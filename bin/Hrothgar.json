@@ -1,0 +1,64 @@
+[
+  {
+    "count": 1,
+    "color": "blue",
+    "title": "Hrothgar",
+    "icon": null,
+    "contents": [
+      "subtitle | Character Info",
+      "property | Base HP | 61",
+      "property | Race | Human",
+      "property | Ethnicity | Shoanti"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "red",
+    "title": "Blackaxe",
+    "icon": null,
+    "contents": [
+      "subtitle | Damage Type | Slashing",
+      "property | Attack | +11",
+      "property | Crit | ×3+2d10 acid",
+      "property | Description | Noxious acid seeps from the obsidian blade of this gigantic black axe, its shape cruel and savage as if ripped from poisoned stone by obscene claws.\n\n Blackaxe is a Huge +5 plant bane greataxe which is considered epic and can penetrate epic damage reduction. Virulent acid constantly seeps from its blade, dealing +1d6 points of acid damage on a successful hit. On a successful critical hit, Blackaxe deals an additional +2d10 points of acid damage. Once per minute, the wea"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "red",
+    "title": "Greataxe",
+    "icon": null,
+    "contents": [
+      "subtitle | Damage Type | Slashing",
+      "property | Attack | +10",
+      "property | Crit | ×3",
+      "property | Description | This two-handed battle axe is heavy enough that you can't wield it with one hand. The head may have one blade or two, and may be \"bearded\" (meaning hooked or trailing at the bottom) to increase cleaving power and help pull down enemy shields. The haft is usually 3 to 4 feet long."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "grey",
+    "title": "Chainmail",
+    "icon": null,
+    "contents": [
+      "property | AC | +6",
+      "property | Weight | 40 lbs",
+      "property | Cost | 150 gp",
+      "property | Quantity | 1",
+      "property | Description | Unlike a chain shirt, which covers only the chest, chainmail protects the wearer with a complete mesh of chain links that cover the torso and arms, and extends below the waist. Multiple interconnected pieces offer additional protection over vital areas. The suit includes gauntlets."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "grey",
+    "title": "Natural armor",
+    "icon": null,
+    "contents": [
+      "property | AC | +0",
+      "property | Weight | ",
+      "property | Cost | ",
+      "property | Quantity | 1",
+      "property | Description | "
+    ]
+  }
+]
