@@ -30,8 +30,6 @@ class Compiler
     tracked_resources.create_card(myXML) if myXML["document"]["public"]["character"]["trackedresources"]["trackedresource"] != nil
     spells.create_card(myXML) if myXML["document"]["public"]["character"]["spellsmemorized"]["spell"] != nil
 
-    binding.pry
-
     weapons.class_cards.each do |w|
       deck.cards << w
     end
