@@ -1,4 +1,4 @@
-# pathfinder_deck_builder
+# Pathfinder Deck Builder
 
 This Ruby program translates a Pathfinder character sheet in an xml format from the Hero Lab 
 character management software into a JSON format for upload to crobi's rpg-cards tool. 
