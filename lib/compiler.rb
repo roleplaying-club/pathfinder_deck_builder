@@ -20,11 +20,9 @@ class Compiler
 
     deck.cards << character.create_card(myXML)
 
-    binding.pry
-
     weapons.create_card(myXML, "melee") if myXML["document"]["public"]["character"]["melee"] != nil
-    weapons.create_card(myXML, "ranged") if myXML["document"]["public"]["character"]["ranged"] != nil
     armors.create_card(myXML) if myXML["document"]["public"]["character"]["defenses"]["armor"] != nil
+    weapons.create_card(myXML, "ranged") if myXML["document"]["public"]["character"]["ranged"] != nil
 
     weapons.class_cards.each do |w|
       deck.cards << w
