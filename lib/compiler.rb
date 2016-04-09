@@ -1,7 +1,9 @@
 require "pry"
 require "crack"
 require "json"
-require_relative 'card_creator'
+require_relative 'character_card'
+require_relative 'weapon_card'
+require_relative 'armor_card'
 require_relative 'deck'
 
 class Compiler
@@ -11,20 +13,24 @@ class Compiler
   
   def compile
     deck = Deck.new
-    creator = CardCreator.new
+    character = CharacterCard.new
+    weapons = WeaponCard.new
+    armors = ArmorCard.new
     myXML = Crack::XML.parse(File.read(@file_path))
 
-    deck.cards << creator.create_character_card(myXML)
+    deck.cards << character.create_card(myXML)
 
-    creator.create_weapon_card(myXML, "melee") if myXML["document"]["public"]["character"]["melee"] != nil
-    creator.create_weapon_card(myXML, "ranged") if myXML["document"]["public"]["character"]["ranged"] != nil
-    creator.create_armor_card(myXML) if myXML["document"]["public"]["character"]["defenses"]["armor"] != nil
+    binding.pry
 
-    creator.weapons.each do |w|
+    weapons.create_card(myXML, "melee") if myXML["document"]["public"]["character"]["melee"] != nil
+    weapons.create_card(myXML, "ranged") if myXML["document"]["public"]["character"]["ranged"] != nil
+    armors.create_card(myXML) if myXML["document"]["public"]["character"]["defenses"]["armor"] != nil
+
+    weapons.class_cards.each do |w|
       deck.cards << w
     end
 
-    creator.armors.each do |a|
+    armors.class_cards.each do |a|
       deck.cards << a
     end
 
