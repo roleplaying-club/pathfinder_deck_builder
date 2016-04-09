@@ -6,6 +6,7 @@ require_relative 'weapon_card'
 require_relative 'armor_card'
 require_relative 'tracked_resource_card'
 require_relative 'spell_card'
+require_relative 'skill_card'
 require_relative 'deck'
 
 class Compiler
@@ -20,6 +21,7 @@ class Compiler
     armors = ArmorCard.new
     tracked_resources = TrackedResourceCard.new
     spells = SpellCard.new
+    skills = SkillCard.new
     myXML = Crack::XML.parse(File.read(@file_path))
 
     deck.cards << character.create_card(myXML)
@@ -27,8 +29,9 @@ class Compiler
     weapons.create_card(myXML, "melee") if myXML["document"]["public"]["character"]["melee"] != nil
     armors.create_card(myXML) if myXML["document"]["public"]["character"]["defenses"]["armor"] != nil
     weapons.create_card(myXML, "ranged") if myXML["document"]["public"]["character"]["ranged"] != nil
-    tracked_resources.create_card(myXML) if myXML["document"]["public"]["character"]["trackedresources"]["trackedresource"] != nil
-    spells.create_card(myXML) if myXML["document"]["public"]["character"]["spellsmemorized"]["spell"] != nil
+    tracked_resources.create_card(myXML) if myXML["document"]["public"]["character"]["trackedresources"] != nil
+    spells.create_card(myXML) if myXML["document"]["public"]["character"]["spellsmemorized"] != nil
+    skills.create_card(myXML) if myXML["document"]["public"]["character"]["skills"] != nil
 
     weapons.class_cards.each do |w|
       deck.cards << w
@@ -44,6 +47,10 @@ class Compiler
 
     spells.class_cards.each do |sr|
       deck.cards << sr
+    end
+
+    skills.class_cards.each do |sc|
+      deck.cards << sc
     end
 
     deck.save_deck("#{@file_path.split(".")[0]}"+".json", deck.cards)

@@ -9,7 +9,7 @@ class TrackedResourceCard < CharacterCard
       @class_cards << {
         "count": 1,
         "color": "purple",
-          "title": "Tracked Resource",
+          "title": "#{path["name"]}",
           "icon": nil,
           "contents": [
           "property | Description | #{path["name"]}",
