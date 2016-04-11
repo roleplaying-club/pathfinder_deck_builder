@@ -155,7 +155,7 @@ Trap sense bonuses gained from multiple classes stack.</description>
                 <speed text="30'" value="30"></speed>
                 <basespeed text="40'" value="40"></basespeed>
             </movement>
-            <encumbrance carried="103.5" encumstr="22" light="173" medium="346" heavy="520" level="Light Load"></encumbrance>
+            <encumbrance carried="53.5" encumstr="22" light="173" medium="346" heavy="520" level="Light Load"></encumbrance>
             <skills>
                 <skill name="Acrobatics" ranks="0" attrbonus="0" attrname="DEX" value="-5" armorcheck="yes" classskill="yes">
                     <description>You can keep your balance while traversing narrow or treacherous surfaces. You can also dive, flip, jump, and roll to avoid attacks and overcome obstacles.
@@ -1028,19 +1028,6 @@ A barbarian can end her rage as a free action and is fatigued after rage for a n
                 </special>
             </attack>
             <melee>
-                <weapon name="Blackaxe" categorytext="Melee Weapon" typetext="S" size="(H)" attack="+11" crit="×3+2d10 acid" damage="4d6+14 plus 1d6 acid" quantity="1">
-                    <weight text="50 lbs" value="50"></weight>
-                    <cost text="" value="0"></cost>
-                    <description>Noxious acid seeps from the obsidian blade of this gigantic black axe, its shape cruel and savage as if ripped from poisoned stone by obscene claws.
-
- Blackaxe is a Huge +5 plant bane greataxe which is considered epic and can penetrate epic damage reduction. Virulent acid constantly seeps from its blade, dealing +1d6 points of acid damage on a successful hit. On a successful critical hit, Blackaxe deals an additional +2d10 points of acid damage. Once per minute, the weapon's wielder can use heal on herself by striking a living and nonmagical tree with Blackaxe, causing the tree to wither to ash. The artifact is inexorably tied to the nascent demon lord Treerazer, who can call Blackaxe to his hand as a free action, despite any intervening distance, so long as Blackaxe is not kept in an area that prevents teleportation effects from occurring. While Blackaxe is wielded by another creature, Treerazer always knows that creature's location and condition (as via the discern location and status spells), and by concentrating can observe the world around the wielder as if using that wielder's senses. While in this state, Treerazer may use any of his spell-like abilities through the link, treating Blackaxe as if it were the source of the spell-like ability. Each time Treerazer does so, Blackaxe's wielder must make a successful DC 25 Will save to avoid being staggered for 1 round from the flow of power. These spell-like abilities trigger during the wielder's turn in initiative, but do not consume any of the wielder's actions in that round.
-
-Destruction
-In order to destroy Blackaxe, the weapon must be used against a powerful magical tree, and while the sap on the blade is still fresh it must then be used to sever one of the demon lord Cyth-V'sug's many fungoid limbs. Doing so causes Blackaxe to explode in a burst of obsidian shrapnel and acid that deals 20d6 points of acid damage and 20d6 points of piercing damage to all within a 60-foot burst (DC 30 Reflex save for half).</description>
-                    <wepcategory>Melee Weapon</wepcategory>
-                    <weptype>Slashing</weptype>
-                    <situationalmodifiers text=""></situationalmodifiers>
-                </weapon>
                 <weapon name="Greataxe" categorytext="Melee Weapon" typetext="S" attack="+10" crit="×3" damage="1d12+9" equipped="bothhands" quantity="1">
                     <weight text="12 lbs" value="12"></weight>
                     <cost text="20 gp" value="20"></cost>
@@ -1065,18 +1052,7 @@ In order to destroy Blackaxe, the weapon must be used against a powerful magical
                     <itemslot>Armor</itemslot>
                 </armor>
             </defenses>
-            <magicitems>
-                <item name="Blackaxe" quantity="1">
-                    <weight text="50 lbs" value="50"></weight>
-                    <cost text="" value="0"></cost>
-                    <description>Noxious acid seeps from the obsidian blade of this gigantic black axe, its shape cruel and savage as if ripped from poisoned stone by obscene claws.
-
- Blackaxe is a Huge +5 plant bane greataxe which is considered epic and can penetrate epic damage reduction. Virulent acid constantly seeps from its blade, dealing +1d6 points of acid damage on a successful hit. On a successful critical hit, Blackaxe deals an additional +2d10 points of acid damage. Once per minute, the weapon's wielder can use heal on herself by striking a living and nonmagical tree with Blackaxe, causing the tree to wither to ash. The artifact is inexorably tied to the nascent demon lord Treerazer, who can call Blackaxe to his hand as a free action, despite any intervening distance, so long as Blackaxe is not kept in an area that prevents teleportation effects from occurring. While Blackaxe is wielded by another creature, Treerazer always knows that creature's location and condition (as via the discern location and status spells), and by concentrating can observe the world around the wielder as if using that wielder's senses. While in this state, Treerazer may use any of his spell-like abilities through the link, treating Blackaxe as if it were the source of the spell-like ability. Each time Treerazer does so, Blackaxe's wielder must make a successful DC 25 Will save to avoid being staggered for 1 round from the flow of power. These spell-like abilities trigger during the wielder's turn in initiative, but do not consume any of the wielder's actions in that round.
-
-Destruction
-In order to destroy Blackaxe, the weapon must be used against a powerful magical tree, and while the sap on the blade is still fresh it must then be used to sever one of the demon lord Cyth-V'sug's many fungoid limbs. Doing so causes Blackaxe to explode in a burst of obsidian shrapnel and acid that deals 20d6 points of acid damage and 20d6 points of piercing damage to all within a 60-foot burst (DC 30 Reflex save for half).</description>
-                </item>
-            </magicitems>
+            <magicitems></magicitems>
             <gear>
                 <item name="Chainmail" quantity="1">
                     <weight text="40 lbs" value="40"></weight>
@@ -1093,7 +1069,6 @@ In order to destroy Blackaxe, the weapon must be used against a powerful magical
             <spelllike></spelllike>
             <trackedresources>
                 <trackedresource name="Extra Rage (6 rounds/day)" text="0/6" used="0" left="6" min="0" max="6"></trackedresource>
-                <trackedresource name="Heal (Kill a tree, 1/minute)" text="0/1" used="0" left="1" min="0" max="1"></trackedresource>
                 <trackedresource name="Knockback (1/round) (Ex)" text="0/1" used="0" left="1" min="0" max="1"></trackedresource>
                 <trackedresource name="Rage (12 rounds/day) (Ex)" text="7/12" used="7" left="5" min="0" max="12"></trackedresource>
             </trackedresources>
