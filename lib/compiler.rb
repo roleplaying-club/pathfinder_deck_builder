@@ -48,8 +48,6 @@ class Compiler
     special_abilities.create_card(myXML) if myXML ["document"]["public"]["character"]["otherspecials"]["special"] != nil
     special_attacks.create_card(myXML) if myXML["document"]["public"]["character"]["attack"]["special"] != nil
 
-    binding.pry
-
     weapons.class_cards.each do |wc|
       deck.cards << wc
     end
