@@ -10,7 +10,7 @@ class FeatCard < CharacterCard
         "count": 1,
         "color": "green",
           "title": "Feat",
-          "icon": nil,
+          "icon": "foot-trip",
           "contents": [
           "subtitle | #{path["name"]}",
           "rule",
@@ -25,7 +25,7 @@ class FeatCard < CharacterCard
         "count": 1,
         "color": "green",
           "title": "Feat",
-          "icon": nil,
+          "icon": "foot-trip",
           "contents": [
           "subtitle | #{f["name"]}",
           "rule",

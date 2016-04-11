@@ -18,14 +18,14 @@
       "property | Movement | 20'",
       "fill",
       "rule",
-      "dndstats | 11 | 16 | 12 | 12 | 12 |"
+      "dndstats | 11 | 16 | 12 | 12 | 12 | 16"
     ]
   },
   {
     "count": 1,
     "color": "red",
     "title": "Melee Weapon",
-    "icon": null,
+    "icon": "battle-axe",
     "contents": [
       "subtitle | Bludgeoning Weapon",
       "property | Attack | +4",
@@ -39,7 +39,7 @@
     "count": 1,
     "color": "red",
     "title": "Ranged Weapon",
-    "icon": null,
+    "icon": "battle-axe",
     "contents": [
       "subtitle | Piercing Weapon",
       "property | Attack | +7",
@@ -53,7 +53,7 @@
     "count": 1,
     "color": "red",
     "title": "Ranged Weapon",
-    "icon": null,
+    "icon": "battle-axe",
     "contents": [
       "subtitle | Piercing Weapon",
       "property | Attack | +7",
@@ -67,7 +67,7 @@
     "count": 1,
     "color": "red",
     "title": "Ranged Weapon",
-    "icon": null,
+    "icon": "battle-axe",
     "contents": [
       "subtitle | Piercing Weapon",
       "property | Attack | -2",
@@ -81,7 +81,7 @@
     "count": 1,
     "color": "grey",
     "title": "Armor",
-    "icon": null,
+    "icon": "anvil",
     "contents": [
       "subtitle | Leather armor",
       "rule",
@@ -98,7 +98,7 @@
     "count": 1,
     "color": "grey",
     "title": "Armor",
-    "icon": null,
+    "icon": "anvil",
     "contents": [
       "subtitle | Natural armor",
       "rule",
@@ -115,7 +115,7 @@
     "count": 1,
     "color": "purple",
     "title": "Tracked Resource",
-    "icon": null,
+    "icon": "checkbox-tree",
     "contents": [
       "text | Arrows",
       "fill",
@@ -127,7 +127,7 @@
     "count": 1,
     "color": "purple",
     "title": "Tracked Resource",
-    "icon": null,
+    "icon": "checkbox-tree",
     "contents": [
       "text | Club",
       "fill",
@@ -139,7 +139,7 @@
     "count": 1,
     "color": "purple",
     "title": "Tracked Resource",
-    "icon": null,
+    "icon": "checkbox-tree",
     "contents": [
       "text | Crossbow bolts",
       "fill",
@@ -151,7 +151,7 @@
     "count": 1,
     "color": "purple",
     "title": "Tracked Resource",
-    "icon": null,
+    "icon": "checkbox-tree",
     "contents": [
       "text | Potion of cat's grace",
       "fill",
@@ -163,7 +163,7 @@
     "count": 1,
     "color": "purple",
     "title": "Tracked Resource",
-    "icon": null,
+    "icon": "checkbox-tree",
     "contents": [
       "text | Shuriken",
       "fill",
@@ -175,13 +175,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Acrobatics",
       "rule",
       "property | Value | 12",
       "property | Ranks | 4",
-      "property | Bonus | DEX: 3",
+      "property | DEX Bonus: | 3",
       "section | Description",
       "text | You can keep your balance while traversing narrow or treacherous surfaces. You can also dive, flip, jump, and roll to avoid attacks and overcome obstacles.\n\nCheck: You can use Acrobatics to move on narrow surfaces and uneven ground without falling. A successful check allows you to move at half speed across such surfaces - only one check is needed per round. Use the following table to determine the base DC, which is then modified by the Acrobatics skill modifiers noted on page 89. While you"
     ]
@@ -190,13 +190,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Appraise",
       "rule",
       "property | Value | 1",
       "property | Ranks | 0",
-      "property | Bonus | INT: 1",
+      "property | INT Bonus: | 1",
       "section | Description",
       "text | You can evaluate the monetary value of an object.\n\nCheck: A DC 20 Appraise check determines the value of a common item. If you succeed by 5 or more, you also determine if the item has magic properties, although this success does not grant knowledge of the magic item's abilities. If your fail the check by less than 5, you determine the price of that item to within 20% of its actual value. If you fail this check by 5 or more, the price is wildly inaccurate, subject to GM discretion. Particul"
     ]
@@ -205,13 +205,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Bluff",
       "rule",
       "property | Value | 10",
       "property | Ranks | 4",
-      "property | Bonus | CHA: 3",
+      "property | CHA Bonus: | 3",
       "section | Description",
       "text | You know how to tell a lie.\n\nCheck: Bluff is an opposed skill check against your opponent's Sense Motive skill. If you use Bluff to fool someone, with a successful check you convince your opponent that what you are saying is true. Bluff checks are modified depending upon the believability of the lie. The following modifiers are applied to the roll of the creature attempting to tell the lie. Note that some lies are so improbable that it is impossible to convince anyone that they are true (s"
     ]
@@ -220,13 +220,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Climb",
       "rule",
       "property | Value | 7",
       "property | Ranks | 2",
-      "property | Bonus | STR: 0",
+      "property | STR Bonus: | 0",
       "section | Description",
       "text | You are skilled at scaling vertical surfaces, from smooth city walls to rocky cliffs.\n\nCheck: With a successful Climb check, you can advance up, down, or across a slope, wall, or other steep incline (or even across a ceiling, provided it has handholds) at one-quarter your normal speed. A slope is considered to be any incline at an angle measuring less than 60 degrees; a wall is any incline at an angle measuring 60 degrees or more.\n\nA Climb check that fails by 4 or less means that you make "
     ]
@@ -235,13 +235,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Diplomacy",
       "rule",
       "property | Value | 8",
       "property | Ranks | 2",
-      "property | Bonus | CHA: 3",
+      "property | CHA Bonus: | 3",
       "section | Description",
       "text | You can use this skill to persuade others to agree with your arguments, to resolve differences, and to gather valuable information or rumors from people. This skill is also used to negotiate conflicts by using the proper etiquette and manners suitable to the problem.\n\nCheck: You can change the initial attitudes of nonplayer characters with a successful check. The DC of this check depends on the creature's starting attitude toward you, adjusted by its Charisma modifier. If you succeed, the "
     ]
@@ -250,13 +250,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Disable Device",
       "rule",
       "property | Value | 13",
       "property | Ranks | 3",
-      "property | Bonus | DEX: 3",
+      "property | DEX Bonus: | 3",
       "section | Description",
       "text | You are skilled at disarming traps and opening locks. In addition, this skill lets you sabotage simple mechanical devices, such as catapults, wagon wheels, and doors.\n\nCheck: When disarming a trap or other device, the Disable Device check is made secretly, so that you don't necessarily know whether you've succeeded.\n\nThe DC depends on how tricky the device is. If the check succeeds, you disable the device. If it fails by 4 or less, you have failed but can try again. If you fail by 5 or mor"
     ]
@@ -265,13 +265,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Disguise",
       "rule",
       "property | Value | 10",
       "property | Ranks | 4",
-      "property | Bonus | CHA: 3",
+      "property | CHA Bonus: | 3",
       "section | Description",
       "text | You are skilled at changing your appearance.\n\nCheck: Your Disguise check result determines how good the disguise is, and it is opposed by others' Perception check results. If you don't draw any attention to yourself, others do not get to make Perception checks. If you come to the attention of people who are suspicious (such as a guard who is watching commoners walking through a city gate), it can be assumed that such observers are taking 10 on their Perception checks.\n\nYou get only one Dis"
     ]
@@ -280,13 +280,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Escape Artist",
       "rule",
       "property | Value | 10",
       "property | Ranks | 2",
-      "property | Bonus | DEX: 3",
+      "property | DEX Bonus: | 3",
       "section | Description",
       "text | Your training allows you to slip out of bonds and escape from grapples.\n\nCheck: The table below gives the DCs needed to escape various forms of restraints.\nRopes: The DC of your Escape Artist check is equal to the binder's Combat Maneuver Bonus +20.\nManacles and Masterwork Manacles: The DC for manacles is set by their construction (see the table below).\nTight Space: The DC noted is for getting through a space through which your head fits but your shoulders don't. If the space is long, you "
     ]
@@ -295,13 +295,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Fly",
       "rule",
       "property | Value | 5",
       "property | Ranks | 0",
-      "property | Bonus | DEX: 3",
+      "property | DEX Bonus: | 3",
       "section | Description",
       "text | You are skilled at flying, through either the use of wings or magic, and can perform daring or complex maneuvers while airborne. Note that this skill does not give you the ability to fly.\n\nCheck: You generally need only make a Fly check when you are attempting a complex maneuver. Without making a check, a flying creature can remain flying at the end of its turn so long as it moves a distance greater than half its speed. It can also turn up to 45 degrees by sacrificing 5 feet of movement, c"
     ]
@@ -310,13 +310,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Handle Animal",
       "rule",
       "property | Value | 4",
       "property | Ranks | 1",
-      "property | Bonus | CHA: 3",
+      "property | CHA Bonus: | 3",
       "section | Description",
       "text | You are trained at working with animals, and can teach them tricks, get them to follow your simple commands, or even domesticate them.\n\nCheck: The DC depends on what you are trying to do.\n\nTask: Handle Animal DC\nHandle an animal: 10\n\"Push\" an animal: 25\nTeach an animal a trick: 15 or 20*\nTrain an animal for a general purpose: 15 or 20*\nRear a wild animal: 15 + HD of animal\n* See the specific trick or purpose below.\n\nHandle an Animal: This task involves commanding an animal to perform a tas"
     ]
@@ -325,13 +325,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Heal",
       "rule",
       "property | Value | 1",
       "property | Ranks | 0",
-      "property | Bonus | WIS: 1",
+      "property | WIS Bonus: | 1",
       "section | Description",
       "text | You are skilled at tending to wounds and ailments.\n\nCheck: The DC and effect of a Heal check depend on the task you attempt.\n\nTask DC\nFirst aid: 15\nLong-term care: 15\nTreat wounds from caltrops, spike growth, or spike stones: 15\nTreat deadly wounds: 20\nTreat poison: Poison's save DC\nTreat disease: Disease's save DC\n\nFirst Aid: You usually use first aid to save a dying character. If a character has negative hit points and is losing hit points (at the rate of 1 per round, 1 per hour, or 1 pe"
     ]
@@ -340,13 +340,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Intimidate",
       "rule",
       "property | Value | 3",
       "property | Ranks | 0",
-      "property | Bonus | CHA: 3",
+      "property | CHA Bonus: | 3",
       "section | Description",
       "text | You can use this skill to frighten your opponents or to get them to act in a way that benefits you. This skill includes verbal threats and displays of prowess.\n\nCheck: You can use Intimidate to force an opponent to act friendly toward you for 1d6 × 10 minutes with a successful check. The DC of this check is equal to 10 + the target's Hit Dice + the target's Wisdom modifier.\n\nIf successful, the target gives you the information you desire, takes actions that do not endanger it, or otherwise "
     ]
@@ -355,13 +355,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Linguistics",
       "rule",
       "property | Value | 5",
       "property | Ranks | 1",
-      "property | Bonus | INT: 1",
+      "property | INT Bonus: | 1",
       "section | Description",
       "text | You are skilled at working with language, in both its spoken and written forms. You can speak multiple languages, and can decipher nearly any tongue given enough time. Your skill in writing allows you to create and detect forgeries as well.\n\nCheck: You can decipher writing in an unfamiliar language or a message written in an incomplete or archaic form. The base DC is 20 for the simplest messages, 25 for standard texts, and 30 or higher for intricate, exotic, or very old writing. If the che"
     ]
@@ -370,13 +370,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Perception",
       "rule",
       "property | Value | 10",
       "property | Ranks | 4",
-      "property | Bonus | WIS: 1",
+      "property | WIS Bonus: | 1",
       "section | Description",
       "text | Your senses allow you to notice fine details and alert you to danger. Perception covers all five senses, including sight, hearing, touch, taste, and smell.\n\nCheck: Perception has a number of uses, the most common of which is an opposed check versus an opponent's Stealth check to notice the opponent and avoid being surprised. If you are successful, you notice the opponent and can react accordingly. If you fail, your opponent can take a variety of actions, including sneaking past you and att"
     ]
@@ -385,13 +385,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Ride",
       "rule",
       "property | Value | 4",
       "property | Ranks | 1",
-      "property | Bonus | DEX: 3",
+      "property | DEX Bonus: | 3",
       "section | Description",
       "text | You are skilled at riding mounts, usually a horse, but possibly something more exotic, like a griffon or pegasus. If you attempt to ride a creature that is ill suited as a mount, you take a -5 penalty on your Ride checks.\n\nCheck: Typical riding actions don't require checks. You can saddle, mount, ride, and dismount from a mount without a problem. The following tasks do require checks.\n\nTask: Ride DC\nGuide with knees: 5\nStay in saddle: 5\nFight with a combat-trained mount: 10\nCover: 15\nSoft "
     ]
@@ -400,13 +400,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Sense Motive",
       "rule",
       "property | Value | 1",
       "property | Ranks | 0",
-      "property | Bonus | WIS: 1",
+      "property | WIS Bonus: | 1",
       "section | Description",
       "text | You are skilled at detecting falsehoods and true intentions.\n\nCheck: A successful check lets you avoid being bluffed (see the Bluff skill). You can also use this skill to determine when \"something is up\" (that is, something odd is going on) or to assess someone's trustworthiness.\n\nTask: Sense Motive DC\nHunch: 20\nSense enchantment: 25 or 15\nDiscern secret message: Varies\n\nHunch: This use of the skill involves making a gut assessment of the social situation. You can get the feeling from anot"
     ]
@@ -415,13 +415,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Sleight of Hand",
       "rule",
       "property | Value | 13",
       "property | Ranks | 4",
-      "property | Bonus | DEX: 3",
+      "property | DEX Bonus: | 3",
       "section | Description",
       "text | Your training allows you to pick pockets, draw hidden weapons, and take a variety of actions without being noticed.\n\nCheck: A DC 10 Sleight of Hand check lets you palm a coin-sized, unattended object. Performing a minor feat of legerdemain, such as making a coin disappear, also has a DC of 10 unless an observer is determined to note where the item went.\n\nWhen you use this skill under close observation, your skill check is opposed by the observer's Perception check. The observer's success d"
     ]
@@ -430,13 +430,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Spellcraft",
       "rule",
       "property | Value | 1",
       "property | Ranks | 0",
-      "property | Bonus | INT: 1",
+      "property | INT Bonus: | 1",
       "section | Description",
       "text | You are skilled at the art of casting spells, identifying magic items, crafting magic items, and identifying spells as they are being cast.\n\nCheck: Spellcraft is used whenever your knowledge and skill of the technical art of casting a spell or crafting a magic item comes into question. This skill is also used to identify the properties of magic items in your possession through the use of spells such as detect magic and identify. The DC of this check varies depending upon the task at hand.\n"
     ]
@@ -445,13 +445,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Stealth",
       "rule",
       "property | Value | 16",
       "property | Ranks | 4",
-      "property | Bonus | DEX: 3",
+      "property | DEX Bonus: | 3",
       "section | Description",
       "text | You are skilled at avoiding detection, allowing you to slip past foes or strike from an unseen position. Creatures that fail to beat your Stealth check are not aware of you and treat you as if you had total concealment. This skill covers hiding and moving silently.\n\nCheck: Your Stealth check is opposed by the Perception check of anyone who might notice you. You can move up to half your normal speed and use Stealth at no penalty. When moving at a speed greater than half but less than your n"
     ]
@@ -460,13 +460,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Survival",
       "rule",
       "property | Value | 1",
       "property | Ranks | 0",
-      "property | Bonus | WIS: 1",
+      "property | WIS Bonus: | 1",
       "section | Description",
       "text | You are skilled at surviving in the wild and at navigating in the wilderness. You also excel at following trails and tracks left by others.\n\nCheck: You can keep yourself and others safe and fed in the wild. The table below gives the DCs for various tasks that require Survival checks.\n\nSurvival DC: Task\n10: Get along in the wild. Move up to half your overland speed while hunting and foraging (no food or water supplies needed). You can provide food and water for one other person for every 2 "
     ]
@@ -475,13 +475,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Swim",
       "rule",
       "property | Value | 4",
       "property | Ranks | 1",
-      "property | Bonus | STR: 0",
+      "property | STR Bonus: | 0",
       "section | Description",
       "text | You know how to swim and can do so even in stormy water.\n\nCheck: Make a Swim check once per round while you are in the water. Success means you may swim at up to half your speed (as a full-round action) or at a quarter of your speed (as a move action). If you fail by 4 or less, you make no progress. If you fail by 5 or more, you go underwater.\n\nIf you are underwater, either because you failed a Swim check or because you are swimming underwater intentionally, you must hold your breath. You "
     ]
@@ -490,13 +490,13 @@
     "count": 1,
     "color": "orange",
     "title": "Skill",
-    "icon": null,
+    "icon": "gears",
     "contents": [
       "subtitle | Use Magic Device",
       "rule",
       "property | Value | 7",
       "property | Ranks | 1",
-      "property | Bonus | CHA: 3",
+      "property | CHA Bonus: | 3",
       "section | Description",
       "text | You are skilled at activating magic items, even if you are not otherwise trained in their use.\n\nCheck: You can use this skill to read a spell or to activate a magic item. Use Magic Device lets you use a magic item as if you had the spell ability or class features of another class, as if you were a different race, or as if you were of a different alignment.\n\nYou make a Use Magic Device check each time you activate a device such as a wand. If you are using the check to emulate an alignment o"
     ]
@@ -505,7 +505,7 @@
     "count": 1,
     "color": "green",
     "title": "Defensive Ability",
-    "icon": null,
+    "icon": "spiked-shell",
     "contents": [
       "subtitle | Evasion",
       "rule",
@@ -519,7 +519,7 @@
     "count": 1,
     "color": "green",
     "title": "Defensive Ability",
-    "icon": null,
+    "icon": "spiked-shell",
     "contents": [
       "subtitle | Trap Sense",
       "rule",
@@ -533,7 +533,7 @@
     "count": 1,
     "color": "green",
     "title": "Defensive Ability",
-    "icon": null,
+    "icon": "spiked-shell",
     "contents": [
       "subtitle | Uncanny Dodge",
       "rule",
@@ -547,7 +547,7 @@
     "count": 1,
     "color": "green",
     "title": "Feat",
-    "icon": null,
+    "icon": "foot-trip",
     "contents": [
       "subtitle | Armor Proficiency (Light)",
       "rule",
@@ -561,7 +561,7 @@
     "count": 1,
     "color": "green",
     "title": "Feat",
-    "icon": null,
+    "icon": "foot-trip",
     "contents": [
       "subtitle | Deft Hands",
       "rule",
@@ -575,7 +575,7 @@
     "count": 1,
     "color": "green",
     "title": "Feat",
-    "icon": null,
+    "icon": "foot-trip",
     "contents": [
       "subtitle | Rogue Weapon Proficiencies",
       "rule",
@@ -589,7 +589,7 @@
     "count": 1,
     "color": "green",
     "title": "Feat",
-    "icon": null,
+    "icon": "foot-trip",
     "contents": [
       "subtitle | Simple Weapon Proficiency - All",
       "rule",
@@ -603,7 +603,7 @@
     "count": 1,
     "color": "green",
     "title": "Feat",
-    "icon": null,
+    "icon": "foot-trip",
     "contents": [
       "subtitle | Stealthy",
       "rule",
@@ -617,7 +617,7 @@
     "count": 1,
     "color": "green",
     "title": "Trait",
-    "icon": null,
+    "icon": "usable",
     "contents": [
       "subtitle | Child of the Streets",
       "rule",
@@ -631,7 +631,7 @@
     "count": 1,
     "color": "green",
     "title": "Trait",
-    "icon": null,
+    "icon": "usable",
     "contents": [
       "subtitle | Reactionary",
       "rule",
@@ -645,11 +645,9 @@
     "count": 1,
     "color": "green",
     "title": "Special Ability",
-    "icon": null,
+    "icon": "magic-swirl",
     "contents": [
       "subtitle | Fearless",
-      "rule",
-      "property | Type | ",
       "fill",
       "section | Description",
       "text | +2 racial bonus on all saving throws against fear. This bonus stacks with the bonus granted by halfling luck."
@@ -659,11 +657,9 @@
     "count": 1,
     "color": "green",
     "title": "Special Ability",
-    "icon": null,
+    "icon": "magic-swirl",
     "contents": [
       "subtitle | Surprise Attacks (Ex)",
-      "rule",
-      "property | Type | Extraordinary Ability",
       "fill",
       "section | Description",
       "text | During the surprise round, opponents are always considered flat-footed to a rogue with this ability, even if they have already acted."
@@ -673,11 +669,9 @@
     "count": 1,
     "color": "green",
     "title": "Special Ability",
-    "icon": null,
+    "icon": "magic-swirl",
     "contents": [
       "subtitle | Trapfinding +2",
-      "rule",
-      "property | Type | ",
       "fill",
       "section | Description",
       "text | A rogue adds 1/2 her level on Perception checks to locate traps and on Disable Device checks (minimum +1). A rogue can use Disable Device to disarm magic traps."
@@ -687,7 +681,7 @@
     "count": 1,
     "color": "green",
     "title": "Special Attack",
-    "icon": null,
+    "icon": "wyvern",
     "contents": [
       "subtitle | Bleeding Attack",
       "rule",
@@ -701,7 +695,7 @@
     "count": 1,
     "color": "green",
     "title": "Special Attack",
-    "icon": null,
+    "icon": "wyvern",
     "contents": [
       "subtitle | Sneak Attack",
       "rule",

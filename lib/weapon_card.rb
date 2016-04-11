@@ -10,7 +10,7 @@ class WeaponCard < CharacterCard
           "count": 1,
           "color": "red",
           "title": "#{weapon_type.capitalize} Weapon",
-          "icon": nil,
+          "icon": "battle-axe",
           "contents": [
             "subtitle | #{path["weptype"]} Weapon",
             "property | Attack | #{path["attack"]}",
@@ -26,7 +26,7 @@ class WeaponCard < CharacterCard
           "count": 1,
           "color": "red",
           "title": "#{weapon_type.capitalize} Weapon",
-          "icon": nil,
+          "icon": "battle-axe",
           "contents": [
             "subtitle | #{w["weptype"]} Weapon",
             "property | Attack | #{w["attack"]}",

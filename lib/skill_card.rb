@@ -10,7 +10,7 @@ class SkillCard < CharacterCard
         "count": 1,
         "color": "orange",
           "title": "Skill",
-          "icon": nil,
+          "icon": "gears",
           "contents": [
           "subtitle | #{path[name]}",
           "rule",
@@ -27,7 +27,7 @@ class SkillCard < CharacterCard
         "count": 1,
         "color": "orange",
           "title": "Skill",
-          "icon": nil,
+          "icon": "gears",
           "contents": [
           "subtitle | #{sc["name"]}",
           "rule",

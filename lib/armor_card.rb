@@ -10,7 +10,7 @@ class ArmorCard < CharacterCard
         "count": 1,
         "color": "grey",
           "title": "Armor",
-          "icon": nil,
+          "icon": "anvil",
           "contents": [
           "subtitle | #{path["name"]}",
           "rule",
@@ -29,7 +29,7 @@ class ArmorCard < CharacterCard
           "count": 1,
           "color": "grey",
           "title": "Armor",
-          "icon": nil,
+          "icon": "anvil",
           "contents": [
             "subtitle | #{armor["name"]}",
             "rule",

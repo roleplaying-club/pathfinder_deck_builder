@@ -10,7 +10,7 @@ class SpecialAbilityCard < CharacterCard
         "count": 1,
         "color": "green",
           "title": "Special Ability",
-          "icon": nil,
+          "icon": "magic-swirl",
           "contents": [
           "subtitle | #{path["shortname"]}",
           "section | Description",
@@ -23,7 +23,7 @@ class SpecialAbilityCard < CharacterCard
         "count": 1,
         "color": "green",
           "title": "Special Ability",
-          "icon": nil,
+          "icon": "magic-swirl",
           "contents": [
           "subtitle | #{sa["name"]}",
           "fill",

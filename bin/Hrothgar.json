@@ -25,7 +25,7 @@
     "count": 1,
     "color": "red",
     "title": "Melee Weapon",
-    "icon": null,
+    "icon": "battle-axe",
     "contents": [
       "subtitle | Slashing Weapon",
       "property | Attack | +10",
@@ -39,7 +39,7 @@
     "count": 1,
     "color": "grey",
     "title": "Armor",
-    "icon": null,
+    "icon": "anvil",
     "contents": [
       "subtitle | Chainmail",
       "rule",
@@ -56,7 +56,7 @@
     "count": 1,
     "color": "grey",
     "title": "Armor",
-    "icon": null,
+    "icon": "anvil",
     "contents": [
       "subtitle | Natural armor",
       "rule",
@@ -439,7 +439,7 @@
     "count": 1,
     "color": "green",
     "title": "Defensive Ability",
-    "icon": null,
+    "icon": "spiked-shell",
     "contents": [
       "subtitle | Trap Sense",
       "rule",
@@ -453,7 +453,7 @@
     "count": 1,
     "color": "green",
     "title": "Defensive Ability",
-    "icon": null,
+    "icon": "spiked-shell",
     "contents": [
       "subtitle | Uncanny Dodge",
       "rule",
@@ -607,46 +607,43 @@
     "count": 1,
     "color": "green",
     "title": "Special Ability",
-    "icon": null,
+    "icon": "magic-swirl",
     "contents": [
       "subtitle | Fast Movement +10 (Ex)",
       "fill",
       "section | Description",
-      "text | A barbarian’s base speed is faster than the norm for her race by 10 feet. This benefit applies only when she is wearing no armor, light armor, or medium armor, and not carrying a heavy load. Apply this bonus before modifying the barbarian’s speed because of any load carried or armor worn. This bonus stacks with any other bonuses to the barbarian’s base speed.",
-      "fill"
+      "text | A barbarian’s base speed is faster than the norm for her race by 10 feet. This benefit applies only when she is wearing no armor, light armor, or medium armor, and not carrying a heavy load. Apply this bonus before modifying the barbarian’s speed because of any load carried or armor worn. This bonus stacks with any other bonuses to the barbarian’s base speed."
     ]
   },
   {
     "count": 1,
     "color": "green",
     "title": "Special Ability",
-    "icon": null,
+    "icon": "magic-swirl",
     "contents": [
       "subtitle | Knockback (1/round) (Ex)",
       "fill",
       "section | Description",
-      "text | Once per round, the barbarian can make a bull rush attempt against one target in place of a melee attack. If successful, the target takes damage equal to the barbarian's Strength modifier and is moved back as normal. The barbarian does not need to move with the target if successful. This does not provoke an attack of opportunity.",
-      "fill"
+      "text | Once per round, the barbarian can make a bull rush attempt against one target in place of a melee attack. If successful, the target takes damage equal to the barbarian's Strength modifier and is moved back as normal. The barbarian does not need to move with the target if successful. This does not provoke an attack of opportunity."
     ]
   },
   {
     "count": 1,
     "color": "green",
     "title": "Special Ability",
-    "icon": null,
+    "icon": "magic-swirl",
     "contents": [
       "subtitle | Roused Anger (Ex)",
       "fill",
       "section | Description",
-      "text | The barbarian may enter a rage even if fatigued. While raging after using this ability, the barbarian is immune to the fatigued condition. Once this rage ends, the barbarian is exhausted for 10 minutes per round spent raging.",
-      "fill"
+      "text | The barbarian may enter a rage even if fatigued. While raging after using this ability, the barbarian is immune to the fatigued condition. Once this rage ends, the barbarian is exhausted for 10 minutes per round spent raging."
     ]
   },
   {
     "count": 1,
     "color": "green",
     "title": "Special Attack",
-    "icon": null,
+    "icon": "moebius-star",
     "contents": [
       "subtitle | Rage (12 rounds/day)",
       "rule",
