@@ -3,31 +3,37 @@ require_relative 'character_card'
 class WeaponCard < CharacterCard
 
   def create_card(xml_file, weapon_type)
-    if xml_file["document"]["public"]["character"][weapon_type]["weapon"].class == Hash
+    path = xml_file["document"]["public"]["character"][weapon_type]["weapon"]
+
+    if path.class == Hash
       @class_cards << {
           "count": 1,
           "color": "red",
-          "title": "#{xml_file["document"]["public"]["character"][weapon_type]["weapon"]["name"]}",
+          "title": "#{weapon_type.capitalize} Weapon",
           "icon": nil,
           "contents": [
-            "subtitle | Damage Type | #{xml_file["document"]["public"]["character"][weapon_type]["weapon"]["weptype"]}",
-            "property | Attack | #{xml_file["document"]["public"]["character"][weapon_type]["weapon"]["attack"]}",
-            "property | Crit | #{xml_file["document"]["public"]["character"][weapon_type]["weapon"]["crit"]}",
-            "property | Description | #{xml_file["document"]["public"]["character"][weapon_type]["weapon"]["description"]}"[0..498]
+            "subtitle | #{path["weptype"]} Weapon",
+            "property | Attack | #{path["attack"]}",
+            "property | Crit | #{path["crit"]}",
+            "fill",
+            "section | Description",
+            "text | #{path["description"]}"[0..498]
           ]
         }
-    elsif xml_file["document"]["public"]["character"][weapon_type]["weapon"].class == Array
-      xml_file["document"]["public"]["character"][weapon_type]["weapon"].each do |w|
+    elsif path.class == Array
+      path.each do |w|
         @class_cards << {
           "count": 1,
           "color": "red",
-          "title": "#{w["name"]}",
+          "title": "#{weapon_type.capitalize} Weapon",
           "icon": nil,
           "contents": [
-            "subtitle | Damage Type | #{w["weptype"]}",
+            "subtitle | #{w["weptype"]} Weapon",
             "property | Attack | #{w["attack"]}",
             "property | Crit | #{w["crit"]}",
-            "property | Description | #{w["description"]}"[0..498]
+            "fill",
+            "section | Description",
+            "text | #{w["description"]}"[0..498]
           ]
         }
       end

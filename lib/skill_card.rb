@@ -9,14 +9,16 @@ class SkillCard < CharacterCard
       @class_cards << {
         "count": 1,
         "color": "orange",
-          "title": "#{path[name]}",
+          "title": "Skill",
           "icon": nil,
           "contents": [
+          "subtitle | #{path[name]}",
+          "rule",
           "property | Value | #{path["value"]}",
           "property | Ranks | #{path["ranks"]}",
-          "property | Bonus | #{path["attrname"]}: #{path["attrbonus"]}",
-          "property | Situational Modifiers | #{path["situationalmodifiers"]["situationalmodifier"]["text"]}",
-          "property | Description | #{path["description"]}"[0..300]
+          "property | #{path["attrname"]} Bonus: | #{path["attrname"]} #{path["attrbonus"]}",
+          "section | Description",
+          "text | #{path["description"]}"[0..500]
         ]
       }
     elsif path.class == Array
@@ -24,14 +26,16 @@ class SkillCard < CharacterCard
         @class_cards << {
         "count": 1,
         "color": "orange",
-          "title": "#{sc["name"]}",
+          "title": "Skill",
           "icon": nil,
           "contents": [
+          "subtitle | #{sc["name"]}",
+          "rule",
           "property | Value | #{sc["value"]}",
           "property | Ranks | #{sc["ranks"]}",
-          "property | Bonus | #{sc["attrname"]}: #{sc["attrbonus"]}",
-          #"property | Situational Modifiers | #{sc["situationalmodifiers"]["situationalmodifier"]["text"]}",
-          "property | Description | #{sc["description"]}"[0..300]
+          "property | #{sc["attrname"]} Bonus: | #{sc["attrbonus"]}",
+          "section | Description",
+          "text | #{sc["description"]}"[0..500]
         ]
       }
       end

@@ -9,11 +9,13 @@ class TrackedResourceCard < CharacterCard
       @class_cards << {
         "count": 1,
         "color": "purple",
-          "title": "#{path["name"]}",
+          "title": "Tracked Resource",
           "icon": nil,
           "contents": [
-          "property | Description | #{path["name"]}",
-          "property | Charges | #{path["max"]}",
+          "text | #{path["name"]}",
+          "fill",
+          "section | Charges",
+          "boxes | #{path["max"]} | 2.5"
         ]
       }
     elsif path.class == Array
@@ -21,10 +23,11 @@ class TrackedResourceCard < CharacterCard
         @class_cards << {
         "count": 1,
         "color": "purple",
-          "title": "#{tr["name"]}"[0..49],
+          "title": "Tracked Resource",
           "icon": nil,
           "contents": [
-          "property | Description | #{tr["name"]}",
+          "text | #{tr["name"]}",
+          "fill",
           "section | Charges",
           "boxes | #{tr["max"]} | 2.5"
         ]
