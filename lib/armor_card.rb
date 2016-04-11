@@ -3,33 +3,43 @@ require_relative 'character_card'
 class ArmorCard < CharacterCard
 
   def create_card(xml_file)
-    if xml_file["document"]["public"]["character"]["defenses"]["armor"].class == Hash
+    path = xml_file["document"]["public"]["character"]["defenses"]["armor"]
+
+    if path.class == Hash
       @class_cards << {
         "count": 1,
         "color": "grey",
-          "title": "#{xml_file["document"]["public"]["character"]["defenses"]["armor"]["name"]}",
+          "title": "Armor",
           "icon": nil,
           "contents": [
-          "property | AC | #{xml_file["document"]["public"]["character"]["defenses"]["armor"]["ac"]}",
-          "property | Weight | #{xml_file["document"]["public"]["character"]["defenses"]["armor"]["weight"]["text"]}",
-          "property | Cost | #{xml_file["document"]["public"]["character"]["defenses"]["armor"]["cost"]["text"]}",
-          "property | Quantity | #{xml_file["document"]["public"]["character"]["defenses"]["armor"]["quantity"]}",
-          "property | Description | #{xml_file["document"]["public"]["character"]["defenses"]["armor"]["description"]}"
+          "subtitle | #{path["name"]}",
+          "rule",
+          "property | AC | #{path["ac"]}",
+          "property | Weight | #{path["weight"]["text"]}",
+          "property | Cost | #{path["cost"]["text"]}",
+          "property | Quantity | #{path["quantity"]}",
+          "fill",
+          "section | Description",
+          "text | #{path["description"]}"[0..500]
         ]
       }
-    elsif xml_file["document"]["public"]["character"]["defenses"]["armor"].class == Array
-      xml_file["document"]["public"]["character"]["defenses"]["armor"].each do |armor|
+    elsif path.class == Array
+      path.each do |armor|
         @class_cards << {
           "count": 1,
           "color": "grey",
-          "title": "#{armor["name"]}",
+          "title": "Armor",
           "icon": nil,
           "contents": [
+            "subtitle | #{armor["name"]}",
+            "rule",
             "property | AC | #{armor["ac"]}",
             "property | Weight | #{armor["weight"]["text"]}",
             "property | Cost | #{armor["cost"]["text"]}",
             "property | Quantity | #{armor["quantity"]}",
-            "property | Description | #{armor["description"]}"
+            "fill",
+            "section | Description",
+            "text | #{armor["description"]}"[0..500]
           ]
         }
       end

@@ -9,9 +9,11 @@ class SpellCard < CharacterCard
       @class_cards << {
         "count": 1,
         "color": "green",
-          "title": path["name"],
-          "icon": nil,
+          "title": "Spell",
+          "icon": "white-book-#{path["level"]}",
           "contents": [
+          "subtitle | #{path["name"]}",
+          "rule",
           "property | Class | #{path["class"]}",
           "property | Level | #{path["level"]}",
           "property | Cast Time | #{path["casttime"]}",
@@ -19,7 +21,9 @@ class SpellCard < CharacterCard
           "property | Range | #{path["range"]}",
           "property | Target | #{path["target"]}",
           "property | Area | #{path["area"]}",
-          "property | Description | #{path["description"]}"
+          "fill",
+          "section | Description",
+          "text | #{path["description"]}"[0..318]
         ]
       }
     elsif path.class == Array
@@ -27,9 +31,11 @@ class SpellCard < CharacterCard
         @class_cards << {
         "count": 1,
         "color": "green",
-          "title": "#{s["name"]}",
-          "icon": nil,
+          "title": "Spell",
+          "icon": "white-book-#{s["level"]}",
           "contents": [
+          "subtitle | #{s["name"]}",
+          "rule",
           "property | Class | #{s["class"]}",
           "property | Level | #{s["level"]}",
           "property | Cast Time | #{s["casttime"]}",
@@ -37,7 +43,9 @@ class SpellCard < CharacterCard
           "property | Range | #{s["range"]}",
           "property | Target | #{s["target"]}",
           "property | Area | #{s["area"]}",
-          "property | Description | #{s["description"]}"
+          "fill",
+          "section | Description",
+          "text | #{s["description"]}"[0..318]
         ]
       }
       end
