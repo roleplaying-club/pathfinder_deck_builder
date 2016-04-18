@@ -9,7 +9,7 @@ class WeaponCard < CharacterCard
       @class_cards << {
           "count": 1,
           "color": "red",
-          "title": "#{weapon_type.capitalize} Weapon",
+          "title": "#{path["name"].capitalize}",
           "icon": nil,
           "contents": [
             "subtitle | #{path["weptype"]} Weapon",
@@ -25,7 +25,7 @@ class WeaponCard < CharacterCard
         @class_cards << {
           "count": 1,
           "color": "red",
-          "title": "#{weapon_type.capitalize} Weapon",
+          "title": "#{path["name"].capitalize}",
           "icon": nil,
           "contents": [
             "subtitle | #{w["weptype"]} Weapon",
