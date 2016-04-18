@@ -9,10 +9,11 @@ class WeaponCard < CharacterCard
       @class_cards << {
           "count": 1,
           "color": "red",
-          "title": "#{path["name"].capitalize}",
+          "title": "Weapon",
           "icon": nil,
           "contents": [
-            "subtitle | #{path["weptype"]} Weapon",
+            "subtitle | #{path["name"].capitalize}",
+            "property | Damage Type | #{path["weptype"]}",
             "property | Attack | #{path["attack"]}",
             "property | Crit | #{path["crit"]}",
             "fill",
@@ -25,10 +26,11 @@ class WeaponCard < CharacterCard
         @class_cards << {
           "count": 1,
           "color": "red",
-          "title": "#{path["name"].capitalize}",
+          "title": "Weapon",
           "icon": nil,
           "contents": [
-            "subtitle | #{w["weptype"]} Weapon",
+            "subtitle | #{w["name"].capitalize}",
+            "property |  Damage Type | #{w["weptype"]}",
             "property | Attack | #{w["attack"]}",
             "property | Crit | #{w["crit"]}",
             "fill",
