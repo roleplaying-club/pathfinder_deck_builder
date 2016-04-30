@@ -2,8 +2,12 @@ require_relative 'character_card'
 
 class SkillCard < CharacterCard
 
-  def create_card(xml_file)
-    path = xml_file["document"]["public"]["character"]["skills"]["skill"]
+  def create_card(xml_file, index=nil)
+  if index == nil
+      path = xml_file["document"]["public"]["character"]["skills"]["skill"]
+    else
+      path = xml_file["document"]["public"]["character"][index]["skills"]["skill"]
+    end
 
     if path.class == Hash
       @class_cards << {

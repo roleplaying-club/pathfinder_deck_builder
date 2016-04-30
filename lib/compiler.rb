@@ -19,7 +19,11 @@ class Compiler
     @file_path = file_path
   end
   
-  def compile
+  def is_party?
+    Crack::XML.parse(File.read(@file_path))["document"]["public"]["character"].class == Array
+  end
+
+  def compile_individual
     deck = Deck.new
     character = CharacterCard.new
     weapons = WeaponCard.new
@@ -91,5 +95,82 @@ class Compiler
     deck.save_deck("#{@file_path.split(".")[0]}"+".json", deck.cards)
 
     puts "Please check your current directory for a JSON file with your deck name."
+  end
+
+  def compile_party
+    deck = Deck.new
+    character = CharacterCard.new
+    weapons = WeaponCard.new
+    armors = ArmorCard.new
+    tracked_resources = TrackedResourceCard.new
+    spells = SpellCard.new
+    skills = SkillCard.new
+    defenses = DefensiveAbilityCard.new
+    feats = FeatCard.new
+    traits = TraitCard.new
+    special_abilities = SpecialAbilityCard.new
+    special_attacks = SpecialAttackCard.new
+    myXML = Crack::XML.parse(File.read(@file_path))
+
+    myXML["document"]["public"]["character"].each_with_index do |fun_stuff, index|
+
+      deck.cards << character.create_card(myXML, index)
+
+      weapons.create_card(myXML, "melee", index) if myXML["document"]["public"]["character"][index]["melee"] != nil
+      armors.create_card(myXML, index) if myXML["document"]["public"]["character"][index]["defenses"]["armor"] != nil
+      weapons.create_card(myXML, "ranged", index) if myXML["document"]["public"]["character"][index]["ranged"] != nil
+      tracked_resources.create_card(myXML, index) if myXML["document"]["public"]["character"][index]["trackedresources"] != nil
+      spells.create_card(myXML, index) if myXML["document"]["public"]["character"][index]["spellsmemorized"] != nil
+      skills.create_card(myXML, index) if myXML["document"]["public"]["character"][index]["skills"] != nil
+      defenses.create_card(myXML, index) if myXML["document"]["public"]["character"][index]["defensive"] != nil
+      feats.create_card(myXML, index) if myXML["document"]["public"]["character"][index]["feats"]["feat"] != nil
+      traits.create_card(myXML, index) if myXML["document"]["public"]["character"][index]["traits"]["trait"] != nil
+      special_abilities.create_card(myXML, index) if myXML ["document"]["public"]["character"][index]["otherspecials"]["special"] != nil
+      special_attacks.create_card(myXML, index) if myXML["document"]["public"]["character"][index]["attack"]["special"] != nil
+
+      weapons.class_cards.each do |wc|
+        deck.cards << wc
+      end
+
+      armors.class_cards.each do |ac|
+        deck.cards << ac
+      end
+
+      tracked_resources.class_cards.each do |trc|
+        deck.cards << trc
+      end
+
+      spells.class_cards.each do |sc|
+        deck.cards << sc
+      end
+
+      skills.class_cards.each do |sc|
+        deck.cards << sc
+      end
+
+      defenses.class_cards.each do |sc|
+        deck.cards << sc
+      end
+
+      feats.class_cards.each do |fc|
+        deck.cards << fc
+      end
+
+      traits.class_cards.each do |tc|
+        deck.cards << tc
+      end
+
+      special_abilities.class_cards.each do |sac|
+        deck.cards << sac
+      end
+
+      special_attacks.class_cards.each do |sac|
+        deck.cards << sac
+      end
+
+      deck.save_deck("#{fun_stuff["name"]}"+".json", deck.cards)
+
+      puts "Please check your current directory for a JSON file with your deck name."
+    end
   end
 end
