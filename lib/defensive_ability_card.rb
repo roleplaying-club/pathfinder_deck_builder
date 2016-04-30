@@ -14,7 +14,7 @@ class DefensiveAbilityCard < CharacterCard
         "count": 1,
         "color": "green",
           "title": "Defensive Ability",
-          "icon": nil,
+          "icon": "spiked-shell",
           "contents": [
           "subtitle | #{path["shortname"]}",
           "rule",
@@ -29,7 +29,7 @@ class DefensiveAbilityCard < CharacterCard
         "count": 1,
         "color": "green",
           "title": "Defensive Ability",
-          "icon": nil,
+          "icon": "spiked-shell",
           "contents": [
           "subtitle | #{da["shortname"]}",
           "rule",

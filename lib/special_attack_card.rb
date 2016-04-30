@@ -14,7 +14,7 @@ class SpecialAttackCard < CharacterCard
         "count": 1,
         "color": "green",
           "title": "Special Attack",
-          "icon": nil,
+          "icon": "wyvern",
           "contents": [
           "subtitle | #{path["shortname"]}",
           "rule",
@@ -30,7 +30,7 @@ class SpecialAttackCard < CharacterCard
         "count": 1,
         "color": "green",
           "title": "Special Attack",
-          "icon": nil,
+          "icon": "wyvern",
           "contents": [
           "subtitle | #{sa["shortname"]}",
           "rule",

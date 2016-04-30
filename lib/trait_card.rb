@@ -14,7 +14,7 @@ class TraitCard < CharacterCard
         "count": 1,
         "color": "green",
           "title": "Trait",
-          "icon": nil,
+          "icon": "usable",
           "contents": [
           "subtitle | #{path["name"]}",
           "rule",
@@ -29,7 +29,7 @@ class TraitCard < CharacterCard
         "count": 1,
         "color": "green",
           "title": "Trait",
-          "icon": nil,
+          "icon": "usable",
           "contents": [
           "subtitle | #{t["name"]}",
           "rule",

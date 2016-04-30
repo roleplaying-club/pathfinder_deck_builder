@@ -14,7 +14,7 @@ class TrackedResourceCard < CharacterCard
         "count": 1,
         "color": "purple",
           "title": "Tracked Resource",
-          "icon": nil,
+          "icon": "checkbox-tree",
           "contents": [
           "text | #{path["name"]}",
           "fill",
@@ -28,7 +28,7 @@ class TrackedResourceCard < CharacterCard
         "count": 1,
         "color": "purple",
           "title": "Tracked Resource",
-          "icon": nil,
+          "icon": "checkbox-tree",
           "contents": [
           "text | #{tr["name"]}",
           "fill",
