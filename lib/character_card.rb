@@ -15,12 +15,12 @@ class CharacterCard
       attack_path = xml_file["document"]["public"]["character"]["attack"]
       attribute_path = xml_file["document"]["public"]["character"]["attributes"]["attribute"]
     else
-      character_path = xml_file["document"]["public"]["character"][index]
-      ac_path = xml_file["document"]["public"]["character"][index]["armorclass"]
-      initiative_path = xml_file["document"]["public"]["character"][index]["initiative"]
-      movement_path = xml_file["document"]["public"]["character"][index]["movement"]
-      attack_path = xml_file["document"]["public"]["character"][index]["attack"]
-      attribute_path = xml_file["document"]["public"]["character"][index]["attributes"]["attribute"]
+      character_path = xml_file["document"]["public"]["character"][@index]
+      ac_path = xml_file["document"]["public"]["character"][@index]["armorclass"]
+      initiative_path = xml_file["document"]["public"]["character"][@index]["initiative"]
+      movement_path = xml_file["document"]["public"]["character"][@index]["movement"]
+      attack_path = xml_file["document"]["public"]["character"][@index]["attack"]
+      attribute_path = xml_file["document"]["public"]["character"][@index]["attributes"]["attribute"]
     end
 
     {

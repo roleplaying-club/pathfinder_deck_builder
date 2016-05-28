@@ -7,8 +7,6 @@ input = gets.chomp.to_s + ".xml"
 
 compiler = Compiler.new("#{input}")
 
-binding.pry
-
 if compiler.is_party?
   compiler.compile_party
 else
