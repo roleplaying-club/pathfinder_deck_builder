@@ -3,10 +3,11 @@ require_relative 'character_card'
 class ArmorCard < CharacterCard
 
   def create_card(xml_file, index=nil)
+    @index = index
     if index == nil
       path = xml_file["document"]["public"]["character"]["defenses"]["armor"]
     else
-      path = xml_file["document"]["public"]["character"][index]["defenses"]["armor"]
+      path = xml_file["document"]["public"]["character"][@index]["defenses"]["armor"]
     end
 
     if path.class == Hash

@@ -98,21 +98,22 @@ class Compiler
   end
 
   def compile_party
-    deck = Deck.new
-    character = CharacterCard.new
-    weapons = WeaponCard.new
-    armors = ArmorCard.new
-    tracked_resources = TrackedResourceCard.new
-    spells = SpellCard.new
-    skills = SkillCard.new
-    defenses = DefensiveAbilityCard.new
-    feats = FeatCard.new
-    traits = TraitCard.new
-    special_abilities = SpecialAbilityCard.new
-    special_attacks = SpecialAttackCard.new
     myXML = Crack::XML.parse(File.read(@file_path))
 
     myXML["document"]["public"]["character"].each_with_index do |fun_stuff, index|
+
+      deck = Deck.new
+      character = CharacterCard.new
+      weapons = WeaponCard.new
+      armors = ArmorCard.new
+      tracked_resources = TrackedResourceCard.new
+      spells = SpellCard.new
+      skills = SkillCard.new
+      defenses = DefensiveAbilityCard.new
+      feats = FeatCard.new
+      traits = TraitCard.new
+      special_abilities = SpecialAbilityCard.new
+      special_attacks = SpecialAttackCard.new
 
       deck.cards << character.create_card(myXML, index)
 
