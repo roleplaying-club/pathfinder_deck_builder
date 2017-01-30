@@ -1,5 +1,5 @@
-class CharacterCard
-  attr_accessor :class_cards
+require_relative 'card'
+class CharacterCard < Card
 
   def initialize
     @class_cards = []
