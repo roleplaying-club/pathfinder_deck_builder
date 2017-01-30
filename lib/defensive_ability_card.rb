@@ -1,47 +1,41 @@
 require_relative 'card'
 class DefensiveAbilityCard < Card
 
-  def initalize(xml_file)
-    super
-  end
-
   def create_card(index=nil)
     super
-
     unless @defensive_ability_path.nil?
 
       if @defensive_ability_path.class == Hash
-        @class_cards << {
-          "count": 1,
-          "color": "green",
-            "title": "Defensive Ability",
-            "icon": "spiked-shell",
-            "contents": [
-            "subtitle | #{@defensive_ability_path["shortname"]}",
-            "rule",
-            "property | Type | #{@defensive_ability_path["type"]}",
-            "section | Description",
-            "text | #{@defensive_ability_path["description"]}"[0..318]
-          ]
-        }
-      elsif @defensive_ability_path.class == Array
-        @defensive_ability_path.each do |da|
-          @class_cards << {
-          "count": 1,
-          "color": "green",
-            "title": "Defensive Ability",
-            "icon": "spiked-shell",
-            "contents": [
-            "subtitle | #{da["shortname"]}",
-            "rule",
-            "property | Type | #{da["type"]}",
-            "fill",
-            "section | Description",
-            "text | #{da["description"]}"[0..318]
-          ]
-        }
-        end
+        @class_cards.push(assembled_card(@defensive_ability_path))
+      else
+        @defensive_ability_path.each { |path| @class_cards.push(assembled_card(path)) }
       end
     end
+  end
+
+  def assembled_card(path)
+    super
+  end
+
+  def static_content
+    {
+      "count": 1,
+      "color": "green",
+      "title": "Defensive Ability",
+      "icon": "spiked-shell"
+    }
+  end
+
+  def variable_content(path)
+    {
+      "contents": [
+        "subtitle | #{path["shortname"]}",
+        "rule",
+        "property | Type | #{path["type"]}",
+        "fill",
+        "section | Description",
+        "text | #{path["description"]}"[0..318]
+      ]
+    }
   end
 end

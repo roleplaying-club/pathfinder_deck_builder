@@ -34,7 +34,7 @@ class Compiler
     @spells.create_card(@myXML) if @myXML["document"]["public"]["character"]["spellsmemorized"] != nil
     @skills.create_card(@myXML) if @myXML["document"]["public"]["character"]["skills"] != nil
     @defenses.create_card
-    @feats.create_card(@myXML) if @myXML["document"]["public"]["character"]["feats"]["feat"] != nil
+    @feats.create_card
     @traits.create_card(@myXML) if @myXML["document"]["public"]["character"]["traits"] != nil
     @special_abilities.create_card(@myXML) if @myXML ["document"]["public"]["character"]["otherspecials"]["special"] != nil
     @special_attacks.create_card(@myXML) if @myXML["document"]["public"]["character"]["attack"]["special"] != nil
@@ -42,7 +42,7 @@ class Compiler
     #turn lines 29-40 into something like lines 44-46
 
     #@setup_cards.each do |card|
-    #  card.create_card(@myXML)
+    #  card.create_card
     #end
 
     @setup_cards.each do |card|
@@ -67,7 +67,7 @@ class Compiler
       @spells.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["spellsmemorized"] != nil
       @skills.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["skills"] != nil
       @defenses.create_card(index)
-      @feats.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["feats"]["feat"] != nil
+      @feats.create_card(index)
       @traits.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["traits"] != nil
       @special_abilities.create_card(@myXML, index) if @myXML ["document"]["public"]["character"][index]["otherspecials"]["special"] != nil
       @special_attacks.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["attack"]["special"] != nil
@@ -92,7 +92,7 @@ class Compiler
       @spells = SpellCard.new,
       @skills = SkillCard.new,
       @defenses = DefensiveAbilityCard.new(@myXML),
-      @feats = FeatCard.new,
+      @feats = FeatCard.new(@myXML),
       @traits = TraitCard.new,
       @special_abilities = SpecialAbilityCard.new,
       @special_attacks = SpecialAttackCard.new

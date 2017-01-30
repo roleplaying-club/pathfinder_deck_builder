@@ -7,7 +7,6 @@ class CharacterCard < Card
 
   def create_card(index=nil)
     super
-
     @class_cards.push(assembled_card)
   end
 

@@ -8,10 +8,10 @@ class Card
 
   def create_card(index=nil)
     @index = index
-    set_path
+    set_paths
   end
 
-  def set_path
+  def set_paths
     @path_shortcut = @xml_file["document"]["public"]["character"]
 
     if @index
@@ -28,7 +28,9 @@ class Card
     @movement_path = @path_shortcut["movement"]
     @attack_path = @path_shortcut["attack"]
     @attribute_path = @path_shortcut["attributes"]["attribute"]
+    binding.pry
     @defensive_ability_path = @path_shortcut["defensive"]["special"] if @path_shortcut["defensive"] != nil
+    @feat_path = @path_shortcut["feats"]["feat"] if @path_shortcut["feats"] != nil
   end
 
   def set_multiple_character_path
@@ -38,10 +40,20 @@ class Card
     @movement_path = @path_shortcut[@index]["movement"]
     @attack_path = @path_shortcut[@index]["attack"]
     @attribute_path = @path_shortcut[@index]["attributes"]["attribute"]
+    binding.pry
     @defensive_ability_path = @path_shortcut[@index]["defensive"]["special"] if @path_shortcut[@index]["defensive"] != nil
+    @feat_path = @path_shortcut[@index]["feats"]["feat"] if @path_shortcut[@index]["feats"] != nil
   end
 
-  def assembled_card
-    #the JSON for your card type goes
+  def assembled_card(path)
+    static_content.merge(variable_content(path))
+  end
+
+  def static_content
+    #non-iterative JSON goes here
+  end
+
+  def variable_content
+    #iterative JSON goes here
   end
 end
