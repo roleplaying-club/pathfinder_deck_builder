@@ -26,14 +26,14 @@ class Compiler
     @myXML = Crack::XML.parse(File.read(@file_path))
     setup
 
-    @character.create_card(@myXML)
+    @character.create_card
     @weapons.create_card(@myXML, "melee") if @myXML["document"]["public"]["character"]["melee"] != nil
     @armors.create_card(@myXML) if @myXML["document"]["public"]["character"]["defenses"]["armor"] != nil
     @weapons.create_card(@myXML, "ranged") if @myXML["document"]["public"]["character"]["ranged"] != nil
     @tracked_resources.create_card(@myXML) if @myXML["document"]["public"]["character"]["trackedresources"] != nil
     @spells.create_card(@myXML) if @myXML["document"]["public"]["character"]["spellsmemorized"] != nil
     @skills.create_card(@myXML) if @myXML["document"]["public"]["character"]["skills"] != nil
-    @defenses.create_card(@myXML) if @myXML["document"]["public"]["character"]["defensive"] != nil
+    @defenses.create_card
     @feats.create_card(@myXML) if @myXML["document"]["public"]["character"]["feats"]["feat"] != nil
     @traits.create_card(@myXML) if @myXML["document"]["public"]["character"]["traits"] != nil
     @special_abilities.create_card(@myXML) if @myXML ["document"]["public"]["character"]["otherspecials"]["special"] != nil
@@ -59,14 +59,14 @@ class Compiler
     @myXML["document"]["public"]["character"].each_with_index do |fun_stuff, index|
       setup
 
-      @character.create_card(@myXML, index)
+      @character.create_card(index)
       @weapons.create_card(@myXML, "melee", index) if @myXML["document"]["public"]["character"][index]["melee"] != nil
       @armors.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["defenses"]["armor"] != nil
       @weapons.create_card(@myXML, "ranged", index) if @myXML["document"]["public"]["character"][index]["ranged"] != nil
       @tracked_resources.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["trackedresources"] != nil
       @spells.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["spellsmemorized"] != nil
       @skills.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["skills"] != nil
-      @defenses.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["defensive"] != nil
+      @defenses.create_card(index)
       @feats.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["feats"]["feat"] != nil
       @traits.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["traits"] != nil
       @special_abilities.create_card(@myXML, index) if @myXML ["document"]["public"]["character"][index]["otherspecials"]["special"] != nil
@@ -85,13 +85,13 @@ class Compiler
   def setup
     @deck = Deck.new
     @setup_cards = [
-      @character = CharacterCard.new,
+      @character = CharacterCard.new(@myXML),
       @weapons = WeaponCard.new,
       @armors = ArmorCard.new,
       @tracked_resources = TrackedResourceCard.new,
       @spells = SpellCard.new,
       @skills = SkillCard.new,
-      @defenses = DefensiveAbilityCard.new,
+      @defenses = DefensiveAbilityCard.new(@myXML),
       @feats = FeatCard.new,
       @traits = TraitCard.new,
       @special_abilities = SpecialAbilityCard.new,
