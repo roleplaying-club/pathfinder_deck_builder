@@ -35,9 +35,15 @@ class Compiler
     @skills.create_card(@myXML) if @myXML["document"]["public"]["character"]["skills"] != nil
     @defenses.create_card(@myXML) if @myXML["document"]["public"]["character"]["defensive"] != nil
     @feats.create_card(@myXML) if @myXML["document"]["public"]["character"]["feats"]["feat"] != nil
-    @traits.create_card(@myXML) if @myXML["document"]["public"]["character"]["traits"]["trait"] != nil
+    @traits.create_card(@myXML) if @myXML["document"]["public"]["character"]["traits"] != nil
     @special_abilities.create_card(@myXML) if @myXML ["document"]["public"]["character"]["otherspecials"]["special"] != nil
     @special_attacks.create_card(@myXML) if @myXML["document"]["public"]["character"]["attack"]["special"] != nil
+
+    #turn lines 29-40 into something like lines 44-46
+
+    #@setup_cards.each do |card|
+    #  card.create_card(@myXML)
+    #end
 
     @setup_cards.each do |card|
       card.class_cards.each {|class_card| @deck.cards << class_card}
