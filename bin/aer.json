@@ -1,0 +1,932 @@
+[
+  {
+    "count": 1,
+    "color": "blue",
+    "title": "Aer",
+    "icon": null,
+    "contents": [
+      "subtitle | Character Info",
+      "property | Base HP | 20",
+      "property | Race | Human",
+      "property | Ethnicity | ",
+      "section | Combat",
+      "property | AC | 10",
+      "property | Touch AC | 10",
+      "property | Flat-Footed AC | 10",
+      "property | Attack Bonus | +2",
+      "property | Initiative | +0",
+      "property | Movement | 30'",
+      "fill",
+      "rule",
+      "dndstats | 10 | 10 | 10 | 16 | 12 | 14"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "red",
+    "title": "Weapon",
+    "icon": "battle-axe",
+    "contents": [
+      "subtitle | Light crossbow",
+      "property | Damage Type | Piercing",
+      "property | Attack | +2",
+      "property | Crit | 19-20/×2",
+      "fill",
+      "section | Description",
+      "text | You draw a light crossbow back by pulling a lever. Loading a light crossbow is a move action that provokes attacks of opportunity. A light crossbow fires crossbow bolts.\n\nNormally, operating a light crossbow requires two hands. However, you can shoot, but not load, a light crossbow with one hand at a -2 penalty on attack rolls. You can shoot a light crossbow with each hand, but you take a penalty on attack rolls as if attacking with two light weapons. This penalty is cumulative with the "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "grey",
+    "title": "Armor",
+    "icon": "anvil",
+    "contents": [
+      "subtitle | Natural armor",
+      "rule",
+      "property | AC | +0",
+      "property | Weight | ",
+      "property | Cost | ",
+      "property | Quantity | 1",
+      "fill",
+      "section | Description",
+      "text | "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "purple",
+    "title": "Tracked Resource",
+    "icon": "checkbox-tree",
+    "contents": [
+      "text | Acid Dart (1d6+2 acid, 6/day) (Sp)",
+      "fill",
+      "section | Charges",
+      "boxes | 6 | 2.5"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "purple",
+    "title": "Tracked Resource",
+    "icon": "checkbox-tree",
+    "contents": [
+      "text | Crossbow bolts",
+      "fill",
+      "section | Charges",
+      "boxes | 50 | 2.5"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-0",
+    "contents": [
+      "subtitle | Detect Magic",
+      "rule",
+      "property | Class | Wizard",
+      "property | Level | 0",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | concentration, up to 1 min./level (D)",
+      "property | Range | 60 ft.",
+      "property | Target | ",
+      "property | Area | cone-shaped emanation",
+      "fill",
+      "section | Description",
+      "text | You detect magical auras. The amount of information revealed depends on how long you study a particular area or subject.\n\n1st Round: Presence or absence of magical auras.\n2nd Round: Number of different magical auras and the power of the most potent aura.\n3rd Round: The strength and location of each aura. If the"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-3",
+    "contents": [
+      "subtitle | Fireball",
+      "rule",
+      "property | Class | Wizard",
+      "property | Level | 3",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | instantaneous",
+      "property | Range | long (400 + 40 ft./level)",
+      "property | Target | ",
+      "property | Area | 20-ft.-radius spread",
+      "fill",
+      "section | Description",
+      "text | A fireball spell generates a searing explosion of flame that detonates with a low roar and deals 1d6 points of fire damage per caster level (maximum 10d6) to every creature within the area. Unattended objects also take this damage. The explosion creates almost no pressure. You point your finger and determine th"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-2",
+    "contents": [
+      "subtitle | Flaming Sphere",
+      "rule",
+      "property | Class | Wizard",
+      "property | Level | 2",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | 1 round/level",
+      "property | Range | medium (100 + 10 ft./level)",
+      "property | Target | ",
+      "property | Area | ",
+      "fill",
+      "section | Description",
+      "text | A burning globe of fire rolls in whichever direction you point and burns those it strikes. It moves 30 feet per round. As part of this movement, it can ascend or jump up to 30 feet to strike a target. If it enters a space with a creature, it stops moving for the round and deals 3d6 points of fire damage to that"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-0",
+    "contents": [
+      "subtitle | Ghost Sound",
+      "rule",
+      "property | Class | Wizard",
+      "property | Level | 0",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | 1 round/level (D)",
+      "property | Range | close (25 + 5 ft./2 levels)",
+      "property | Target | ",
+      "property | Area | ",
+      "fill",
+      "section | Description",
+      "text | Ghost sound allows you to create a volume of sound that rises, recedes, approaches, or remains at a fixed place. You choose what type of sound ghost sound creates when casting it and cannot thereafter change the sound's basic character. The volume of sound created depends on your level. You can produce as much "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-2",
+    "contents": [
+      "subtitle | Glitterdust",
+      "rule",
+      "property | Class | ",
+      "property | Level | 2",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | 1 round/level",
+      "property | Range | medium (100 + 10 ft./level)",
+      "property | Target | ",
+      "property | Area | creatures and objects within 10-ft.-radius spread",
+      "fill",
+      "section | Description",
+      "text | A cloud of golden particles covers everyone and everything in the area, causing creatures to become blinded and visibly outlining invisible things for the duration of the spell. All within the area are covered by the dust, which cannot be removed and continues to sparkle until it fades. Each round at the end of"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-1",
+    "contents": [
+      "subtitle | Grease",
+      "rule",
+      "property | Class | ",
+      "property | Level | 1",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | 1 min./level (D)",
+      "property | Range | close (25 + 5 ft./2 levels)",
+      "property | Target | one object or 10-ft. square",
+      "property | Area | ",
+      "fill",
+      "section | Description",
+      "text | A grease spell covers a solid surface with a layer of slippery grease. Any creature in the area when the spell is cast must make a successful Reflex save or fall. A creature can walk within or through the area of grease at half normal speed with a DC 10 Acrobatics check. Failure means it can't move that round ("
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-3",
+    "contents": [
+      "subtitle | Haste",
+      "rule",
+      "property | Class | Wizard",
+      "property | Level | 3",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | 1 round/level",
+      "property | Range | close (25 + 5 ft./2 levels)",
+      "property | Target | one creature/level, no two of which can be more than 30 ft. apart",
+      "property | Area | ",
+      "fill",
+      "section | Description",
+      "text | The transmuted creatures move and act more quickly than normal. This extra speed has several effects. \n\nWhen making a full attack action, a hasted creature may make one extra attack with one natural or manufactured weapon. The attack is made using the creature's full base attack bonus, plus any modifiers approp"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-2",
+    "contents": [
+      "subtitle | Invisibility",
+      "rule",
+      "property | Class | Wizard",
+      "property | Level | 2",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | 1 min./level (D)",
+      "property | Range | personal or touch",
+      "property | Target | you or a creature or object weighing no more than 100 lbs./level",
+      "property | Area | ",
+      "fill",
+      "section | Description",
+      "text | The creature or object touched becomes invisible. If the recipient is a creature carrying gear, that vanishes, too. If you cast the spell on someone else, neither you nor your allies can see the subject, unless you can normally see invisible things or you employ magic to do so.\n\nItems dropped or put down by an "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-1",
+    "contents": [
+      "subtitle | Mage Armor",
+      "rule",
+      "property | Class | Wizard",
+      "property | Level | 1",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | 1 hour/level (D)",
+      "property | Range | touch",
+      "property | Target | creature touched",
+      "property | Area | ",
+      "fill",
+      "section | Description",
+      "text | An invisible but tangible field of force surrounds the subject of a mage armor spell, providing a +4 armor bonus to AC. Unlike mundane armor, mage armor entails no armor check penalty, arcane spell failure chance, or speed reduction. Since mage armor is made of force, incorporeal creatures can't bypass it the w"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-1",
+    "contents": [
+      "subtitle | Magic Missile",
+      "rule",
+      "property | Class | Wizard",
+      "property | Level | 1",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | instantaneous",
+      "property | Range | medium (100 + 10 ft./level)",
+      "property | Target | up to five creatures, no two of which can be more than 15 ft. apart",
+      "property | Area | ",
+      "fill",
+      "section | Description",
+      "text | A missile of magical energy darts forth from your fingertip and strikes its target, dealing 1d4+1 points of force damage. The missile strikes unerringly, even if the target is in melee combat, so long as it has less than total cover or total concealment. Specific parts of a creature can't be singled out. Object"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-0",
+    "contents": [
+      "subtitle | Prestidigitation",
+      "rule",
+      "property | Class | Wizard",
+      "property | Level | 0",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | 1 hour",
+      "property | Range | 10 ft.",
+      "property | Target | see text",
+      "property | Area | see text",
+      "fill",
+      "section | Description",
+      "text | Prestidigitations are minor tricks that novice spellcasters use for practice. Once cast, a prestidigitation spell enables you to perform simple magical effects for 1 hour. The effects are minor and have severe limitations. A prestidigitation can slowly lift 1 pound of material. It can color, clean, or soil item"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-0",
+    "contents": [
+      "subtitle | Read Magic",
+      "rule",
+      "property | Class | Wizard",
+      "property | Level | 0",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | 10 min./level",
+      "property | Range | personal",
+      "property | Target | you",
+      "property | Area | ",
+      "fill",
+      "section | Description",
+      "text | You can decipher magical inscriptions on objects - books, scrolls, weapons, and the like - that would otherwise be unintelligible. This deciphering does not normally invoke the magic contained in the writing, although it may do so in the case of a cursed or trapped scroll. Furthermore, once the spell is cast an"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-1",
+    "contents": [
+      "subtitle | Silent Image",
+      "rule",
+      "property | Class | Wizard",
+      "property | Level | 1",
+      "property | Cast Time | 1 standard action",
+      "property | Duration | concentration",
+      "property | Range | long (400 + 40 ft./level)",
+      "property | Target | ",
+      "property | Area | ",
+      "fill",
+      "section | Description",
+      "text | This spell creates the visual illusion of an object, creature, or force, as visualized by you. The illusion does not create sound, smell, texture, or temperature. You can move the image within the limits of the size of the effect."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-3",
+    "contents": [
+      "subtitle | Summon Monster III",
+      "rule",
+      "property | Class | ",
+      "property | Level | 3",
+      "property | Cast Time | 1 round",
+      "property | Duration | 1 round/level (D)",
+      "property | Range | close (25 + 5 ft./2 levels)",
+      "property | Target | ",
+      "property | Area | ",
+      "fill",
+      "section | Description",
+      "text | This spell functions like summon monster I, except that you can summon one creature from the 3rd-level list, 1d3 creatures of the same kind from the 2nd-level list, or 1d4+1 creatures of the same kind from the 1st-level list.\n\nSummon Monster Tables\n3rd Level: Ant, giant (soldier)*, Ape*, Aurochs (herd animal)*,"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Acrobatics",
+      "rule",
+      "property | Value | 0",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | You can keep your balance while traversing narrow or treacherous surfaces. You can also dive, flip, jump, and roll to avoid attacks and overcome obstacles.\n\nCheck: You can use Acrobatics to move on narrow surfaces and uneven ground without falling. A successful check allows you to move at half speed across such surfaces - only one check is needed per round. Use the following table to determine the base DC, which is then modified by the Acrobatics skill modifiers noted on page 89. While you"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Appraise",
+      "rule",
+      "property | Value | 3",
+      "property | Ranks | 0",
+      "property | INT Bonus: | 3",
+      "section | Description",
+      "text | You can evaluate the monetary value of an object.\n\nCheck: A DC 20 Appraise check determines the value of a common item. If you succeed by 5 or more, you also determine if the item has magic properties, although this success does not grant knowledge of the magic item's abilities. If your fail the check by less than 5, you determine the price of that item to within 20% of its actual value. If you fail this check by 5 or more, the price is wildly inaccurate, subject to GM discretion. Particul"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Bluff",
+      "rule",
+      "property | Value | 4",
+      "property | Ranks | 2",
+      "property | CHA Bonus: | 2",
+      "section | Description",
+      "text | You know how to tell a lie.\n\nCheck: Bluff is an opposed skill check against your opponent's Sense Motive skill. If you use Bluff to fool someone, with a successful check you convince your opponent that what you are saying is true. Bluff checks are modified depending upon the believability of the lie. The following modifiers are applied to the roll of the creature attempting to tell the lie. Note that some lies are so improbable that it is impossible to convince anyone that they are true (s"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Climb",
+      "rule",
+      "property | Value | 0",
+      "property | Ranks | 0",
+      "property | STR Bonus: | 0",
+      "section | Description",
+      "text | You are skilled at scaling vertical surfaces, from smooth city walls to rocky cliffs.\n\nCheck: With a successful Climb check, you can advance up, down, or across a slope, wall, or other steep incline (or even across a ceiling, provided it has handholds) at one-quarter your normal speed. A slope is considered to be any incline at an angle measuring less than 60 degrees; a wall is any incline at an angle measuring 60 degrees or more.\n\nA Climb check that fails by 4 or less means that you make "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Diplomacy",
+      "rule",
+      "property | Value | 5",
+      "property | Ranks | 3",
+      "property | CHA Bonus: | 2",
+      "section | Description",
+      "text | You can use this skill to persuade others to agree with your arguments, to resolve differences, and to gather valuable information or rumors from people. This skill is also used to negotiate conflicts by using the proper etiquette and manners suitable to the problem.\n\nCheck: You can change the initial attitudes of nonplayer characters with a successful check. The DC of this check depends on the creature's starting attitude toward you, adjusted by its Charisma modifier. If you succeed, the "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Disable Device",
+      "rule",
+      "property | Value | -2",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | You are skilled at disarming traps and opening locks. In addition, this skill lets you sabotage simple mechanical devices, such as catapults, wagon wheels, and doors.\n\nCheck: When disarming a trap or other device, the Disable Device check is made secretly, so that you don't necessarily know whether you've succeeded.\n\nThe DC depends on how tricky the device is. If the check succeeds, you disable the device. If it fails by 4 or less, you have failed but can try again. If you fail by 5 or mor"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Disguise",
+      "rule",
+      "property | Value | 4",
+      "property | Ranks | 2",
+      "property | CHA Bonus: | 2",
+      "section | Description",
+      "text | You are skilled at changing your appearance.\n\nCheck: Your Disguise check result determines how good the disguise is, and it is opposed by others' Perception check results. If you don't draw any attention to yourself, others do not get to make Perception checks. If you come to the attention of people who are suspicious (such as a guard who is watching commoners walking through a city gate), it can be assumed that such observers are taking 10 on their Perception checks.\n\nYou get only one Dis"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Escape Artist",
+      "rule",
+      "property | Value | 0",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | Your training allows you to slip out of bonds and escape from grapples.\n\nCheck: The table below gives the DCs needed to escape various forms of restraints.\nRopes: The DC of your Escape Artist check is equal to the binder's Combat Maneuver Bonus +20.\nManacles and Masterwork Manacles: The DC for manacles is set by their construction (see the table below).\nTight Space: The DC noted is for getting through a space through which your head fits but your shoulders don't. If the space is long, you "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Fly",
+      "rule",
+      "property | Value | 5",
+      "property | Ranks | 2",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | You are skilled at flying, through either the use of wings or magic, and can perform daring or complex maneuvers while airborne. Note that this skill does not give you the ability to fly.\n\nCheck: You generally need only make a Fly check when you are attempting a complex maneuver. Without making a check, a flying creature can remain flying at the end of its turn so long as it moves a distance greater than half its speed. It can also turn up to 45 degrees by sacrificing 5 feet of movement, c"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Handle Animal",
+      "rule",
+      "property | Value | 2",
+      "property | Ranks | 0",
+      "property | CHA Bonus: | 2",
+      "section | Description",
+      "text | You are trained at working with animals, and can teach them tricks, get them to follow your simple commands, or even domesticate them.\n\nCheck: The DC depends on what you are trying to do.\n\nTask: Handle Animal DC\nHandle an animal: 10\n\"Push\" an animal: 25\nTeach an animal a trick: 15 or 20*\nTrain an animal for a general purpose: 15 or 20*\nRear a wild animal: 15 + HD of animal\n* See the specific trick or purpose below.\n\nHandle an Animal: This task involves commanding an animal to perform a tas"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Heal",
+      "rule",
+      "property | Value | 1",
+      "property | Ranks | 0",
+      "property | WIS Bonus: | 1",
+      "section | Description",
+      "text | You are skilled at tending to wounds and ailments.\n\nCheck: The DC and effect of a Heal check depend on the task you attempt.\n\nTask DC\nFirst aid: 15\nLong-term care: 15\nTreat wounds from caltrops, spike growth, or spike stones: 15\nTreat deadly wounds: 20\nTreat poison: Poison's save DC\nTreat disease: Disease's save DC\n\nFirst Aid: You usually use first aid to save a dying character. If a character has negative hit points and is losing hit points (at the rate of 1 per round, 1 per hour, or 1 pe"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Intimidate",
+      "rule",
+      "property | Value | 2",
+      "property | Ranks | 0",
+      "property | CHA Bonus: | 2",
+      "section | Description",
+      "text | You can use this skill to frighten your opponents or to get them to act in a way that benefits you. This skill includes verbal threats and displays of prowess.\n\nCheck: You can use Intimidate to force an opponent to act friendly toward you for 1d6 × 10 minutes with a successful check. The DC of this check is equal to 10 + the target's Hit Dice + the target's Wisdom modifier.\n\nIf successful, the target gives you the information you desire, takes actions that do not endanger it, or otherwise "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Knowledge (arcana)",
+      "rule",
+      "property | Value | 10",
+      "property | Ranks | 4",
+      "property | INT Bonus: | 3",
+      "section | Description",
+      "text | You are educated in a field of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.\n\n• Arcana (ancient mysteries, magic traditions, arcane symbols, constructs, dragons, magical beasts)\n• Dungeoneering (aberrations, caverns, oozes, spelunking)\n• Engineering (buildings, aqueducts, bridges, fortifications)\n• Geography (lands, terrain, c"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Linguistics",
+      "rule",
+      "property | Value | 10",
+      "property | Ranks | 4",
+      "property | INT Bonus: | 3",
+      "section | Description",
+      "text | You are skilled at working with language, in both its spoken and written forms. You can speak multiple languages, and can decipher nearly any tongue given enough time. Your skill in writing allows you to create and detect forgeries as well.\n\nCheck: You can decipher writing in an unfamiliar language or a message written in an incomplete or archaic form. The base DC is 20 for the simplest messages, 25 for standard texts, and 30 or higher for intricate, exotic, or very old writing. If the che"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Perception",
+      "rule",
+      "property | Value | 5",
+      "property | Ranks | 4",
+      "property | WIS Bonus: | 1",
+      "section | Description",
+      "text | Your senses allow you to notice fine details and alert you to danger. Perception covers all five senses, including sight, hearing, touch, taste, and smell.\n\nCheck: Perception has a number of uses, the most common of which is an opposed check versus an opponent's Stealth check to notice the opponent and avoid being surprised. If you are successful, you notice the opponent and can react accordingly. If you fail, your opponent can take a variety of actions, including sneaking past you and att"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Ride",
+      "rule",
+      "property | Value | 0",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | You are skilled at riding mounts, usually a horse, but possibly something more exotic, like a griffon or pegasus. If you attempt to ride a creature that is ill suited as a mount, you take a -5 penalty on your Ride checks.\n\nCheck: Typical riding actions don't require checks. You can saddle, mount, ride, and dismount from a mount without a problem. The following tasks do require checks.\n\nTask: Ride DC\nGuide with knees: 5\nStay in saddle: 5\nFight with a combat-trained mount: 10\nCover: 15\nSoft "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Sense Motive",
+      "rule",
+      "property | Value | 6",
+      "property | Ranks | 5",
+      "property | WIS Bonus: | 1",
+      "section | Description",
+      "text | You are skilled at detecting falsehoods and true intentions.\n\nCheck: A successful check lets you avoid being bluffed (see the Bluff skill). You can also use this skill to determine when \"something is up\" (that is, something odd is going on) or to assess someone's trustworthiness.\n\nTask: Sense Motive DC\nHunch: 20\nSense enchantment: 25 or 15\nDiscern secret message: Varies\n\nHunch: This use of the skill involves making a gut assessment of the social situation. You can get the feeling from anot"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Sleight of Hand",
+      "rule",
+      "property | Value | 0",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | Your training allows you to pick pockets, draw hidden weapons, and take a variety of actions without being noticed.\n\nCheck: A DC 10 Sleight of Hand check lets you palm a coin-sized, unattended object. Performing a minor feat of legerdemain, such as making a coin disappear, also has a DC of 10 unless an observer is determined to note where the item went.\n\nWhen you use this skill under close observation, your skill check is opposed by the observer's Perception check. The observer's success d"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Spellcraft",
+      "rule",
+      "property | Value | 11",
+      "property | Ranks | 5",
+      "property | INT Bonus: | 3",
+      "section | Description",
+      "text | You are skilled at the art of casting spells, identifying magic items, crafting magic items, and identifying spells as they are being cast.\n\nCheck: Spellcraft is used whenever your knowledge and skill of the technical art of casting a spell or crafting a magic item comes into question. This skill is also used to identify the properties of magic items in your possession through the use of spells such as detect magic and identify. The DC of this check varies depending upon the task at hand.\n"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Stealth",
+      "rule",
+      "property | Value | 0",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | You are skilled at avoiding detection, allowing you to slip past foes or strike from an unseen position. Creatures that fail to beat your Stealth check are not aware of you and treat you as if you had total concealment. This skill covers hiding and moving silently.\n\nCheck: Your Stealth check is opposed by the Perception check of anyone who might notice you. You can move up to half your normal speed and use Stealth at no penalty. When moving at a speed greater than half but less than your n"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Survival",
+      "rule",
+      "property | Value | 2",
+      "property | Ranks | 1",
+      "property | WIS Bonus: | 1",
+      "section | Description",
+      "text | You are skilled at surviving in the wild and at navigating in the wilderness. You also excel at following trails and tracks left by others.\n\nCheck: You can keep yourself and others safe and fed in the wild. The table below gives the DCs for various tasks that require Survival checks.\n\nSurvival DC: Task\n10: Get along in the wild. Move up to half your overland speed while hunting and foraging (no food or water supplies needed). You can provide food and water for one other person for every 2 "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Swim",
+      "rule",
+      "property | Value | 0",
+      "property | Ranks | 0",
+      "property | STR Bonus: | 0",
+      "section | Description",
+      "text | You know how to swim and can do so even in stormy water.\n\nCheck: Make a Swim check once per round while you are in the water. Success means you may swim at up to half your speed (as a full-round action) or at a quarter of your speed (as a move action). If you fail by 4 or less, you make no progress. If you fail by 5 or more, you go underwater.\n\nIf you are underwater, either because you failed a Swim check or because you are swimming underwater intentionally, you must hold your breath. You "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Use Magic Device",
+      "rule",
+      "property | Value | 2",
+      "property | Ranks | 0",
+      "property | CHA Bonus: | 2",
+      "section | Description",
+      "text | You are skilled at activating magic items, even if you are not otherwise trained in their use.\n\nCheck: You can use this skill to read a spell or to activate a magic item. Use Magic Device lets you use a magic item as if you had the spell ability or class features of another class, as if you were a different race, or as if you were of a different alignment.\n\nYou make a Use Magic Device check each time you activate a device such as a wand. If you are using the check to emulate an alignment o"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Craft Wand",
+      "rule",
+      "property | Category | Item Creation",
+      "section | Description",
+      "text | You can create magic wands.\n\nPrerequisite: Caster level 5th.\n\nBenefit: You can create a wand of any 4th-level or lower spell that you know. Crafting a wand takes 1 day for each 1,000 gp in its base price. To craft a wand, you must use up raw materials costing half of this base price. A newly created wand has 50"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Empower Spell",
+      "rule",
+      "property | Category | Metamagic",
+      "section | Description",
+      "text | You can increase the power of your spells, causing them to deal more damage.\n\nBenefit: All variable, numeric effects of an empowered spell are increased by half, including bonuses to those dice rolls.\n\nSaving throws and opposed rolls are not affected, nor are spells without random variables. An empowered spell "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Heighten Spell",
+      "rule",
+      "property | Category | Metamagic",
+      "section | Description",
+      "text | You can cast spells as if they were a higher level.\n\nBenefit: A heightened spell has a higher spell level than normal (up to a maximum of 9th level). Unlike other metamagic feats, Heighten Spell actually increases the effective level of the spell that it modifies. All effects dependent on spell level (such as s"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Maximize Spell",
+      "rule",
+      "property | Category | Metamagic",
+      "section | Description",
+      "text | Your spells have the maximum possible effect.\n\nBenefit: All variable, numeric effects of a spell modified by this feat are maximized. Saving throws and opposed rolls are not affected, nor are spells without random variables. A maximized spell uses up a spell slot three levels higher than the spell's actual leve"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Quicken Spell",
+      "rule",
+      "property | Category | Metamagic",
+      "section | Description",
+      "text | You can cast spells in a fraction of the normal time.\n\nBenefit: Casting a quickened spell is a swift action. You can perform another action, even casting another spell, in the same round as you cast a quickened spell. A spell whose casting time is more than 1 round or 1 full-round action cannot be quickened.\n\nA"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Scribe Scroll",
+      "rule",
+      "property | Category | Item Creation",
+      "section | Description",
+      "text | You can create magic scrolls.\n\nPrerequisite: Caster level 1st.\n\nBenefit: You can create a scroll of any spell that you know. Scribing a scroll takes 2 hours if its base price is 250 gp or less, otherwise scribing a scroll takes 1 day for each 1,000 gp in its base price. To scribe a scroll, you must use up raw m"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Wizard Weapon Proficiencies",
+      "rule",
+      "property | Category | ",
+      "section | Description",
+      "text | Benefit: You are proficient with the Dagger, Crossbow (Light and Heavy) and Quarterstaff.\n\nNormal: When using a weapon with which you are not proficient, you are at -4 to attack rolls."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Trait",
+    "icon": "usable",
+    "contents": [
+      "subtitle | Charming",
+      "rule",
+      "property | Category | Social",
+      "fill",
+      "section | Description",
+      "text | Blessed with good looks, you’ve come to depend on the fact that others find you attractive.\n\nBenefit: You gain a +1 trait bonus when you use Bluff or Diplomacy on a character that is (or could be) sexually attracted to you, and a +1 trait bonus to the save DC of any language-dependent spell you cast on such cha"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Trait",
+    "icon": "usable",
+    "contents": [
+      "subtitle | Magical Knack (Conjurer)",
+      "rule",
+      "property | Category | Magic",
+      "fill",
+      "section | Description",
+      "text | You were raised, either wholly or in part, by a magical creature, either after it found you abandoned in the woods or because your parents often left you in the care of a magical minion. This constant exposure to magic has made its mysteries easy for you to understand, even when you turn your mind to other devo"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Abjuration",
+      "fill",
+      "section | Description",
+      "text | You must spend 2 slots to cast spells from the Abjuration school."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Arcane Familiar Nearby",
+      "fill",
+      "section | Description",
+      "text | If you are within arm's reach of your familiar, you gain the benefits of the Alertness feat.\n\nIf you are within 1 mile of your familiar, you may gain other benefits."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Conjuration",
+      "fill",
+      "section | Description",
+      "text | The conjurer focuses on the study of summoning monsters and magic alike to bend to his will."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Deliver Touch Spells Through Familiar (Su)",
+      "fill",
+      "section | Description",
+      "text | If the master is 3rd level or higher, a familiar can deliver touch spells for him. If the master and the familiar are in contact at the time the master casts a touch spell, he can designate his familiar as the 'toucher'. The familiar can then deliver the touch spell just as the master could. As usual, if the master casts another spell before the touch is delivered, the touch spell dissipates."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Empathic Link with Familiar (Su)",
+      "fill",
+      "section | Description",
+      "text | The master has an empathic link with his familiar out to a distance of up to 1 mile. The master cannot see through the familiar's eyes, but they can communicate empathically. Because of the limited nature of the link, only general emotional content can be communicated.\n\nBecause of this empathic link, the master has the same connection to an item or place that his familiar does."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Necromancy",
+      "fill",
+      "section | Description",
+      "text | You must spend 2 slots to cast spells from the Necromancy school."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Share Spells with Familiar",
+      "fill",
+      "section | Description",
+      "text | The wizard may cast a spell with a target of \"You\" on his familiar (as a touch spell) instead of on himself. A wizard may cast spells on his familiar even if the spells do not normally affect creatures of the familiar's type (magical beast)."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Speak with Familiar (Ex)",
+      "fill",
+      "section | Description",
+      "text | If the master is 5th level or higher, a familiar and the master can communicate verbally as if they were using a common language. Other creatures do not understand the communication without magical help."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Summoner's Charm (+2 rds) (Su)",
+      "fill",
+      "section | Description",
+      "text | Whenever you cast a conjuration (summoning) spell, increase the duration by a number of rounds equal to 1/2 your wizard level (minimum 1). At 20th level, you can change the duration of all summon monster spells to permanent. You can have no more than one summon monster spell made permanent in this way at one time. If you designate another summon monster spell as permanent, the previous spell immediately ends."
+    ]
+  }
+]

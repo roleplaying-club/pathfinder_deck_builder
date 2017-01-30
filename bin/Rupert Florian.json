@@ -1,0 +1,700 @@
+[
+  {
+    "count": 1,
+    "color": "red",
+    "title": "Weapon",
+    "icon": "battle-axe",
+    "contents": [
+      "subtitle | Bastard sword",
+      "property |  Damage Type | Slashing",
+      "property | Attack | +11",
+      "property | Crit | 19-20/×2",
+      "fill",
+      "section | Description",
+      "text | A bastard sword is about 4 feet in length, making it too large to use in one hand without special training; thus, it is an exotic weapon. A character can use a bastard sword two-handed as a martial weapon."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "red",
+    "title": "Weapon",
+    "icon": "battle-axe",
+    "contents": [
+      "subtitle | Morningstar",
+      "property |  Damage Type | [\"Bludgeoning\", \"Piercing\"]",
+      "property | Attack | +10",
+      "property | Crit | ×2",
+      "fill",
+      "section | Description",
+      "text | A morningstar is a spiked metal ball affixed to a handle."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "grey",
+    "title": "Armor",
+    "icon": "anvil",
+    "contents": [
+      "subtitle | Breastplate",
+      "rule",
+      "property | AC | +6",
+      "property | Weight | 30 lbs",
+      "property | Cost | 200 gp",
+      "property | Quantity | 1",
+      "fill",
+      "section | Description",
+      "text | A breastplate protects a wearer's torso with a single piece of sculpted metal, similar to the core piece of a suit of full plate. Despite its sturdiness, its inflexibility and open back make it inferior to complete suits of metal armor, but still an improvement over most non-metal armors."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "grey",
+    "title": "Armor",
+    "icon": "anvil",
+    "contents": [
+      "subtitle | Natural armor",
+      "rule",
+      "property | AC | +0",
+      "property | Weight | ",
+      "property | Cost | ",
+      "property | Quantity | 1",
+      "fill",
+      "section | Description",
+      "text | "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "purple",
+    "title": "Tracked Resource",
+    "icon": "checkbox-tree",
+    "contents": [
+      "text | Detect Evil (At will) (Sp)",
+      "fill",
+      "section | Charges",
+      "boxes | 0 | 2.5"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "purple",
+    "title": "Tracked Resource",
+    "icon": "checkbox-tree",
+    "contents": [
+      "text | Lay on Hands (2d6 hit points, 5/day) (Su)",
+      "fill",
+      "section | Charges",
+      "boxes | 5 | 2.5"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "purple",
+    "title": "Tracked Resource",
+    "icon": "checkbox-tree",
+    "contents": [
+      "text | Paladin Channel Positive Energy 2d6 (2/day, DC 15) (Su)",
+      "fill",
+      "section | Charges",
+      "boxes | 2 | 2.5"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "purple",
+    "title": "Tracked Resource",
+    "icon": "checkbox-tree",
+    "contents": [
+      "text | Smite Evil (2/day) (Su)",
+      "fill",
+      "section | Charges",
+      "boxes | 2 | 2.5"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "purple",
+    "title": "Tracked Resource",
+    "icon": "checkbox-tree",
+    "contents": [
+      "text | Trail rations",
+      "fill",
+      "section | Charges",
+      "boxes | 10 | 2.5"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Spell",
+    "icon": "white-book-1",
+    "contents": [
+      "subtitle | Magic Weapon",
+      "rule",
+      "property | Class | Paladin",
+      "property | Level | 1",
+      "property | Cast Time | 1 action",
+      "property | Duration | 1 min./level",
+      "property | Range | touch",
+      "property | Target | weapon touched",
+      "property | Area | ",
+      "fill",
+      "section | Description",
+      "text | Magic weapon gives a weapon a +1 enhancement bonus on attack and damage rolls. An enhancement bonus does not stack with a masterwork weapon's +1 bonus on attack rolls. You can't cast this spell on a natural weapon, such as an unarmed strike (instead, see magic fang). A monk's unarmed strike is considered a weap"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Acrobatics",
+      "rule",
+      "property | Value | -4",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | You can keep your balance while traversing narrow or treacherous surfaces. You can also dive, flip, jump, and roll to avoid attacks and overcome obstacles.\n\nCheck: You can use Acrobatics to move on narrow surfaces and uneven ground without falling. A successful check allows you to move at half speed across such surfaces - only one check is needed per round. Use the following table to determine the base DC, which is then modified by the Acrobatics skill modifiers noted on page 89. While you"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Appraise",
+      "rule",
+      "property | Value | -1",
+      "property | Ranks | 0",
+      "property | INT Bonus: | -1",
+      "section | Description",
+      "text | You can evaluate the monetary value of an object.\n\nCheck: A DC 20 Appraise check determines the value of a common item. If you succeed by 5 or more, you also determine if the item has magic properties, although this success does not grant knowledge of the magic item's abilities. If your fail the check by less than 5, you determine the price of that item to within 20% of its actual value. If you fail this check by 5 or more, the price is wildly inaccurate, subject to GM discretion. Particul"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Bluff",
+      "rule",
+      "property | Value | 3",
+      "property | Ranks | 0",
+      "property | CHA Bonus: | 3",
+      "section | Description",
+      "text | You know how to tell a lie.\n\nCheck: Bluff is an opposed skill check against your opponent's Sense Motive skill. If you use Bluff to fool someone, with a successful check you convince your opponent that what you are saying is true. Bluff checks are modified depending upon the believability of the lie. The following modifiers are applied to the roll of the creature attempting to tell the lie. Note that some lies are so improbable that it is impossible to convince anyone that they are true (s"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Climb",
+      "rule",
+      "property | Value | 2",
+      "property | Ranks | 0",
+      "property | STR Bonus: | 6",
+      "section | Description",
+      "text | You are skilled at scaling vertical surfaces, from smooth city walls to rocky cliffs.\n\nCheck: With a successful Climb check, you can advance up, down, or across a slope, wall, or other steep incline (or even across a ceiling, provided it has handholds) at one-quarter your normal speed. A slope is considered to be any incline at an angle measuring less than 60 degrees; a wall is any incline at an angle measuring 60 degrees or more.\n\nA Climb check that fails by 4 or less means that you make "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Diplomacy",
+      "rule",
+      "property | Value | 3",
+      "property | Ranks | 0",
+      "property | CHA Bonus: | 3",
+      "section | Description",
+      "text | You can use this skill to persuade others to agree with your arguments, to resolve differences, and to gather valuable information or rumors from people. This skill is also used to negotiate conflicts by using the proper etiquette and manners suitable to the problem.\n\nCheck: You can change the initial attitudes of nonplayer characters with a successful check. The DC of this check depends on the creature's starting attitude toward you, adjusted by its Charisma modifier. If you succeed, the "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Disable Device",
+      "rule",
+      "property | Value | -6",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | You are skilled at disarming traps and opening locks. In addition, this skill lets you sabotage simple mechanical devices, such as catapults, wagon wheels, and doors.\n\nCheck: When disarming a trap or other device, the Disable Device check is made secretly, so that you don't necessarily know whether you've succeeded.\n\nThe DC depends on how tricky the device is. If the check succeeds, you disable the device. If it fails by 4 or less, you have failed but can try again. If you fail by 5 or mor"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Disguise",
+      "rule",
+      "property | Value | 3",
+      "property | Ranks | 0",
+      "property | CHA Bonus: | 3",
+      "section | Description",
+      "text | You are skilled at changing your appearance.\n\nCheck: Your Disguise check result determines how good the disguise is, and it is opposed by others' Perception check results. If you don't draw any attention to yourself, others do not get to make Perception checks. If you come to the attention of people who are suspicious (such as a guard who is watching commoners walking through a city gate), it can be assumed that such observers are taking 10 on their Perception checks.\n\nYou get only one Dis"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Escape Artist",
+      "rule",
+      "property | Value | -4",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | Your training allows you to slip out of bonds and escape from grapples.\n\nCheck: The table below gives the DCs needed to escape various forms of restraints.\nRopes: The DC of your Escape Artist check is equal to the binder's Combat Maneuver Bonus +20.\nManacles and Masterwork Manacles: The DC for manacles is set by their construction (see the table below).\nTight Space: The DC noted is for getting through a space through which your head fits but your shoulders don't. If the space is long, you "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Fly",
+      "rule",
+      "property | Value | -4",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | You are skilled at flying, through either the use of wings or magic, and can perform daring or complex maneuvers while airborne. Note that this skill does not give you the ability to fly.\n\nCheck: You generally need only make a Fly check when you are attempting a complex maneuver. Without making a check, a flying creature can remain flying at the end of its turn so long as it moves a distance greater than half its speed. It can also turn up to 45 degrees by sacrificing 5 feet of movement, c"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Handle Animal",
+      "rule",
+      "property | Value | 3",
+      "property | Ranks | 0",
+      "property | CHA Bonus: | 3",
+      "section | Description",
+      "text | You are trained at working with animals, and can teach them tricks, get them to follow your simple commands, or even domesticate them.\n\nCheck: The DC depends on what you are trying to do.\n\nTask: Handle Animal DC\nHandle an animal: 10\n\"Push\" an animal: 25\nTeach an animal a trick: 15 or 20*\nTrain an animal for a general purpose: 15 or 20*\nRear a wild animal: 15 + HD of animal\n* See the specific trick or purpose below.\n\nHandle an Animal: This task involves commanding an animal to perform a tas"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Heal",
+      "rule",
+      "property | Value | 5",
+      "property | Ranks | 4",
+      "property | WIS Bonus: | -2",
+      "section | Description",
+      "text | You are skilled at tending to wounds and ailments.\n\nCheck: The DC and effect of a Heal check depend on the task you attempt.\n\nTask DC\nFirst aid: 15\nLong-term care: 15\nTreat wounds from caltrops, spike growth, or spike stones: 15\nTreat deadly wounds: 20\nTreat poison: Poison's save DC\nTreat disease: Disease's save DC\n\nFirst Aid: You usually use first aid to save a dying character. If a character has negative hit points and is losing hit points (at the rate of 1 per round, 1 per hour, or 1 pe"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Intimidate",
+      "rule",
+      "property | Value | 3",
+      "property | Ranks | 0",
+      "property | CHA Bonus: | 3",
+      "section | Description",
+      "text | You can use this skill to frighten your opponents or to get them to act in a way that benefits you. This skill includes verbal threats and displays of prowess.\n\nCheck: You can use Intimidate to force an opponent to act friendly toward you for 1d6 × 10 minutes with a successful check. The DC of this check is equal to 10 + the target's Hit Dice + the target's Wisdom modifier.\n\nIf successful, the target gives you the information you desire, takes actions that do not endanger it, or otherwise "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Knowledge (religion)",
+      "rule",
+      "property | Value | -1",
+      "property | Ranks | 0",
+      "property | INT Bonus: | -1",
+      "section | Description",
+      "text | You are educated in a field of study and can answer both simple and complex questions. Like the Craft, Perform, and Profession skills, Knowledge actually encompasses a number of different specialties. Below are listed typical fields of study.\n\n• Arcana (ancient mysteries, magic traditions, arcane symbols, constructs, dragons, magical beasts)\n• Dungeoneering (aberrations, caverns, oozes, spelunking)\n• Engineering (buildings, aqueducts, bridges, fortifications)\n• Geography (lands, terrain, c"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Linguistics",
+      "rule",
+      "property | Value | -1",
+      "property | Ranks | 0",
+      "property | INT Bonus: | -1",
+      "section | Description",
+      "text | You are skilled at working with language, in both its spoken and written forms. You can speak multiple languages, and can decipher nearly any tongue given enough time. Your skill in writing allows you to create and detect forgeries as well.\n\nCheck: You can decipher writing in an unfamiliar language or a message written in an incomplete or archaic form. The base DC is 20 for the simplest messages, 25 for standard texts, and 30 or higher for intricate, exotic, or very old writing. If the che"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Perception",
+      "rule",
+      "property | Value | -2",
+      "property | Ranks | 0",
+      "property | WIS Bonus: | -2",
+      "section | Description",
+      "text | Your senses allow you to notice fine details and alert you to danger. Perception covers all five senses, including sight, hearing, touch, taste, and smell.\n\nCheck: Perception has a number of uses, the most common of which is an opposed check versus an opponent's Stealth check to notice the opponent and avoid being surprised. If you are successful, you notice the opponent and can react accordingly. If you fail, your opponent can take a variety of actions, including sneaking past you and att"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Ride",
+      "rule",
+      "property | Value | -4",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | You are skilled at riding mounts, usually a horse, but possibly something more exotic, like a griffon or pegasus. If you attempt to ride a creature that is ill suited as a mount, you take a -5 penalty on your Ride checks.\n\nCheck: Typical riding actions don't require checks. You can saddle, mount, ride, and dismount from a mount without a problem. The following tasks do require checks.\n\nTask: Ride DC\nGuide with knees: 5\nStay in saddle: 5\nFight with a combat-trained mount: 10\nCover: 15\nSoft "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Sense Motive",
+      "rule",
+      "property | Value | -2",
+      "property | Ranks | 0",
+      "property | WIS Bonus: | -2",
+      "section | Description",
+      "text | You are skilled at detecting falsehoods and true intentions.\n\nCheck: A successful check lets you avoid being bluffed (see the Bluff skill). You can also use this skill to determine when \"something is up\" (that is, something odd is going on) or to assess someone's trustworthiness.\n\nTask: Sense Motive DC\nHunch: 20\nSense enchantment: 25 or 15\nDiscern secret message: Varies\n\nHunch: This use of the skill involves making a gut assessment of the social situation. You can get the feeling from anot"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Sleight of Hand",
+      "rule",
+      "property | Value | -4",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | Your training allows you to pick pockets, draw hidden weapons, and take a variety of actions without being noticed.\n\nCheck: A DC 10 Sleight of Hand check lets you palm a coin-sized, unattended object. Performing a minor feat of legerdemain, such as making a coin disappear, also has a DC of 10 unless an observer is determined to note where the item went.\n\nWhen you use this skill under close observation, your skill check is opposed by the observer's Perception check. The observer's success d"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Spellcraft",
+      "rule",
+      "property | Value | 6",
+      "property | Ranks | 4",
+      "property | INT Bonus: | -1",
+      "section | Description",
+      "text | You are skilled at the art of casting spells, identifying magic items, crafting magic items, and identifying spells as they are being cast.\n\nCheck: Spellcraft is used whenever your knowledge and skill of the technical art of casting a spell or crafting a magic item comes into question. This skill is also used to identify the properties of magic items in your possession through the use of spells such as detect magic and identify. The DC of this check varies depending upon the task at hand.\n"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Stealth",
+      "rule",
+      "property | Value | -4",
+      "property | Ranks | 0",
+      "property | DEX Bonus: | 0",
+      "section | Description",
+      "text | You are skilled at avoiding detection, allowing you to slip past foes or strike from an unseen position. Creatures that fail to beat your Stealth check are not aware of you and treat you as if you had total concealment. This skill covers hiding and moving silently.\n\nCheck: Your Stealth check is opposed by the Perception check of anyone who might notice you. You can move up to half your normal speed and use Stealth at no penalty. When moving at a speed greater than half but less than your n"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Survival",
+      "rule",
+      "property | Value | -2",
+      "property | Ranks | 0",
+      "property | WIS Bonus: | -2",
+      "section | Description",
+      "text | You are skilled at surviving in the wild and at navigating in the wilderness. You also excel at following trails and tracks left by others.\n\nCheck: You can keep yourself and others safe and fed in the wild. The table below gives the DCs for various tasks that require Survival checks.\n\nSurvival DC: Task\n10: Get along in the wild. Move up to half your overland speed while hunting and foraging (no food or water supplies needed). You can provide food and water for one other person for every 2 "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Swim",
+      "rule",
+      "property | Value | 2",
+      "property | Ranks | 0",
+      "property | STR Bonus: | 6",
+      "section | Description",
+      "text | You know how to swim and can do so even in stormy water.\n\nCheck: Make a Swim check once per round while you are in the water. Success means you may swim at up to half your speed (as a full-round action) or at a quarter of your speed (as a move action). If you fail by 4 or less, you make no progress. If you fail by 5 or more, you go underwater.\n\nIf you are underwater, either because you failed a Swim check or because you are swimming underwater intentionally, you must hold your breath. You "
+    ]
+  },
+  {
+    "count": 1,
+    "color": "orange",
+    "title": "Skill",
+    "icon": "gears",
+    "contents": [
+      "subtitle | Use Magic Device",
+      "rule",
+      "property | Value | 3",
+      "property | Ranks | 0",
+      "property | CHA Bonus: | 3",
+      "section | Description",
+      "text | You are skilled at activating magic items, even if you are not otherwise trained in their use.\n\nCheck: You can use this skill to read a spell or to activate a magic item. Use Magic Device lets you use a magic item as if you had the spell ability or class features of another class, as if you were a different race, or as if you were of a different alignment.\n\nYou make a Use Magic Device check each time you activate a device such as a wand. If you are using the check to emulate an alignment o"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Armor Proficiency (Heavy)",
+      "rule",
+      "property | Category | Combat",
+      "section | Description",
+      "text | You are skilled at wearing heavy armor.\n\nPrerequisites: Light Armor Proficiency, Medium Armor Proficiency.\n\nBenefit: See Armor Proficiency, Light.\n\nNormal: See Armor Proficiency, Light.\n\nSpecial: Fighters and paladins automatically have Heavy Armor Proficiency as a bonus feat. They need not select it."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Armor Proficiency (Light)",
+      "rule",
+      "property | Category | Combat",
+      "section | Description",
+      "text | You are skilled at wearing light armor.\n\nBenefit: When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.\n\nNormal: A character who is wearing armor with which he is not proficient applies its armor check pena"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Armor Proficiency (Medium)",
+      "rule",
+      "property | Category | Combat",
+      "section | Description",
+      "text | You are skilled at wearing medium armor.\n\nPrerequisite: Light Armor Proficiency.\n\nBenefit: See Armor Proficiency, Light.\n\nNormal: See Armor Proficiency, Light.\n\nSpecial: Barbarians, clerics, druids, fighters, paladins, and rangers automatically have Medium Armor Proficiency as a bonus feat. They need not select"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Exotic Weapon Proficiency (Bastard sword)",
+      "rule",
+      "property | Category | Combat",
+      "section | Description",
+      "text | Choose one type of exotic weapon, such as the spiked chain or whip. You understand how to use that type of exotic weapon in combat, and can utilize any special tricks or qualities that exotic weapon might allow.\n\nPrerequisite: Base attack bonus +1.\n\nBenefit: You make attack rolls with the weapon normally.\n\nNorm"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Martial Weapon Proficiency - All",
+      "rule",
+      "property | Category | ",
+      "section | Description",
+      "text | Benefit: You are proficient with all Martial weapons.\n\nNormal: When using a weapon with which you are not proficient, you are at -4 to attack rolls."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Power Attack -2/+4",
+      "rule",
+      "property | Category | Combat",
+      "section | Description",
+      "text | You can make exceptionally deadly melee attacks by sacrificing accuracy for strength.\n\nPrerequisites: Str 13, base attack bonus +1.\n\nBenefit: You can choose to take a –1 penalty on all melee attack rolls and combat maneuver checks to gain a +2 bonus on all melee damage rolls. This bonus to damage is increased b"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Shield Proficiency",
+      "rule",
+      "property | Category | Combat",
+      "section | Description",
+      "text | You are trained in how to properly use a shield.\n\nBenefit: When you use a shield (except a tower shield), the shield's armor check penalty only applies to Strength- and Dexterity-based skills.\n\nNormal: When you are using a shield with which you are not proficient, you take the shield's armor check penalty on at"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Simple Weapon Proficiency - All",
+      "rule",
+      "property | Category | Combat",
+      "section | Description",
+      "text | You are trained in the use of basic weapons.\n\nBenefit: You make attack rolls with simple weapons without penalty.\n\nNormal: When using a weapon with which you are not proficient, you take a –4 penalty on attack rolls.\n\nSpecial: All characters except for druids, monks, and wizards are automatically proficient wit"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Feat",
+    "icon": "foot-trip",
+    "contents": [
+      "subtitle | Weapon Focus (Bastard sword)",
+      "rule",
+      "property | Category | Combat",
+      "section | Description",
+      "text | Choose one type of weapon. You can also choose unarmed strike or grapple (or ray, if you are a spellcaster) as your weapon for the purposes of this feat.\n\nPrerequisites: Proficiency with selected weapon, base attack bonus +1.\n\nBenefit: You gain a +1 bonus on all attack rolls you make using the selected weapon.\n"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Trait",
+    "icon": "usable",
+    "contents": [
+      "subtitle | Charming",
+      "rule",
+      "property | Category | Social",
+      "fill",
+      "section | Description",
+      "text | Blessed with good looks, you’ve come to depend on the fact that others find you attractive.\n\nBenefit: You gain a +1 trait bonus when you use Bluff or Diplomacy on a character that is (or could be) sexually attracted to you, and a +1 trait bonus to the save DC of any language-dependent spell you cast on such cha"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Trait",
+    "icon": "usable",
+    "contents": [
+      "subtitle | Courageous",
+      "rule",
+      "property | Category | Combat",
+      "fill",
+      "section | Description",
+      "text | Your childhood was brutal, yet you persevered primarily through force of will and the hope that no matter how hard things might get, as long as you kept a level head you'd make it through. You gain a +2 trait bonus on saving throws against fear effects."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Aura of Good (Ex)",
+      "fill",
+      "section | Description",
+      "text | The power of a paladin's aura of good (see the detect good spell) is equal to her paladin level."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Lay on Hands (2d6 hit points, 5/day) (Su)",
+      "fill",
+      "section | Description",
+      "text | Beginning at 2nd level, a paladin can heal wounds (her own or those of others) by touch. Each day she can use this ability a number of times equal to 1/2 her paladin level plus her Charisma modifier. With one use of this ability, a paladin can heal 1d6 hit points of damage for every two paladin levels she possesses. Using this ability is a standard action, unless the paladin targets herself, in which case it is a swift action. Despite the name of this ability, a paladin only needs one free hand to use this ability.\n\nAlternatively, a paladin can use this healing power to deal damage to un"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Ability",
+    "icon": "magic-swirl",
+    "contents": [
+      "subtitle | Mercy (Fatigued) (Su)",
+      "fill",
+      "section | Description",
+      "text | When you use your lay on hands ability, it also removes the fatigued condition."
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Attack",
+    "icon": "wyvern",
+    "contents": [
+      "subtitle | Channel Energy (2/day) (DC 15)",
+      "rule",
+      "property | Type | Supernatural Ability",
+      "fill",
+      "section | Description",
+      "text | Regardless of alignment, any cleric can release a wave of energy by channeling the power of her faith through her holy (or unholy) symbol (see Channel Energy). This energy can be used to cause or heal damage, depending on the type of energy channeled and the creatures targeted.\n\nA good cleric (or a neutral cler"
+    ]
+  },
+  {
+    "count": 1,
+    "color": "green",
+    "title": "Special Attack",
+    "icon": "wyvern",
+    "contents": [
+      "subtitle | Smite Evil (2/day)",
+      "rule",
+      "property | Type | Supernatural Ability",
+      "fill",
+      "section | Description",
+      "text | Once per day, a paladin can call out to the powers of good to aid her in her struggle against evil. As a swift action, the paladin chooses one target within sight to smite. If this target is evil, the paladin adds her Charisma bonus (if any) to her attack rolls and adds her paladin level to all damage rolls mad"
+    ]
+  }
+]
