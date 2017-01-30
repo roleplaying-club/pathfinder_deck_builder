@@ -13,7 +13,7 @@ class Card
 
     unless @class_path.nil?
       if @class_path.class == Hash
-        @class_cards.push(assembled_card(@feat_path))
+        @class_cards.push(assembled_card(@class_path))
       else
         @class_path.each { |path| @class_cards.push(assembled_card(path)) }
       end
@@ -53,7 +53,6 @@ class Card
     @movement_path = @path_shortcut[@index]["movement"]
     @attack_path = @path_shortcut[@index]["attack"]
     @attribute_path = @path_shortcut[@index]["attributes"]["attribute"]
-    binding.pry
     @defensive_ability_path = @path_shortcut[@index]["defensive"]["special"] if @path_shortcut[@index]["defensive"] != nil
     @feat_path = @path_shortcut[@index]["feats"]["feat"] if @path_shortcut[@index]["feats"] != nil
     @armor_path = @path_shortcut[@index]["defenses"]["armor"] if @path_shortcut[@index]["defenses"]["armor"] != nil

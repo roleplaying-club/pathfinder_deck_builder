@@ -2,52 +2,41 @@ require_relative 'card'
 
 class ArmorCard < Card
 
-  def create_card(xml_file, index=nil)
-    @index = index
-    if index == nil
-      path = xml_file["document"]["public"]["character"]["defenses"]["armor"]
-    else
-      path = xml_file["document"]["public"]["character"][@index]["defenses"]["armor"]
-    end
+  def create_card(index=nil)
+    super
+  end
 
-    if path.class == Hash
-      @class_cards << {
-        "count": 1,
-        "color": "grey",
-          "title": "Armor",
-          "icon": "anvil",
-          "contents": [
-          "subtitle | #{path["name"]}",
-          "rule",
-          "property | AC | #{path["ac"]}",
-          "property | Weight | #{path["weight"]["text"]}",
-          "property | Cost | #{path["cost"]["text"]}",
-          "property | Quantity | #{path["quantity"]}",
-          "fill",
-          "section | Description",
-          "text | #{path["description"]}"[0..500]
-        ]
-      }
-    elsif path.class == Array
-      path.each do |armor|
-        @class_cards << {
-          "count": 1,
-          "color": "grey",
-          "title": "Armor",
-          "icon": "anvil",
-          "contents": [
-            "subtitle | #{armor["name"]}",
-            "rule",
-            "property | AC | #{armor["ac"]}",
-            "property | Weight | #{armor["weight"]["text"]}",
-            "property | Cost | #{armor["cost"]["text"]}",
-            "property | Quantity | #{armor["quantity"]}",
-            "fill",
-            "section | Description",
-            "text | #{armor["description"]}"[0..500]
-          ]
-        }
-      end
-    end
+  def set_class_path
+    @class_path = @armor_path
+  end
+
+  def assembled_card(path)
+    super
+  end
+
+  def static_content
+    {
+      "count": 1,
+      "color": "grey",
+      "title": "Armor",
+      "icon": "anvil"
+    }   
+  end
+
+  def variable_content(path)
+    binding.pry
+    {
+      "contents": [
+        "subtitle | #{path["name"]}",
+        "rule",
+        "property | AC | #{path["ac"]}",
+        "property | Weight | #{path["weight"]["text"]}",
+        "property | Cost | #{path["cost"]["text"]}",
+        "property | Quantity | #{path["quantity"]}",
+        "fill",
+        "section | Description",
+        "text | #{path["description"]}"[0..500]
+      ]
+    }
   end
 end

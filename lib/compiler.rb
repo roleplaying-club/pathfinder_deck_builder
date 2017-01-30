@@ -28,7 +28,7 @@ class Compiler
 
     @character.create_card
     @weapons.create_card(@myXML, "melee") if @myXML["document"]["public"]["character"]["melee"] != nil
-    @armors.create_card(@myXML) if @myXML["document"]["public"]["character"]["defenses"]["armor"] != nil
+    @armors.create_card
     @weapons.create_card(@myXML, "ranged") if @myXML["document"]["public"]["character"]["ranged"] != nil
     @tracked_resources.create_card(@myXML) if @myXML["document"]["public"]["character"]["trackedresources"] != nil
     @spells.create_card(@myXML) if @myXML["document"]["public"]["character"]["spellsmemorized"] != nil
@@ -61,7 +61,7 @@ class Compiler
 
       @character.create_card(index)
       @weapons.create_card(@myXML, "melee", index) if @myXML["document"]["public"]["character"][index]["melee"] != nil
-      @armors.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["defenses"]["armor"] != nil
+      @armors.create_card(index)
       @weapons.create_card(@myXML, "ranged", index) if @myXML["document"]["public"]["character"][index]["ranged"] != nil
       @tracked_resources.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["trackedresources"] != nil
       @spells.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["spellsmemorized"] != nil
@@ -87,7 +87,7 @@ class Compiler
     @setup_cards = [
       @character = CharacterCard.new(@myXML),
       @weapons = WeaponCard.new,
-      @armors = ArmorCard.new,
+      @armors = ArmorCard.new(@myXML),
       @tracked_resources = TrackedResourceCard.new,
       @spells = SpellCard.new,
       @skills = SkillCard.new,
