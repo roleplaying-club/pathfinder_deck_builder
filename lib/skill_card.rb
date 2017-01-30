@@ -1,6 +1,6 @@
-require_relative 'character_card'
+require_relative 'card'
 
-class SkillCard < CharacterCard
+class SkillCard < Card
 
   def create_card(xml_file, index=nil)
     @index = index

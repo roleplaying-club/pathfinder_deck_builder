@@ -23,10 +23,10 @@ class Compiler
   end
 
   def compile_individual
+    @myXML = Crack::XML.parse(File.read(@file_path))
     setup
 
-    @deck.cards << @character.create_card(@myXML)
-
+    @character.create_card(@myXML)
     @weapons.create_card(@myXML, "melee") if @myXML["document"]["public"]["character"]["melee"] != nil
     @armors.create_card(@myXML) if @myXML["document"]["public"]["character"]["defenses"]["armor"] != nil
     @weapons.create_card(@myXML, "ranged") if @myXML["document"]["public"]["character"]["ranged"] != nil
@@ -49,9 +49,11 @@ class Compiler
   end
 
   def compile_party
+    @myXML = Crack::XML.parse(File.read(@file_path))
     @myXML["document"]["public"]["character"].each_with_index do |fun_stuff, index|
       setup
 
+      @character.create_card(@myXML, index)
       @weapons.create_card(@myXML, "melee", index) if @myXML["document"]["public"]["character"][index]["melee"] != nil
       @armors.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["defenses"]["armor"] != nil
       @weapons.create_card(@myXML, "ranged", index) if @myXML["document"]["public"]["character"][index]["ranged"] != nil
@@ -60,7 +62,7 @@ class Compiler
       @skills.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["skills"] != nil
       @defenses.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["defensive"] != nil
       @feats.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["feats"]["feat"] != nil
-      @traits.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["traits"]["trait"] != nil
+      @traits.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["traits"] != nil
       @special_abilities.create_card(@myXML, index) if @myXML ["document"]["public"]["character"][index]["otherspecials"]["special"] != nil
       @special_attacks.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["attack"]["special"] != nil
 
@@ -76,9 +78,8 @@ class Compiler
 
   def setup
     @deck = Deck.new
-    @character = CharacterCard.new
-    @myXML = Crack::XML.parse(File.read(@file_path))
     @setup_cards = [
+      @character = CharacterCard.new,
       @weapons = WeaponCard.new,
       @armors = ArmorCard.new,
       @tracked_resources = TrackedResourceCard.new,
