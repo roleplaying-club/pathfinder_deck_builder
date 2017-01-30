@@ -6,7 +6,8 @@ class CharacterCard < Card
   end
 
   def create_card(index=nil)
-    super
+    @index = index
+    set_paths
     @class_cards.push(assembled_card)
   end
 

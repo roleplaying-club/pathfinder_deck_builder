@@ -3,14 +3,10 @@ class DefensiveAbilityCard < Card
 
   def create_card(index=nil)
     super
-    unless @defensive_ability_path.nil?
+  end
 
-      if @defensive_ability_path.class == Hash
-        @class_cards.push(assembled_card(@defensive_ability_path))
-      else
-        @defensive_ability_path.each { |path| @class_cards.push(assembled_card(path)) }
-      end
-    end
+  def set_class_path
+   @class_path = @defensive_ability_path
   end
 
   def assembled_card(path)

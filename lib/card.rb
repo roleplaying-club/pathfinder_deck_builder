@@ -9,6 +9,19 @@ class Card
   def create_card(index=nil)
     @index = index
     set_paths
+    set_class_path
+
+    unless @class_path.nil?
+      if @class_path.class == Hash
+        @class_cards.push(assembled_card(@feat_path))
+      else
+        @class_path.each { |path| @class_cards.push(assembled_card(path)) }
+      end
+    end
+  end
+
+  def set_class_path
+    @class_path = @character_path
   end
 
   def set_paths
@@ -28,9 +41,9 @@ class Card
     @movement_path = @path_shortcut["movement"]
     @attack_path = @path_shortcut["attack"]
     @attribute_path = @path_shortcut["attributes"]["attribute"]
-    binding.pry
     @defensive_ability_path = @path_shortcut["defensive"]["special"] if @path_shortcut["defensive"] != nil
     @feat_path = @path_shortcut["feats"]["feat"] if @path_shortcut["feats"] != nil
+    @armor_path = @path_shortcut["defenses"]["armor"] if @path_shortcut["defenses"]["armor"] != nil
   end
 
   def set_multiple_character_path
@@ -43,6 +56,7 @@ class Card
     binding.pry
     @defensive_ability_path = @path_shortcut[@index]["defensive"]["special"] if @path_shortcut[@index]["defensive"] != nil
     @feat_path = @path_shortcut[@index]["feats"]["feat"] if @path_shortcut[@index]["feats"] != nil
+    @armor_path = @path_shortcut[@index]["defenses"]["armor"] if @path_shortcut[@index]["defenses"]["armor"] != nil
   end
 
   def assembled_card(path)

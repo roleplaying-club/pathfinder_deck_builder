@@ -4,14 +4,10 @@ class FeatCard < Card
 
   def create_card(index=nil)
     super
-    unless @feat_path.nil?
+  end
 
-      if @feat_path.class == Hash
-        @class_cards.push(assembled_card(@feat_path))
-      else
-        @feat_path.each { |path| @class_cards.push(assembled_card(path)) }
-      end
-    end
+  def set_class_path
+    @class_path = @feat_path
   end
 
   def assembled_card(path)
