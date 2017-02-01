@@ -1,16 +1,17 @@
 require_relative 'card'
 class CharacterCard < Card
 
-  def initialize
-    @class_cards = []
+  def initialize(xml_file)
+    super
   end
 
-  def create_card(xml_file, index=nil)
-    @xml_file = xml_file
+  def create_card(index=nil)
     @index = index
-    set_path
+    set_paths
+    @class_cards.push(assembled_card)
+  end
 
-    @class_cards.push(
+  def assembled_card
     {
       "count" => 1,
       "color": "blue",
@@ -33,15 +34,5 @@ class CharacterCard < Card
         "dndstats | #{@attribute_path[0]["attrvalue"]["base"]} | #{@attribute_path[1]["attrvalue"]["base"]} | #{@attribute_path[2]["attrvalue"]["base"]} | #{@attribute_path[3]["attrvalue"]["base"]} | #{@attribute_path[4]["attrvalue"]["base"]} | #{@attribute_path[5]["attrvalue"]["base"]}"
       ]
     }
-    )
-  end
-
-  def set_path
-    @character_path = @index.nil? ? @xml_file["document"]["public"]["character"] : @xml_file["document"]["public"]["character"][@index]
-    @ac_path = @index.nil? ? @xml_file["document"]["public"]["character"]["armorclass"] : @xml_file["document"]["public"]["character"][@index]["armorclass"]
-    @initiative_path = @index.nil? ? @xml_file["document"]["public"]["character"]["initiative"] : @xml_file["document"]["public"]["character"][@index]["armorclass"]
-    @movement_path = @index.nil? ? @xml_file["document"]["public"]["character"]["movement"] : @xml_file["document"]["public"]["character"][@index]["movement"]
-    @attack_path = @index.nil? ? @xml_file["document"]["public"]["character"]["attack"] : @xml_file["document"]["public"]["character"][@index]["attack"]
-    @attribute_path = @index.nil? ? @xml_file["document"]["public"]["character"]["attributes"]["attribute"] : @xml_file["document"]["public"]["character"][@index]["attributes"]["attribute"]
   end
 end
