@@ -4,7 +4,7 @@
         <program name="Hero Lab" url="http://www.wolflair.com">
             <programinfo>Hero Lab and the Hero Lab logo are Registered Trademarks of LWD Technology, Inc. Free download at http://www.wolflair.com
 Pathfinder® and associated marks and logos are trademarks of Paizo Inc.®, and are used under license.</programinfo>
-            <version version="7.6d" primary="7" secondary="6" tertiary="d" build="648"></version>
+            <version version="8.0b" primary="8" secondary="0" tertiary="b" build="664"></version>
         </program>
         <localization language="eng" units="imperial"></localization>
         <character nature="normal" role="pc" relationship="ally" type="Hero" name="Aer" playername="Connie">
@@ -1466,7 +1466,7 @@ Read magic can be made permanent with a permanency spell.</description>
                 <validmessage>Error: Conjurer: Add more Free Spells to your Spellbook.</validmessage>
                 <validmessage>Error: Conjurer: Memorize more spells!</validmessage>
             </validation>
-            <settings summary="Advanced Player's Guide: Advanced Player's Guide Familiars; Ultimate Campaign -&gt; Ultimate Campaign Character Backgrounds: Unrestricted Traits &amp; Drawbacks; Ultimate Magic: Ultimate Magic Familiars; Bestiary: Bestiary Familiars, Bestiary Free Content; Campaign Setting: Inner Sea World Guide; Miscellaneous Content: Character Traits Web Enhancement, Core Rulebook Deities, GameMastery Guide, Paizo Blog; Pathfinder Modules: Daughters of Fury, Doom Comes to Dustpawn, Murder's Mark, No Response from Deepmar, Plunder and Peril, Tears at Bitter Manor, The Dragon's Demand, The Emerald Spire, The Harrowing, The Midnight Mirror; Pathfinder Adventure Paths: Strange Aeons; Advancement Speed: Medium Advancement; Firearm Availability: Emerging Guns; Experimental Options: Don't show statblock summary window; Output Options: Hide Ammo (in weapons), Hide Unusable Skills, Hide Validation Messages, Show Hero Portrait, Show Sourcebook Report"></settings>
+            <settings summary="Advanced Player's Guide: Advanced Player's Guide Familiars; Ultimate Campaign -&gt; Ultimate Campaign Character Backgrounds: Unrestricted Traits &amp; Drawbacks; Ultimate Magic: Ultimate Magic Familiars; Bestiary: Bestiary Familiars, Bestiary Free Content; Campaign Setting: Inner Sea World Guide; Miscellaneous Content: Character Traits Web Enhancement, Core Rulebook Deities, GameMastery Guide, Paizo Blog; Pathfinder Modules: Daughters of Fury, Doom Comes to Dustpawn, Fangwood Keep, Murder's Mark, No Response from Deepmar, Plunder and Peril, Tears at Bitter Manor, The Dragon's Demand, The Emerald Spire, The Harrowing, The Midnight Mirror; Pathfinder Adventure Paths: Strange Aeons; Advancement Speed: Medium Advancement; Firearm Availability: Emerging Guns; Experimental Options: Don't show statblock summary window; Output Options: Hide Ammo (in weapons), Hide Unusable Skills, Hide Validation Messages, Show Hero Portrait, Show Sourcebook Report"></settings>
             <minions>
                 <character nature="normal" role="pc" relationship="ally" type="Arcane Familiar" name="Arcane Familiar" playername="Connie">
                     <race racetext="No Race" name="No Race" ethnicity=""></race>
@@ -2428,12 +2428,12 @@ Continued - Core Rulebook, pg. 108.</description>
                         <validmessage>Error: Hero: You must pick an Alignment for your character.</validmessage>
                         <validmessage>Error: Hero: You must pick a Race for your character.</validmessage>
                     </validation>
-                    <settings summary="Advanced Player's Guide: Advanced Player's Guide Familiars; Ultimate Campaign -&gt; Ultimate Campaign Character Backgrounds: Unrestricted Traits &amp; Drawbacks; Ultimate Magic: Ultimate Magic Familiars; Bestiary: Bestiary Familiars, Bestiary Free Content; Campaign Setting: Inner Sea World Guide; Miscellaneous Content: Character Traits Web Enhancement, Core Rulebook Deities, GameMastery Guide, Paizo Blog; Pathfinder Modules: Daughters of Fury, Doom Comes to Dustpawn, Murder's Mark, No Response from Deepmar, Plunder and Peril, Tears at Bitter Manor, The Dragon's Demand, The Emerald Spire, The Harrowing, The Midnight Mirror; Pathfinder Adventure Paths: Strange Aeons; Advancement Speed: Medium Advancement; Firearm Availability: Emerging Guns; Experimental Options: Don't show statblock summary window; Output Options: Hide Ammo (in weapons), Hide Unusable Skills, Hide Validation Messages, Show Hero Portrait, Show Sourcebook Report"></settings>
+                    <settings summary="Advanced Player's Guide: Advanced Player's Guide Familiars; Ultimate Campaign -&gt; Ultimate Campaign Character Backgrounds: Unrestricted Traits &amp; Drawbacks; Ultimate Magic: Ultimate Magic Familiars; Bestiary: Bestiary Familiars, Bestiary Free Content; Campaign Setting: Inner Sea World Guide; Miscellaneous Content: Character Traits Web Enhancement, Core Rulebook Deities, GameMastery Guide, Paizo Blog; Pathfinder Modules: Daughters of Fury, Doom Comes to Dustpawn, Fangwood Keep, Murder's Mark, No Response from Deepmar, Plunder and Peril, Tears at Bitter Manor, The Dragon's Demand, The Emerald Spire, The Harrowing, The Midnight Mirror; Pathfinder Adventure Paths: Strange Aeons; Advancement Speed: Medium Advancement; Firearm Availability: Emerging Guns; Experimental Options: Don't show statblock summary window; Output Options: Hide Ammo (in weapons), Hide Unusable Skills, Hide Validation Messages, Show Hero Portrait, Show Sourcebook Report"></settings>
                     <minions></minions>
                 </character>
             </minions>
         </character>
-        <character active="yes" nature="normal" role="pc" relationship="ally" type="Hero" name="Fredegar Maggot" playername="Dominic">
+        <character nature="normal" role="pc" relationship="ally" type="Hero" name="Fredegar Maggot" playername="Dominic">
             <race racetext="halfling" name="halfling" ethnicity=""></race>
             <alignment name="Chaotic Neutral"></alignment>
             <templates summary=""></templates>
@@ -3468,7 +3468,7 @@ The character must be able to see the target well enough to pick out a vital spo
                 </weapon>
             </melee>
             <ranged>
-                <weapon name="Cold iron shuriken" categorytext="Thrown Weapon" typetext="P" attack="+0" crit="×2" damage="1" quantity="15">
+                <weapon name="Cold iron shuriken" categorytext="Counts as Ammunition for Crafting, Thrown Weapon" typetext="P" attack="+0" crit="×2" damage="1" quantity="15">
                     <rangedattack attack="+3" rangeinctext="10'" rangeincvalue="10'"></rangedattack>
                     <weight text="0.05 lbs" value="0.05"></weight>
                     <cost text="6 gp" value="6"></cost>
@@ -3480,6 +3480,7 @@ This iron, mined deep underground and known for its effectiveness against demons
 Items without metal parts cannot be made from cold iron. An arrow could be made of cold iron, but a quarterstaff could not. A double weapon with one cold iron half costs 50% more than normal.
 
 Cold iron has 30 hit points per inch of thickness and hardness 10.</description>
+                    <wepcategory>Counts as Ammunition for Crafting</wepcategory>
                     <wepcategory>Thrown Weapon</wepcategory>
                     <weptype>Piercing</weptype>
                     <situationalmodifiers text=""></situationalmodifiers>
@@ -3636,7 +3637,7 @@ Normally, operating a light crossbow requires two hands. However, you can shoot,
             <validation>
                 <report></report>
             </validation>
-            <settings summary="Advanced Player's Guide: Advanced Player's Guide Familiars; Ultimate Campaign -&gt; Ultimate Campaign Character Backgrounds: Unrestricted Traits &amp; Drawbacks; Ultimate Magic: Ultimate Magic Familiars; Bestiary: Bestiary Familiars, Bestiary Free Content; Campaign Setting: Inner Sea World Guide; Miscellaneous Content: Character Traits Web Enhancement, Core Rulebook Deities, GameMastery Guide, Paizo Blog; Pathfinder Modules: Daughters of Fury, Doom Comes to Dustpawn, Murder's Mark, No Response from Deepmar, Plunder and Peril, Tears at Bitter Manor, The Dragon's Demand, The Emerald Spire, The Harrowing, The Midnight Mirror; Pathfinder Adventure Paths: Strange Aeons; Advancement Speed: Medium Advancement; Firearm Availability: Emerging Guns; Experimental Options: Don't show statblock summary window; Output Options: Hide Ammo (in weapons), Hide Unusable Skills, Hide Validation Messages, Show Hero Portrait, Show Sourcebook Report"></settings>
+            <settings summary="Advanced Player's Guide: Advanced Player's Guide Familiars; Ultimate Campaign -&gt; Ultimate Campaign Character Backgrounds: Unrestricted Traits &amp; Drawbacks; Ultimate Magic: Ultimate Magic Familiars; Bestiary: Bestiary Familiars, Bestiary Free Content; Campaign Setting: Inner Sea World Guide; Miscellaneous Content: Character Traits Web Enhancement, Core Rulebook Deities, GameMastery Guide, Paizo Blog; Pathfinder Modules: Daughters of Fury, Doom Comes to Dustpawn, Fangwood Keep, Murder's Mark, No Response from Deepmar, Plunder and Peril, Tears at Bitter Manor, The Dragon's Demand, The Emerald Spire, The Harrowing, The Midnight Mirror; Pathfinder Adventure Paths: Strange Aeons; Advancement Speed: Medium Advancement; Firearm Availability: Emerging Guns; Experimental Options: Don't show statblock summary window; Output Options: Hide Ammo (in weapons), Hide Unusable Skills, Hide Validation Messages, Show Hero Portrait, Show Sourcebook Report"></settings>
             <minions>
                 <character nature="normal" role="pc" relationship="ally" type="Dog, riding" name="Alby" playername="Dominic">
                     <race racetext="riding dog" name="riding dog" ethnicity=""></race>
@@ -4659,12 +4660,12 @@ Special: You can gain this feat multiple times. Its effects do not stack. Each t
                     <validation>
                         <report></report>
                     </validation>
-                    <settings summary="Advanced Player's Guide: Advanced Player's Guide Familiars; Ultimate Campaign -&gt; Ultimate Campaign Character Backgrounds: Unrestricted Traits &amp; Drawbacks; Ultimate Magic: Ultimate Magic Familiars; Bestiary: Bestiary Familiars, Bestiary Free Content; Campaign Setting: Inner Sea World Guide; Miscellaneous Content: Character Traits Web Enhancement, Core Rulebook Deities, GameMastery Guide, Paizo Blog; Pathfinder Modules: Daughters of Fury, Doom Comes to Dustpawn, Murder's Mark, No Response from Deepmar, Plunder and Peril, Tears at Bitter Manor, The Dragon's Demand, The Emerald Spire, The Harrowing, The Midnight Mirror; Pathfinder Adventure Paths: Strange Aeons; Advancement Speed: Medium Advancement; Firearm Availability: Emerging Guns; Experimental Options: Don't show statblock summary window; Output Options: Hide Ammo (in weapons), Hide Unusable Skills, Hide Validation Messages, Show Hero Portrait, Show Sourcebook Report"></settings>
+                    <settings summary="Advanced Player's Guide: Advanced Player's Guide Familiars; Ultimate Campaign -&gt; Ultimate Campaign Character Backgrounds: Unrestricted Traits &amp; Drawbacks; Ultimate Magic: Ultimate Magic Familiars; Bestiary: Bestiary Familiars, Bestiary Free Content; Campaign Setting: Inner Sea World Guide; Miscellaneous Content: Character Traits Web Enhancement, Core Rulebook Deities, GameMastery Guide, Paizo Blog; Pathfinder Modules: Daughters of Fury, Doom Comes to Dustpawn, Fangwood Keep, Murder's Mark, No Response from Deepmar, Plunder and Peril, Tears at Bitter Manor, The Dragon's Demand, The Emerald Spire, The Harrowing, The Midnight Mirror; Pathfinder Adventure Paths: Strange Aeons; Advancement Speed: Medium Advancement; Firearm Availability: Emerging Guns; Experimental Options: Don't show statblock summary window; Output Options: Hide Ammo (in weapons), Hide Unusable Skills, Hide Validation Messages, Show Hero Portrait, Show Sourcebook Report"></settings>
                     <minions></minions>
                 </character>
             </minions>
         </character>
-        <character nature="normal" role="pc" relationship="ally" type="Hero" name="Hrothgar" playername="Kyle Sponheim">
+        <character active="yes" nature="normal" role="pc" relationship="ally" type="Hero" name="Hrothgar" playername="Kyle Sponheim">
             <race racetext="human (Shoanti)" name="human" ethnicity="Shoanti"></race>
             <alignment name="Chaotic Neutral"></alignment>
             <templates summary=""></templates>
@@ -5805,7 +5806,7 @@ A barbarian can end her rage as a free action and is fatigued after rage for a n
             <validation>
                 <report></report>
             </validation>
-            <settings summary="Advanced Player's Guide: Advanced Player's Guide Familiars; Ultimate Campaign -&gt; Ultimate Campaign Character Backgrounds: Unrestricted Traits &amp; Drawbacks; Ultimate Magic: Ultimate Magic Familiars; Bestiary: Bestiary Familiars, Bestiary Free Content; Campaign Setting: Inner Sea World Guide; Miscellaneous Content: Character Traits Web Enhancement, Core Rulebook Deities, GameMastery Guide, Paizo Blog; Pathfinder Modules: Daughters of Fury, Doom Comes to Dustpawn, Murder's Mark, No Response from Deepmar, Plunder and Peril, Tears at Bitter Manor, The Dragon's Demand, The Emerald Spire, The Harrowing, The Midnight Mirror; Pathfinder Adventure Paths: Strange Aeons; Advancement Speed: Medium Advancement; Firearm Availability: Emerging Guns; Experimental Options: Don't show statblock summary window; Output Options: Hide Ammo (in weapons), Hide Unusable Skills, Hide Validation Messages, Show Hero Portrait, Show Sourcebook Report"></settings>
+            <settings summary="Advanced Player's Guide: Advanced Player's Guide Familiars; Ultimate Campaign -&gt; Ultimate Campaign Character Backgrounds: Unrestricted Traits &amp; Drawbacks; Ultimate Magic: Ultimate Magic Familiars; Bestiary: Bestiary Familiars, Bestiary Free Content; Campaign Setting: Inner Sea World Guide; Miscellaneous Content: Character Traits Web Enhancement, Core Rulebook Deities, GameMastery Guide, Paizo Blog; Pathfinder Modules: Daughters of Fury, Doom Comes to Dustpawn, Fangwood Keep, Murder's Mark, No Response from Deepmar, Plunder and Peril, Tears at Bitter Manor, The Dragon's Demand, The Emerald Spire, The Harrowing, The Midnight Mirror; Pathfinder Adventure Paths: Strange Aeons; Advancement Speed: Medium Advancement; Firearm Availability: Emerging Guns; Experimental Options: Don't show statblock summary window; Output Options: Hide Ammo (in weapons), Hide Unusable Skills, Hide Validation Messages, Show Hero Portrait, Show Sourcebook Report"></settings>
             <minions></minions>
         </character>
     </public>

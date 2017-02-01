@@ -30,14 +30,14 @@ class Compiler
     @weapons.create_card(@myXML, "melee") if @myXML["document"]["public"]["character"]["melee"] != nil
     @armors.create_card
     @weapons.create_card(@myXML, "ranged") if @myXML["document"]["public"]["character"]["ranged"] != nil
-    @tracked_resources.create_card(@myXML) if @myXML["document"]["public"]["character"]["trackedresources"] != nil
-    @spells.create_card(@myXML) if @myXML["document"]["public"]["character"]["spellsmemorized"] != nil
+    @tracked_resources.create_card
+    @spells.create_card
     @skills.create_card
     @defenses.create_card
     @feats.create_card
-    @traits.create_card(@myXML) if @myXML["document"]["public"]["character"]["traits"] != nil
-    @special_abilities.create_card(@myXML) if @myXML ["document"]["public"]["character"]["otherspecials"]["special"] != nil
-    @special_attacks.create_card(@myXML) if @myXML["document"]["public"]["character"]["attack"]["special"] != nil
+    @traits.create_card
+    @special_abilities.create_card
+    @special_attacks.create_card
 
     #turn lines 29-40 into something like lines 44-46
 
@@ -63,14 +63,14 @@ class Compiler
       @weapons.create_card(@myXML, "melee", index) if @myXML["document"]["public"]["character"][index]["melee"] != nil
       @armors.create_card(index)
       @weapons.create_card(@myXML, "ranged", index) if @myXML["document"]["public"]["character"][index]["ranged"] != nil
-      @tracked_resources.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["trackedresources"] != nil
-      @spells.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["spellsmemorized"] != nil
+      @tracked_resources.create_card(index)
+      @spells.create_card(index)
       @skills.create_card(index)
       @defenses.create_card(index)
       @feats.create_card(index)
-      @traits.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["traits"] != nil
-      @special_abilities.create_card(@myXML, index) if @myXML ["document"]["public"]["character"][index]["otherspecials"]["special"] != nil
-      @special_attacks.create_card(@myXML, index) if @myXML["document"]["public"]["character"][index]["attack"]["special"] != nil
+      @traits.create_card(index)
+      @special_abilities.create_card(index)
+      @special_attacks.create_card(index)
 
       @setup_cards.each do |card|
         card.class_cards.each {|class_card| @deck.cards << class_card}
@@ -88,14 +88,14 @@ class Compiler
       @character = CharacterCard.new(@myXML),
       @weapons = WeaponCard.new,
       @armors = ArmorCard.new(@myXML),
-      @tracked_resources = TrackedResourceCard.new,
-      @spells = SpellCard.new,
+      @tracked_resources = TrackedResourceCard.new(@myXML),
+      @spells = SpellCard.new(@myXML),
       @skills = SkillCard.new(@myXML),
       @defenses = DefensiveAbilityCard.new(@myXML),
       @feats = FeatCard.new(@myXML),
-      @traits = TraitCard.new,
-      @special_abilities = SpecialAbilityCard.new,
-      @special_attacks = SpecialAttackCard.new
+      @traits = TraitCard.new(@myXML),
+      @special_abilities = SpecialAbilityCard.new(@myXML),
+      @special_attacks = SpecialAttackCard.new(@myXML)
     ]
   end
 end

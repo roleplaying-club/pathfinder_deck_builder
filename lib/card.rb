@@ -25,7 +25,6 @@ class Card
   end
 
   def set_paths
-    binding.pry
     @path_shortcut = @xml_file["document"]["public"]["character"]
 
     if @index
@@ -46,6 +45,11 @@ class Card
     @feat_path = @path_shortcut["feats"]["feat"] if @path_shortcut["feats"] != nil
     @armor_path = @path_shortcut["defenses"]["armor"] if @path_shortcut["defenses"]["armor"] != nil
     @skill_path = @path_shortcut["skills"]["skill"] if @path_shortcut["skills"]["skill"] != nil
+    @special_ability_path = @path_shortcut["otherspecials"]["special"] if @path_shortcut["otherspecials"]["special"] != nil
+    @trait_path = @path_shortcut["traits"]["trait"] if @path_shortcut["traits"]["trait"] != nil
+    @tracked_resource_path = @path_shortcut["trackedresources"]["trackedresource"] if @path_shortcut["trackedresources"]["trackedresource"] != nil
+    @spell_path = @path_shortcut["spellsmemorized"]["spell"] if @path_shortcut["spellsmemorized"]["spell"] != nil
+    @special_attack_path = @path_shortcut["attack"]["special"] if @path_shortcut["attack"]["special"] != nil
   end
 
   def set_multiple_character_path
@@ -59,6 +63,11 @@ class Card
     @feat_path = @path_shortcut[@index]["feats"]["feat"] if @path_shortcut[@index]["feats"] != nil
     @armor_path = @path_shortcut[@index]["defenses"]["armor"] if @path_shortcut[@index]["defenses"]["armor"] != nil
     @skill_path = @path_shortcut[@index]["skills"]["skill"] if @path_shortcut[@index]["skills"]["skill"] != nil
+    @special_ability_path = @path_shortcut[@index]["otherspecials"]["special"] if @path_shortcut[@index]["otherspecials"]["special"] != nil
+    @trait_path = @path_shortcut[@index]["traits"]["trait"] if @path_shortcut[@index]["traits"]["trait"] != nil
+    @tracked_resource_path = @path_shortcut[@index]["trackedresources"]["trackedresource"] if @path_shortcut[@index]["trackedresources"]["trackedresource"] != nil
+    @spell_path = @path_shortcut[@index]["spellsmemorized"]["spell"] if @path_shortcut[@index]["spellsmemorized"] != nil
+    @special_attack_path = @path_shortcut[@index]["attack"]["special"] if @path_shortcut[@index]["attack"]["special"] != nil
   end
 
   def assembled_card(path)
