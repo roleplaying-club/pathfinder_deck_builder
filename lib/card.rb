@@ -25,6 +25,7 @@ class Card
   end
 
   def set_paths
+    binding.pry
     @path_shortcut = @xml_file["document"]["public"]["character"]
 
     if @index
@@ -44,6 +45,7 @@ class Card
     @defensive_ability_path = @path_shortcut["defensive"]["special"] if @path_shortcut["defensive"] != nil
     @feat_path = @path_shortcut["feats"]["feat"] if @path_shortcut["feats"] != nil
     @armor_path = @path_shortcut["defenses"]["armor"] if @path_shortcut["defenses"]["armor"] != nil
+    @skill_path = @path_shortcut["skills"]["skill"] if @path_shortcut["skills"]["skill"] != nil
   end
 
   def set_multiple_character_path
@@ -56,6 +58,7 @@ class Card
     @defensive_ability_path = @path_shortcut[@index]["defensive"]["special"] if @path_shortcut[@index]["defensive"] != nil
     @feat_path = @path_shortcut[@index]["feats"]["feat"] if @path_shortcut[@index]["feats"] != nil
     @armor_path = @path_shortcut[@index]["defenses"]["armor"] if @path_shortcut[@index]["defenses"]["armor"] != nil
+    @skill_path = @path_shortcut[@index]["skills"]["skill"] if @path_shortcut[@index]["skills"]["skill"] != nil
   end
 
   def assembled_card(path)

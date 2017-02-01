@@ -24,7 +24,6 @@ class ArmorCard < Card
   end
 
   def variable_content(path)
-    binding.pry
     {
       "contents": [
         "subtitle | #{path["name"]}",
