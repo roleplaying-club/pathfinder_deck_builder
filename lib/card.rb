@@ -50,6 +50,8 @@ class Card
     @tracked_resource_path = @path_shortcut["trackedresources"]["trackedresource"] if @path_shortcut["trackedresources"]["trackedresource"] != nil
     @spell_path = @path_shortcut["spellsmemorized"]["spell"] if @path_shortcut["spellsmemorized"]["spell"] != nil
     @special_attack_path = @path_shortcut["attack"]["special"] if @path_shortcut["attack"]["special"] != nil
+    @melee_weapon_path = @path_shortcut["melee"]["weapon"] if @path_shortcut["melee"]!= nil
+    @ranged_weapon_path = @path_shortcut["ranged"]["weapon"] if @path_shortcut["ranged"] != nil
   end
 
   def set_multiple_character_path
@@ -68,6 +70,8 @@ class Card
     @tracked_resource_path = @path_shortcut[@index]["trackedresources"]["trackedresource"] if @path_shortcut[@index]["trackedresources"]["trackedresource"] != nil
     @spell_path = @path_shortcut[@index]["spellsmemorized"]["spell"] if @path_shortcut[@index]["spellsmemorized"] != nil
     @special_attack_path = @path_shortcut[@index]["attack"]["special"] if @path_shortcut[@index]["attack"]["special"] != nil
+    @melee_weapon_path = @path_shortcut[@index]["melee"]["weapon"] if @path_shortcut[@index]["melee"] != nil
+    @ranged_weapon_path = @path_shortcut[@index]["ranged"]["weapon"] if @path_shortcut[@index]["ranged"] != nil
   end
 
   def assembled_card(path)
