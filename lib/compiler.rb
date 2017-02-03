@@ -35,7 +35,7 @@ class Compiler
       card.class_cards.each {|class_card| @deck.cards << class_card}
     end
 
-    @deck.save_deck("#{@file_path.split(".")[0]}"+".json", @deck.cards)
+    @deck.save_deck("#{@file_path.split(".")[0]}"+".json")
 
     puts "Please check your current directory for a JSON file with your deck name."
   end
@@ -53,7 +53,7 @@ class Compiler
         card.class_cards.each {|class_card| @deck.cards << class_card}
       end
 
-      @deck.save_deck("#{fun_stuff["name"]}"+".json", @deck.cards)
+      @deck.save_deck("#{fun_stuff["name"]}"+".json")
 
       puts "Please check your current directory for a JSON file with your deck name."
     end

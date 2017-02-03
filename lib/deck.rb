@@ -1,3 +1,4 @@
+require 'pry'
 class Deck
   attr_accessor :cards
 
@@ -5,9 +6,9 @@ class Deck
     @cards = []
   end
 
-  def save_deck(to_file="new_deck.json", cards)
+  def save_deck(to_file="new_deck.json")
     File.open(to_file, "w") do |file|
-      file.puts JSON.pretty_generate(cards)
+      file.puts JSON.pretty_generate(@cards)
     end
   end
 end
