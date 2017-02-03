@@ -6,7 +6,7 @@ describe TraitCard do
   
   before {@trait_card = TraitCard.new}
 
-  it "#static_content returns a hash " do
+  it "#static_content returns a hash" do
     expect(@trait_card.static_content).to eq({
       "count": 1,
       "color": "green",
