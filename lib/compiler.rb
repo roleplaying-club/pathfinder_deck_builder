@@ -1,7 +1,8 @@
 require 'crack'
 require 'json'
 require_relative 'character_card'
-require_relative 'weapon_card'
+require_relative 'melee_weapon_card'
+require_relative 'ranged_weapon_card'
 require_relative 'armor_card'
 require_relative 'tracked_resource_card'
 require_relative 'spell_card'
@@ -26,24 +27,9 @@ class Compiler
     @myXML = Crack::XML.parse(File.read(@file_path))
     setup
 
-    @character.create_card
-    @weapons.create_card(@myXML, "melee") if @myXML["document"]["public"]["character"]["melee"] != nil
-    @armors.create_card
-    @weapons.create_card(@myXML, "ranged") if @myXML["document"]["public"]["character"]["ranged"] != nil
-    @tracked_resources.create_card
-    @spells.create_card
-    @skills.create_card
-    @defenses.create_card
-    @feats.create_card
-    @traits.create_card
-    @special_abilities.create_card
-    @special_attacks.create_card
-
-    #turn lines 29-40 into something like lines 44-46
-
-    #@setup_cards.each do |card|
-    #  card.create_card
-    #end
+    @setup_cards.each do |card|
+      card.create_card
+    end
 
     @setup_cards.each do |card|
       card.class_cards.each {|class_card| @deck.cards << class_card}
@@ -59,18 +45,9 @@ class Compiler
     @myXML["document"]["public"]["character"].each_with_index do |fun_stuff, index|
       setup
 
-      @character.create_card(index)
-      @weapons.create_card(@myXML, "melee", index) if @myXML["document"]["public"]["character"][index]["melee"] != nil
-      @armors.create_card(index)
-      @weapons.create_card(@myXML, "ranged", index) if @myXML["document"]["public"]["character"][index]["ranged"] != nil
-      @tracked_resources.create_card(index)
-      @spells.create_card(index)
-      @skills.create_card(index)
-      @defenses.create_card(index)
-      @feats.create_card(index)
-      @traits.create_card(index)
-      @special_abilities.create_card(index)
-      @special_attacks.create_card(index)
+      @setup_cards.each do |card|
+        card.create_card(index)
+      end
 
       @setup_cards.each do |card|
         card.class_cards.each {|class_card| @deck.cards << class_card}
@@ -86,7 +63,8 @@ class Compiler
     @deck = Deck.new
     @setup_cards = [
       @character = CharacterCard.new(@myXML),
-      @weapons = WeaponCard.new,
+      @melee_weapons = MeleeWeaponCard.new(@myXML),
+      @ranged_weapons = RangedWeaponCard.new(@myXML),
       @armors = ArmorCard.new(@myXML),
       @tracked_resources = TrackedResourceCard.new(@myXML),
       @spells = SpellCard.new(@myXML),
