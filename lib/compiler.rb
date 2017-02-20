@@ -27,7 +27,12 @@ class Compiler
     @myXML = Crack::XML.parse(File.read(@file_path))
     setup
 
+
     @setup_cards.each { |card| card.create_card }
+    
+    @setup_cards.each do |card|
+      card.create_card
+    end
 
     @setup_cards.each do |card|
       card.class_cards.each {|class_card| @deck.cards << class_card}
@@ -44,6 +49,10 @@ class Compiler
       setup
 
       @setup_cards.each { |card| card.create_card(index) }
+
+      @setup_cards.each do |card|
+        card.create_card(index)
+      end
 
       @setup_cards.each do |card|
         card.class_cards.each {|class_card| @deck.cards << class_card}

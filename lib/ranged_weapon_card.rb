@@ -19,7 +19,7 @@ class RangedWeaponCard < Card
       "count": 1,
       "color": "green",
       "title": "Ranged Weapon",
-      "icon": "battle-axe"
+      "icon": "bowman"
     }
   end
 
