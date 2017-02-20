@@ -7,7 +7,7 @@ class MeleeWeaponCard < Card
   end
 
   def set_class_path
-    @class_path = @melee_weapon_path
+    @class_path = @melee_weapons_path
   end
 
   def assembled_card(path)
@@ -27,7 +27,7 @@ class MeleeWeaponCard < Card
     {
       "contents": [
         "subtitle | #{path["name"].capitalize}",
-        "property | Damage Type | #{path["weptype"]}",
+        "property | Damage Type | #{path["melee"]}",
         "property | Attack | #{path["attack"]}",
         "property | Crit | #{path["crit"]}",
         "fill",

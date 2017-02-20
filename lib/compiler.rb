@@ -27,6 +27,9 @@ class Compiler
     @myXML = Crack::XML.parse(File.read(@file_path))
     setup
 
+
+    @setup_cards.each { |card| card.create_card }
+    
     @setup_cards.each do |card|
       card.create_card
     end
@@ -44,6 +47,8 @@ class Compiler
     @myXML = Crack::XML.parse(File.read(@file_path))
     @myXML["document"]["public"]["character"].each_with_index do |fun_stuff, index|
       setup
+
+      @setup_cards.each { |card| card.create_card(index) }
 
       @setup_cards.each do |card|
         card.create_card(index)
@@ -75,5 +80,13 @@ class Compiler
       @special_abilities = SpecialAbilityCard.new(@myXML),
       @special_attacks = SpecialAttackCard.new(@myXML)
     ]
+  end
+
+  def compile
+    if self.is_party?
+      compile_party
+    else
+      compile_individual
+    end
   end
 end

@@ -7,7 +7,7 @@ class RangedWeaponCard < Card
   end
 
   def set_class_path
-    @class_path = @ranged_weapon_path
+    @class_path = @ranged_weapons_path
   end
 
   def assembled_card(path)
@@ -27,7 +27,7 @@ class RangedWeaponCard < Card
     {
       "contents": [
         "subtitle | #{path["name"].capitalize}",
-        "property | Damage Type | #{path["weptype"]}",
+        "property | Damage Type | #{path["ranged"]}",
         "property | Attack | #{path["attack"]}",
         "property | Crit | #{path["crit"]}",
         "fill",
