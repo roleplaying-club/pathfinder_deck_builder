@@ -1,7 +1,6 @@
 require 'crack'
 require 'json'
 require_relative 'character_card'
-require_relative 'weapon_card'
 require_relative 'melee_weapon_card'
 require_relative 'ranged_weapon_card'
 require_relative 'armor_card'
@@ -72,5 +71,13 @@ class Compiler
       @special_abilities = SpecialAbilityCard.new(@myXML),
       @special_attacks = SpecialAttackCard.new(@myXML)
     ]
+  end
+
+  def compile
+    if self.is_party?
+      compile_party
+    else
+      compile_individual
+    end
   end
 end
