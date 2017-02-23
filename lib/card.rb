@@ -21,7 +21,7 @@ class Card
   end
 
   def set_class_path
-    @class_path = @character_path
+    :must_implement
   end
 
   def set_paths
@@ -35,6 +35,7 @@ class Card
   end
 
   def set_single_character_path
+    binding.pry
     @character_path = @path_shortcut
     @ac_path = @path_shortcut["armorclass"]
     @initiative_path = @path_shortcut["armorclass"]
@@ -48,7 +49,7 @@ class Card
     @special_ability_path = @path_shortcut["otherspecials"]["special"] if @path_shortcut["otherspecials"]["special"] != nil
     @trait_path = @path_shortcut["traits"]["trait"] if @path_shortcut["traits"]["trait"] != nil
     @tracked_resource_path = @path_shortcut["trackedresources"]["trackedresource"] if @path_shortcut["trackedresources"]["trackedresource"] != nil
-    @spell_path = @path_shortcut["spellsmemorized"]["spell"] if @path_shortcut["spellsmemorized"]["spell"] != nil
+    @spell_path = @path_shortcut["spellsmemorized"]["spell"] if @path_shortcut["spellsmemorized"] != nil
     @special_attack_path = @path_shortcut["attack"]["special"] if @path_shortcut["attack"]["special"] != nil
     @melee_weapons_path = @path_shortcut["melee"]["weapon"] if @path_shortcut["melee"] != nil
     @ranged_weapons_path = @path_shortcut["ranged"]["weapon"] if @path_shortcut["ranged"] != nil
