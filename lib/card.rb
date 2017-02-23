@@ -35,7 +35,6 @@ class Card
   end
 
   def set_single_character_path
-    binding.pry
     @character_path = @path_shortcut
     @ac_path = @path_shortcut["armorclass"]
     @initiative_path = @path_shortcut["armorclass"]
