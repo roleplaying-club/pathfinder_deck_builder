@@ -6,8 +6,6 @@ require 'crack'
 describe Compiler do
   before {@single_character = Compiler.new('spec/Aer.xml')}
   before {@multiple_characters = Compiler.new('spec/Fellowship.xml')}
-  before {`rm *.json` if Dir.entries(Dir.pwd).include?(/.json/)}
-  after {`rm *.json` if Dir.entries(Dir.pwd).include?(/.json/)}
 
   describe "#is_party?" do
     context "with one party member" do
