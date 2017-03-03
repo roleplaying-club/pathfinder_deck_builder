@@ -14,4 +14,9 @@ describe TraitCard do
       "icon": "usable"
     })
   end
+
+  it "#set_class_path sets up the appropriate path" do
+    expect(@trait_card.class_path).to eq(@trait_path)
+    @trait_card.set_class_path
+  end
 end
