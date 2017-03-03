@@ -46,27 +46,29 @@ describe Compiler do
   end
 
   describe "#setup" do
-    it "creates 12 Card objects in a setup_cards array" do
-      @single_character.setup
+    context "with any amount of characters in the party" do
+      it "initializes 12 CardTypes" do
+        expect_any_instance_of(CharacterCard).to receive(:initialize).and_return(:nil)
+        expect_any_instance_of(MeleeWeaponCard).to receive(:initialize).and_return(:nil)
+        expect_any_instance_of(RangedWeaponCard).to receive(:initialize).and_return(:nil)
+        expect_any_instance_of(ArmorCard).to receive(:initialize).and_return(:nil)
+        expect_any_instance_of(TrackedResourceCard).to receive(:initialize).and_return(:nil)
+        expect_any_instance_of(SpellCard).to receive(:initialize).and_return(:nil)
+        expect_any_instance_of(SkillCard).to receive(:initialize).and_return(:nil)
+        expect_any_instance_of(DefensiveAbilityCard).to receive(:initialize).and_return(:nil)
+        expect_any_instance_of(FeatCard).to receive(:initialize).and_return(:nil)
+        expect_any_instance_of(TraitCard).to receive(:initialize).and_return(:nil)
+        expect_any_instance_of(SpecialAbilityCard).to receive(:initialize).and_return(:nil)
+        expect_any_instance_of(SpecialAttackCard).to receive(:initialize).and_return(:nil)
+        
+        @single_character.setup
+      end
 
-      expect(@single_character.setup_cards.count).to eq(12)
-    end
+      it "initializes a Deck" do
+        expect_any_instance_of(Deck).to receive(:initialize).and_return(:nil)
 
-    it "initializes 12 CardTypes" do
-      expect_any_instance_of(CharacterCard).to receive(:initialize).and_return(:nil)
-      expect_any_instance_of(MeleeWeaponCard).to receive(:initialize).and_return(:nil)
-      expect_any_instance_of(RangedWeaponCard).to receive(:initialize).and_return(:nil)
-      expect_any_instance_of(ArmorCard).to receive(:initialize).and_return(:nil)
-      expect_any_instance_of(TrackedResourceCard).to receive(:initialize).and_return(:nil)
-      expect_any_instance_of(SpellCard).to receive(:initialize).and_return(:nil)
-      expect_any_instance_of(SkillCard).to receive(:initialize).and_return(:nil)
-      expect_any_instance_of(DefensiveAbilityCard).to receive(:initialize).and_return(:nil)
-      expect_any_instance_of(FeatCard).to receive(:initialize).and_return(:nil)
-      expect_any_instance_of(TraitCard).to receive(:initialize).and_return(:nil)
-      expect_any_instance_of(SpecialAbilityCard).to receive(:initialize).and_return(:nil)
-      expect_any_instance_of(SpecialAttackCard).to receive(:initialize).and_return(:nil)
-      
-      @single_character.setup
+        @single_character.setup
+      end
     end
   end
 end

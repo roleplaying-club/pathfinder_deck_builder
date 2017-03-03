@@ -30,7 +30,6 @@ class Compiler
     @myXML = Crack::XML.parse(File.read(@file_path))
     setup
 
-
     @setup_cards.each { |card| card.create_card }
 
     @setup_cards.each do |card|
