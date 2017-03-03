@@ -16,6 +16,7 @@ require_relative 'deck'
 
 class Compiler
   attr_accessor :deck
+  attr_reader :setup_cards
 
   def initialize(file_path)
     @file_path = file_path

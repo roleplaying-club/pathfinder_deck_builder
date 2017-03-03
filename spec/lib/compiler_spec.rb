@@ -44,4 +44,29 @@ describe Compiler do
       end
     end
   end
+
+  describe "#setup" do
+    it "creates 12 Card objects in a setup_cards array" do
+      @single_character.setup
+
+      expect(@single_character.setup_cards.count).to eq(12)
+    end
+
+    it "initializes 12 CardTypes" do
+      expect_any_instance_of(CharacterCard).to receive(:initialize).and_return(:nil)
+      expect_any_instance_of(MeleeWeaponCard).to receive(:initialize).and_return(:nil)
+      expect_any_instance_of(RangedWeaponCard).to receive(:initialize).and_return(:nil)
+      expect_any_instance_of(ArmorCard).to receive(:initialize).and_return(:nil)
+      expect_any_instance_of(TrackedResourceCard).to receive(:initialize).and_return(:nil)
+      expect_any_instance_of(SpellCard).to receive(:initialize).and_return(:nil)
+      expect_any_instance_of(SkillCard).to receive(:initialize).and_return(:nil)
+      expect_any_instance_of(DefensiveAbilityCard).to receive(:initialize).and_return(:nil)
+      expect_any_instance_of(FeatCard).to receive(:initialize).and_return(:nil)
+      expect_any_instance_of(TraitCard).to receive(:initialize).and_return(:nil)
+      expect_any_instance_of(SpecialAbilityCard).to receive(:initialize).and_return(:nil)
+      expect_any_instance_of(SpecialAttackCard).to receive(:initialize).and_return(:nil)
+      
+      @single_character.setup
+    end
+  end
 end

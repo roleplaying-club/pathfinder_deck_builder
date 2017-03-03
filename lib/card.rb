@@ -1,5 +1,6 @@
 class Card
   attr_accessor :class_cards, :index
+  attr_reader :class_path
   
   def initialize(xml_file=nil)
     @class_cards = []
