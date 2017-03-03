@@ -15,6 +15,8 @@ require_relative 'special_attack_card'
 require_relative 'deck'
 
 class Compiler
+  attr_accessor :deck
+
   def initialize(file_path)
     @file_path = file_path
   end
@@ -29,10 +31,6 @@ class Compiler
 
 
     @setup_cards.each { |card| card.create_card }
-    
-    @setup_cards.each do |card|
-      card.create_card
-    end
 
     @setup_cards.each do |card|
       card.class_cards.each {|class_card| @deck.cards << class_card}
@@ -51,10 +49,6 @@ class Compiler
       @setup_cards.each { |card| card.create_card(index) }
 
       @setup_cards.each do |card|
-        card.create_card(index)
-      end
-
-      @setup_cards.each do |card|
         card.class_cards.each {|class_card| @deck.cards << class_card}
       end
 
@@ -62,6 +56,18 @@ class Compiler
 
       puts "Please check your current directory for a JSON file with your deck name."
     end
+  end
+
+  def prepare_for_s3
+    @myXML = Crack::XML.parse(File.read(@file_path))
+    setup
+
+    @setup_cards.each { |card| card.create_card }
+
+    @setup_cards.each do |card|
+      card.class_cards.each {|class_card| @deck.cards << class_card}
+    end
+    return @deck.cards
   end
 
   def setup

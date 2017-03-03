@@ -5,8 +5,9 @@ require 'json'
 describe Deck do 
   
   before {@deck = Deck.new}
-  before {`rm new_deck.json`}
-  after  {`rm new_deck.json`}
+
+  before {`rm new_deck.json`if Dir.entries(Dir.pwd).include?('new_deck.json') }
+  after {`rm new_deck.json`if Dir.entries(Dir.pwd).include?('new_deck.json') }
 
   it "is initialized with an empty array called cards" do
     expect(@deck.cards.class).to eq(Array)

@@ -11,6 +11,10 @@ class CharacterCard < Card
     @class_cards.push(assembled_card)
   end
 
+  def set_class_path
+    @class_path = @character_path
+  end
+
   def assembled_card
     {
       "count" => 1,
