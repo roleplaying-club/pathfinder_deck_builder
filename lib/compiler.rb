@@ -27,46 +27,28 @@ class Compiler
   end
 
   def compile_individual
-    @myXML = Crack::XML.parse(File.read(@file_path))
-    setup
+    read_file_path
 
-    @setup_cards.each { |card| card.create_card }
+    build_cards
 
-    @setup_cards.each do |card|
-      card.class_cards.each {|class_card| @deck.cards << class_card}
-    end
-
-    @deck.save_deck("#{@file_path.split(".")[0]}"+".json")
-
-    puts "Please check your current directory for a JSON file with your deck name."
+    save_deck("#{@deck.cards.first[:title]}"+".json")
   end
 
   def compile_party
-    @myXML = Crack::XML.parse(File.read(@file_path))
+    read_file_path
     @myXML["document"]["public"]["character"].each_with_index do |fun_stuff, index|
-      setup
 
-      @setup_cards.each { |card| card.create_card(index) }
+      build_cards(index)
 
-      @setup_cards.each do |card|
-        card.class_cards.each {|class_card| @deck.cards << class_card}
-      end
-
-      @deck.save_deck("#{fun_stuff["name"]}"+".json")
-
-      puts "Please check your current directory for a JSON file with your deck name."
+      save_deck("#{fun_stuff["name"]}"+".json")
     end
   end
 
   def prepare_for_s3
-    @myXML = Crack::XML.parse(File.read(@file_path))
-    setup
+    read_file_path
+    
+    build_cards
 
-    @setup_cards.each { |card| card.create_card }
-
-    @setup_cards.each do |card|
-      card.class_cards.each {|class_card| @deck.cards << class_card}
-    end
     return @deck.cards
   end
 
@@ -89,10 +71,29 @@ class Compiler
   end
 
   def compile
-    if self.is_party?
+    if is_party?
       compile_party
     else
       compile_individual
     end
+  end
+
+  def save_deck(file_name)
+    @deck.save_deck(file_name)
+    puts "Please check your current directory for a JSON file with your deck name."
+  end
+
+  def build_cards(index=nil)
+    setup
+
+    @setup_cards.each { |card| card.create_card(index) }
+
+    @setup_cards.each do |card|
+      card.class_cards.each {|class_card| @deck.cards << class_card}
+    end
+  end
+
+  def read_file_path
+    @myXML = Crack::XML.parse(File.read(@file_path))
   end
 end

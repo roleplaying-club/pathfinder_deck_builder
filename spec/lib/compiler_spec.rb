@@ -23,6 +23,7 @@ describe Compiler do
 
   describe "#compile" do
     it "calls #is_party?" do
+      allow(@single_character).to receive(:compile_individual) {nil}
       expect(@single_character).to receive(:is_party?)
 
       @single_character.compile
