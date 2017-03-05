@@ -49,27 +49,46 @@ describe Compiler do
   describe "#setup" do
     context "with any amount of characters in the party" do
       it "initializes 12 CardTypes" do
-        expect_any_instance_of(CharacterCard).to receive(:initialize).and_return(:nil)
-        expect_any_instance_of(MeleeWeaponCard).to receive(:initialize).and_return(:nil)
-        expect_any_instance_of(RangedWeaponCard).to receive(:initialize).and_return(:nil)
-        expect_any_instance_of(ArmorCard).to receive(:initialize).and_return(:nil)
-        expect_any_instance_of(TrackedResourceCard).to receive(:initialize).and_return(:nil)
-        expect_any_instance_of(SpellCard).to receive(:initialize).and_return(:nil)
-        expect_any_instance_of(SkillCard).to receive(:initialize).and_return(:nil)
-        expect_any_instance_of(DefensiveAbilityCard).to receive(:initialize).and_return(:nil)
-        expect_any_instance_of(FeatCard).to receive(:initialize).and_return(:nil)
-        expect_any_instance_of(TraitCard).to receive(:initialize).and_return(:nil)
-        expect_any_instance_of(SpecialAbilityCard).to receive(:initialize).and_return(:nil)
-        expect_any_instance_of(SpecialAttackCard).to receive(:initialize).and_return(:nil)
+        expect(CharacterCard).to receive(:new)
+        expect(MeleeWeaponCard).to receive(:new)
+        expect(RangedWeaponCard).to receive(:new)
+        expect(ArmorCard).to receive(:new)
+        expect(TrackedResourceCard).to receive(:new)
+        expect(SpellCard).to receive(:new)
+        expect(SkillCard).to receive(:new)
+        expect(DefensiveAbilityCard).to receive(:new)
+        expect(FeatCard).to receive(:new)
+        expect(TraitCard).to receive(:new)
+        expect(SpecialAbilityCard).to receive(:new)
+        expect(SpecialAttackCard).to receive(:new)
         
         @single_character.setup
       end
 
       it "initializes a Deck" do
-        expect_any_instance_of(Deck).to receive(:initialize).and_return(:nil)
+        expect(Deck).to receive(:new)
 
         @single_character.setup
       end
+    end
+  end
+
+  describe "#read_file_path" do
+    it "Loads a XML file into memory using a given file path" do
+      expect(@single_character.myXML).to eq(nil)
+
+      @single_character.read_file_path
+
+      expect(@single_character.myXML).to eq(Crack::XML.parse(File.read(@single_character.file_path)))
+    end
+  end
+
+  describe "#build_cards" do
+    it "calls #setup" do
+      allow(@single_character.setup_cards).to receive(:each) {nil}
+      expect(@single_character).to receive(:setup)
+
+      @single_character.build_cards
     end
   end
 end
