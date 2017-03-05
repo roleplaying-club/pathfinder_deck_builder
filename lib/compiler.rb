@@ -16,7 +16,7 @@ require_relative 'deck'
 
 class Compiler
   attr_accessor :deck
-  attr_reader :setup_cards
+  attr_reader :setup_cards, :file_path, :myXML
 
   def initialize(file_path)
     @file_path = file_path
