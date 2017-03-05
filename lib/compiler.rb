@@ -36,11 +36,11 @@ class Compiler
 
   def compile_party
     read_file_path
-    @myXML["document"]["public"]["character"].each_with_index do |fun_stuff, index|
+    @myXML["document"]["public"]["character"].each_with_index do |character, index|
 
       build_cards(index)
 
-      save_deck("#{fun_stuff["name"]}"+".json")
+      save_deck("#{character["name"]}"+".json")
     end
   end
 
