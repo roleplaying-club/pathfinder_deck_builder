@@ -58,7 +58,7 @@ module PathfinderDeckBuilder
       @setup_cards = [
         @character = PathfinderDeckBuilder::CharacterCard.new(@myXML),
         @melee_weapons = PathfinderDeckBuilder::MeleeWeaponCard.new(@myXML),
-        @ranged_weapons = RangedWeaponCard.new(@myXML),
+        @ranged_weapons = PathfinderDeckBuilder::RangedWeaponCard.new(@myXML),
         @armors = PathfinderDeckBuilder::ArmorCard.new(@myXML),
         @tracked_resources = TrackedResourceCard.new(@myXML),
         @spells = SpellCard.new(@myXML),

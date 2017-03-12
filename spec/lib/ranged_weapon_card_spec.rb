@@ -3,8 +3,8 @@ require_relative '../../lib/ranged_weapon_card.rb'
 require 'json'
 require 'crack'
 
-describe RangedWeaponCard do 
-  before {@ranged_weapon_card = RangedWeaponCard.new(Crack::XML.parse(File.read('spec/Aer.xml')))}
+describe PathfinderDeckBuilder::RangedWeaponCard do 
+  before {@ranged_weapon_card = PathfinderDeckBuilder::RangedWeaponCard.new(Crack::XML.parse(File.read('spec/Aer.xml')))}
 
   it "#static_content returns a hash" do
     expect(@ranged_weapon_card.static_content).to eq({

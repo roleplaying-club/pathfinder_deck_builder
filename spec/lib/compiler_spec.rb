@@ -51,7 +51,7 @@ describe PathfinderDeckBuilder::Compiler do
       it "initializes 12 CardTypes" do
         expect(PathfinderDeckBuilder::CharacterCard).to receive(:new)
         expect(PathfinderDeckBuilder::MeleeWeaponCard).to receive(:new)
-        expect(RangedWeaponCard).to receive(:new)
+        expect(PathfinderDeckBuilder::RangedWeaponCard).to receive(:new)
         expect(PathfinderDeckBuilder::ArmorCard).to receive(:new)
         expect(TrackedResourceCard).to receive(:new)
         expect(SpellCard).to receive(:new)
