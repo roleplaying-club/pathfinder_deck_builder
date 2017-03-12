@@ -60,7 +60,7 @@ describe PathfinderDeckBuilder::Compiler do
         expect(PathfinderDeckBuilder::FeatCard).to receive(:new)
         expect(TraitCard).to receive(:new)
         expect(PathfinderDeckBuilder::SpecialAbilityCard).to receive(:new)
-        expect(SpecialAttackCard).to receive(:new)
+        expect(PathfinderDeckBuilder::SpecialAttackCard).to receive(:new)
         
         @single_character.setup
       end

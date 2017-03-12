@@ -67,7 +67,7 @@ module PathfinderDeckBuilder
         @feats = PathfinderDeckBuilder::FeatCard.new(@myXML),
         @traits = TraitCard.new(@myXML),
         @special_abilities = PathfinderDeckBuilder::SpecialAbilityCard.new(@myXML),
-        @special_attacks = SpecialAttackCard.new(@myXML)
+        @special_attacks = PathfinderDeckBuilder::SpecialAttackCard.new(@myXML)
       ]
     end
 
