@@ -57,14 +57,14 @@ module PathfinderDeckBuilder
       @deck = PathfinderDeckBuilder::Deck.new
       @setup_cards = [
         @character = PathfinderDeckBuilder::CharacterCard.new(@myXML),
-        @melee_weapons = MeleeWeaponCard.new(@myXML),
+        @melee_weapons = PathfinderDeckBuilder::MeleeWeaponCard.new(@myXML),
         @ranged_weapons = RangedWeaponCard.new(@myXML),
         @armors = PathfinderDeckBuilder::ArmorCard.new(@myXML),
         @tracked_resources = TrackedResourceCard.new(@myXML),
         @spells = SpellCard.new(@myXML),
         @skills = SkillCard.new(@myXML),
         @defenses = PathfinderDeckBuilder::DefensiveAbilityCard.new(@myXML),
-        @feats = FeatCard.new(@myXML),
+        @feats = PathfinderDeckBuilder::FeatCard.new(@myXML),
         @traits = TraitCard.new(@myXML),
         @special_abilities = SpecialAbilityCard.new(@myXML),
         @special_attacks = SpecialAttackCard.new(@myXML)
