@@ -63,7 +63,7 @@ module PathfinderDeckBuilder
         @tracked_resources = TrackedResourceCard.new(@myXML),
         @spells = SpellCard.new(@myXML),
         @skills = SkillCard.new(@myXML),
-        @defenses = DefensiveAbilityCard.new(@myXML),
+        @defenses = PathfinderDeckBuilder::DefensiveAbilityCard.new(@myXML),
         @feats = FeatCard.new(@myXML),
         @traits = TraitCard.new(@myXML),
         @special_abilities = SpecialAbilityCard.new(@myXML),
