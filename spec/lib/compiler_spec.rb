@@ -3,9 +3,9 @@ require_relative '../../lib/compiler.rb'
 require 'json'
 require 'crack'
 
-describe Compiler do
-  before {@single_character = Compiler.new('spec/Aer.xml')}
-  before {@multiple_characters = Compiler.new('spec/Fellowship.xml')}
+describe PathfinderDeckBuilder::Compiler do
+  before {@single_character = PathfinderDeckBuilder::Compiler.new('spec/Aer.xml')}
+  before {@multiple_characters = PathfinderDeckBuilder::Compiler.new('spec/Fellowship.xml')}
 
   describe "#is_party?" do
     context "with one party member" do

@@ -5,4 +5,4 @@ puts "Please provide the full name and path to your xml file relative to your cu
 
 input = gets.chomp.to_s + ".xml"
 
-Compiler.new("#{input}").compile
+PathfinderDeckBuilder::Compiler.new("#{input}").compile
