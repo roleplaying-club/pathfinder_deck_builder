@@ -58,7 +58,7 @@ describe PathfinderDeckBuilder::Compiler do
         expect(PathfinderDeckBuilder::SkillCard).to receive(:new)
         expect(PathfinderDeckBuilder::DefensiveAbilityCard).to receive(:new)
         expect(PathfinderDeckBuilder::FeatCard).to receive(:new)
-        expect(TraitCard).to receive(:new)
+        expect(PathfinderDeckBuilder::TraitCard).to receive(:new)
         expect(PathfinderDeckBuilder::SpecialAbilityCard).to receive(:new)
         expect(PathfinderDeckBuilder::SpecialAttackCard).to receive(:new)
         
