@@ -52,7 +52,7 @@ describe PathfinderDeckBuilder::Compiler do
         expect(CharacterCard).to receive(:new)
         expect(MeleeWeaponCard).to receive(:new)
         expect(RangedWeaponCard).to receive(:new)
-        expect(ArmorCard).to receive(:new)
+        expect(PathfinderDeckBuilder::ArmorCard).to receive(:new)
         expect(TrackedResourceCard).to receive(:new)
         expect(SpellCard).to receive(:new)
         expect(SkillCard).to receive(:new)

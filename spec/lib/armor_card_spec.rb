@@ -3,8 +3,8 @@ require_relative '../../lib/armor_card.rb'
 require 'json'
 require 'crack'
 
-describe ArmorCard do 
-  before {@armor_card = ArmorCard.new(Crack::XML.parse(File.read('spec/Aer.xml')))}
+describe PathfinderDeckBuilder::ArmorCard do 
+  before {@armor_card = PathfinderDeckBuilder::ArmorCard.new(Crack::XML.parse(File.read('spec/Aer.xml')))}
 
   it "#static_content returns a hash" do
     expect(@armor_card.static_content).to eq({

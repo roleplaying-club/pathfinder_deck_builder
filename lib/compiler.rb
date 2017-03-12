@@ -59,7 +59,7 @@ module PathfinderDeckBuilder
         @character = CharacterCard.new(@myXML),
         @melee_weapons = MeleeWeaponCard.new(@myXML),
         @ranged_weapons = RangedWeaponCard.new(@myXML),
-        @armors = ArmorCard.new(@myXML),
+        @armors = PathfinderDeckBuilder::ArmorCard.new(@myXML),
         @tracked_resources = TrackedResourceCard.new(@myXML),
         @spells = SpellCard.new(@myXML),
         @skills = SkillCard.new(@myXML),

@@ -3,7 +3,7 @@ require_relative '../../lib/feat_card.rb'
 require 'json'
 require 'crack'
 
-describe ArmorCard do 
+describe FeatCard do 
   before {@feat_card = FeatCard.new(Crack::XML.parse(File.read('spec/Aer.xml')))}
 
   it "#static_content returns a hash" do
