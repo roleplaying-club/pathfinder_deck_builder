@@ -3,8 +3,8 @@ require_relative '../../lib/character_card.rb'
 require 'json'
 require 'crack'
 
-describe CharacterCard do
-  before {@character_card = CharacterCard.new(Crack::XML.parse(File.read('spec/Aer.xml')))}
+describe PathfinderDeckBuilder::CharacterCard do
+  before {@character_card = PathfinderDeckBuilder::CharacterCard.new(Crack::XML.parse(File.read('spec/Aer.xml')))}
 
   it "#static_content returns nil" do
     expect(@character_card.static_content).to eq(nil)

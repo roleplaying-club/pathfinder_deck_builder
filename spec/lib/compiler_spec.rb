@@ -3,9 +3,9 @@ require_relative '../../lib/compiler.rb'
 require 'json'
 require 'crack'
 
-describe Compiler do
-  before {@single_character = Compiler.new('spec/Aer.xml')}
-  before {@multiple_characters = Compiler.new('spec/Fellowship.xml')}
+describe PathfinderDeckBuilder::Compiler do
+  before {@single_character = PathfinderDeckBuilder::Compiler.new('spec/Aer.xml')}
+  before {@multiple_characters = PathfinderDeckBuilder::Compiler.new('spec/Fellowship.xml')}
 
   describe "#is_party?" do
     context "with one party member" do
@@ -49,24 +49,24 @@ describe Compiler do
   describe "#setup" do
     context "with any amount of characters in the party" do
       it "initializes 12 CardTypes" do
-        expect(CharacterCard).to receive(:new)
-        expect(MeleeWeaponCard).to receive(:new)
-        expect(RangedWeaponCard).to receive(:new)
-        expect(ArmorCard).to receive(:new)
-        expect(TrackedResourceCard).to receive(:new)
-        expect(SpellCard).to receive(:new)
-        expect(SkillCard).to receive(:new)
-        expect(DefensiveAbilityCard).to receive(:new)
-        expect(FeatCard).to receive(:new)
-        expect(TraitCard).to receive(:new)
-        expect(SpecialAbilityCard).to receive(:new)
-        expect(SpecialAttackCard).to receive(:new)
+        expect(PathfinderDeckBuilder::CharacterCard).to receive(:new)
+        expect(PathfinderDeckBuilder::MeleeWeaponCard).to receive(:new)
+        expect(PathfinderDeckBuilder::RangedWeaponCard).to receive(:new)
+        expect(PathfinderDeckBuilder::ArmorCard).to receive(:new)
+        expect(PathfinderDeckBuilder::TrackedResourceCard).to receive(:new)
+        expect(PathfinderDeckBuilder::SpellCard).to receive(:new)
+        expect(PathfinderDeckBuilder::SkillCard).to receive(:new)
+        expect(PathfinderDeckBuilder::DefensiveAbilityCard).to receive(:new)
+        expect(PathfinderDeckBuilder::FeatCard).to receive(:new)
+        expect(PathfinderDeckBuilder::TraitCard).to receive(:new)
+        expect(PathfinderDeckBuilder::SpecialAbilityCard).to receive(:new)
+        expect(PathfinderDeckBuilder::SpecialAttackCard).to receive(:new)
         
         @single_character.setup
       end
 
-      it "initializes a Deck" do
-        expect(Deck).to receive(:new)
+      it "initializes a PathfinderDeckBuilder::Deck" do
+        expect(PathfinderDeckBuilder::Deck).to receive(:new)
 
         @single_character.setup
       end
