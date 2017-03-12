@@ -65,8 +65,8 @@ describe PathfinderDeckBuilder::Compiler do
         @single_character.setup
       end
 
-      it "initializes a Deck" do
-        expect(Deck).to receive(:new)
+      it "initializes a PathfinderDeckBuilder::Deck" do
+        expect(PathfinderDeckBuilder::Deck).to receive(:new)
 
         @single_character.setup
       end

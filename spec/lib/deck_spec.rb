@@ -2,9 +2,9 @@ require_relative '../spec_helper.rb'
 require_relative '../../lib/deck.rb'
 require 'json'
 
-describe Deck do 
+describe PathfinderDeckBuilder::Deck do 
   
-  before {@deck = Deck.new}
+  before {@deck = PathfinderDeckBuilder::Deck.new}
 
   before {`rm new_deck.json`if Dir.entries(Dir.pwd).include?('new_deck.json') }
   after {`rm new_deck.json`if Dir.entries(Dir.pwd).include?('new_deck.json') }
