@@ -1,5 +1,5 @@
 require_relative 'card'
-class CharacterCard < Card
+class CharacterCard < PathfinderDeckBuilder::Card
 
   def initialize(xml_file)
     super

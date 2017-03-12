@@ -1,6 +1,6 @@
 require_relative 'card'
 
-class TrackedResourceCard < Card
+class TrackedResourceCard < PathfinderDeckBuilder::Card
 
   def create_card(index=nil)
     super

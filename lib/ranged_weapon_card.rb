@@ -1,6 +1,6 @@
 require_relative 'card'
 
-class RangedWeaponCard < Card
+class RangedWeaponCard < PathfinderDeckBuilder::Card
 
   def create_card(index=nil)
     super

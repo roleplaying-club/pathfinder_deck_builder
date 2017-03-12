@@ -3,8 +3,8 @@ require_relative '../../lib/card.rb'
 require 'json'
 require 'crack'
 
-describe Card do 
-  before { @card = Card.new(Crack::XML.parse(File.read('spec/Aer.xml'))) }
+describe PathfinderDeckBuilder::Card do 
+  before { @card = PathfinderDeckBuilder::Card.new(Crack::XML.parse(File.read('spec/Aer.xml'))) }
 
   describe "#create_card" do
     it "calls #set_paths on itself" do 
@@ -20,7 +20,7 @@ describe Card do
 
   describe "#set_paths" do
     context "with one party member" do
-      before { @card = Card.new(Crack::XML.parse(File.read('spec/Aer.xml'))) }
+      before { @card = PathfinderDeckBuilder::Card.new(Crack::XML.parse(File.read('spec/Aer.xml'))) }
     
       it "calls #set_single_character_path on itself" do
         expect(@card).to receive(:set_single_character_path)
@@ -29,7 +29,7 @@ describe Card do
     end
 
     context "with more than one party member" do
-      before { @card = Card.new(Crack::XML.parse(File.read('spec/Fellowship.xml'))) }
+      before { @card = PathfinderDeckBuilder::Card.new(Crack::XML.parse(File.read('spec/Fellowship.xml'))) }
       before { @card.index = 0 }
 
       it "calls #set_multiple_character_path on itself" do

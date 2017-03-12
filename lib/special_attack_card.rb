@@ -1,6 +1,6 @@
 require_relative 'card'
 
-class SpecialAttackCard < Card
+class SpecialAttackCard < PathfinderDeckBuilder::Card
 
   def create_card(index=nil)
     super
