@@ -61,7 +61,7 @@ module PathfinderDeckBuilder
         @ranged_weapons = PathfinderDeckBuilder::RangedWeaponCard.new(@myXML),
         @armors = PathfinderDeckBuilder::ArmorCard.new(@myXML),
         @tracked_resources = TrackedResourceCard.new(@myXML),
-        @spells = SpellCard.new(@myXML),
+        @spells = PathfinderDeckBuilder::SpellCard.new(@myXML),
         @skills = PathfinderDeckBuilder::SkillCard.new(@myXML),
         @defenses = PathfinderDeckBuilder::DefensiveAbilityCard.new(@myXML),
         @feats = PathfinderDeckBuilder::FeatCard.new(@myXML),

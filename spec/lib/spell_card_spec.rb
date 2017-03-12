@@ -3,8 +3,8 @@ require_relative '../../lib/spell_card.rb'
 require 'json'
 require 'crack'
 
-describe SpellCard do 
-  before {@spell_card = SpellCard.new(Crack::XML.parse(File.read('spec/Aer.xml')))}
+describe PathfinderDeckBuilder::SpellCard do 
+  before {@spell_card = PathfinderDeckBuilder::SpellCard.new(Crack::XML.parse(File.read('spec/Aer.xml')))}
 
   it "#static_content returns a hash" do
     expect(@spell_card.static_content).to eq({
