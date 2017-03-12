@@ -56,7 +56,7 @@ module PathfinderDeckBuilder
     def setup
       @deck = Deck.new
       @setup_cards = [
-        @character = CharacterCard.new(@myXML),
+        @character = PathfinderDeckBuilder::CharacterCard.new(@myXML),
         @melee_weapons = MeleeWeaponCard.new(@myXML),
         @ranged_weapons = RangedWeaponCard.new(@myXML),
         @armors = PathfinderDeckBuilder::ArmorCard.new(@myXML),
