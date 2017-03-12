@@ -60,7 +60,7 @@ module PathfinderDeckBuilder
         @melee_weapons = PathfinderDeckBuilder::MeleeWeaponCard.new(@myXML),
         @ranged_weapons = PathfinderDeckBuilder::RangedWeaponCard.new(@myXML),
         @armors = PathfinderDeckBuilder::ArmorCard.new(@myXML),
-        @tracked_resources = TrackedResourceCard.new(@myXML),
+        @tracked_resources = PathfinderDeckBuilder::TrackedResourceCard.new(@myXML),
         @spells = PathfinderDeckBuilder::SpellCard.new(@myXML),
         @skills = PathfinderDeckBuilder::SkillCard.new(@myXML),
         @defenses = PathfinderDeckBuilder::DefensiveAbilityCard.new(@myXML),
