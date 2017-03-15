@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'pathfinder_deck_builder'
-  s.version     = '0.0.3'
+  s.version     = '0.0.4'
   s.date        = '2017-02-23'
   s.summary     = 'Turn your Herolab custom output into a deck of cards'
   s.description = 'A simple gem to turn XML into JSON'
