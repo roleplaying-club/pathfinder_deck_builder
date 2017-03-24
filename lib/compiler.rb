@@ -46,7 +46,7 @@ module PathfinderDeckBuilder
     end
 
     def prepare_for_s3
-      read_file_path
+      prepare_json_for_s3(@file_path)
       
       build_cards
 
@@ -96,6 +96,10 @@ module PathfinderDeckBuilder
 
     def read_file_path
       @myXML = Crack::XML.parse(File.read(@file_path))
+    end
+
+    def prepare_json_for_s3(xml)
+      @myXML = Crack::XML.parse(xml)
     end
   end
 end
